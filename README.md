@@ -28,10 +28,13 @@ every change. For an agentic-engineering reader, this is the part of the repo wo
 
 | | |
 |---|---|
-| Pace | 380+ commits since Sept 23, 2026 (this public copy is a single snapshot; day-to-day history is in the private repo) |
+| Pace | 380+ commits since Sept 23, 2026 (this public copy is a snapshot; day-to-day history is in the private repo) |
+| Parallel agents | Three Claude Code agents work at once in separate lanes (features, UI, design), each on its own git branch, worktree and Unity Editor; lanes merge into main periodically |
 | Tests | 927 EditMode tests across 89 test files, over 165 game scripts |
 | Planned features | 56 written feature plans in [`docs/plans/finished/`](docs/plans/finished), each built test-first and reviewed |
 | Agent kit | 11 skills, 5 path-scoped rule files, 2 hooks, a reviewer subagent, and the Unity Editor connected over MCP |
+
+*Because work happens in the lanes and reaches main only when they merge, this snapshot reflects main and can trail the newest lane work.*
 
 **Why it's set up this way.** My first attempt at AI-built games was chat-only "vibe coding" with another model. It
 failed: repeated compile errors, weak Unity knowledge, and no way for the AI to check its own work, so every error
