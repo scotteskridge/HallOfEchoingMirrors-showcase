@@ -1,0 +1,162 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Summary Proposal</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;1,400&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --bg: #141210; --panel: #1c1916; --line: #3a322a; --gilt: #d9a54a; --gilt-dim: #8a6a33;
+    --ink: #e8e0d4; --ink-dim: #9c9186; --ink-faint: #5f574f; --good: #7fa36b; --bad: #c25a4a;
+    --travel: #8a6a33; --work: #d9a54a; --search: #b89a6a; --stall: #c25a4a; --idle: #3f3a34;
+  }
+  * { box-sizing: border-box; }
+  body { margin: 0; background: var(--bg); color: var(--ink); font-family: Inter, sans-serif; font-size: 15px; }
+  .page { max-width: 1100px; margin: 0 auto; padding: 32px 16px 48px; }
+  .serif { font-family: "EB Garamond", serif; }
+  .caps { font-size: 11px; letter-spacing: .18em; text-transform: uppercase; color: var(--ink-dim); }
+  .note { font-size: 12px; color: var(--ink-faint); }
+
+  .switcher { display: flex; gap: 8px; justify-content: center; margin-bottom: 28px; flex-wrap: wrap; }
+  .switcher button { background: none; border: 1px solid var(--line); color: var(--ink-dim); padding: 6px 12px; border-radius: 6px; font: inherit; font-size: 12px; cursor: pointer; }
+  .switcher button.on { border-color: var(--gilt); color: var(--gilt); }
+
+  header { text-align: center; margin-bottom: 36px; }
+  h1 { font-family: "EB Garamond", serif; font-weight: 400; font-size: clamp(28px, 4vw, 42px); margin: 6px 0 8px; }
+  h1 .t { color: var(--gilt); }
+  .bench { font-size: 15px; color: var(--ink-dim); }
+  .bench b { color: var(--ink); font-weight: 500; }
+  .bench .up { color: var(--good); } .bench .down { color: var(--bad); }
+  .quote { font-family: "EB Garamond", serif; font-style: italic; color: var(--ink-dim); font-size: 18px; margin-top: 14px; }
+
+  section { border-top: 1px solid var(--line); padding: 22px 0 8px; margin-bottom: 18px; }
+  h2 { font-family: "EB Garamond", serif; font-weight: 500; font-size: 22px; margin: 0 0 14px; text-align: center; }
+
+  .strip { display: flex; height: 26px; border: 1px solid var(--line); border-radius: 4px; overflow: hidden; position: relative; }
+  .strip div { height: 100%; }
+  .strip .seg { display: flex; align-items: center; justify-content: center; font-size: 12px; color: #1a1408; font-weight: 600; white-space: nowrap; overflow: hidden; border-right: 1px solid var(--bg); }
+  .strip { height: 30px; }
+  .ticks { position: relative; height: 22px; margin-top: 4px; }
+  .ticks span { position: absolute; transform: translateX(-50%); font-size: 11px; color: var(--gilt); white-space: nowrap; }
+  .ticks span::before { content: "◆"; display: block; text-align: center; font-size: 8px; }
+  .legend { display: grid; grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); gap: 10px; margin-top: 10px; }
+  .legend div { display: flex; gap: 8px; align-items: baseline; }
+  .sw { width: 10px; height: 10px; border-radius: 2px; flex: none; transform: translateY(1px); }
+  .legend .n { color: var(--ink); font-weight: 500; }
+  .findings { list-style: none; padding: 0; margin: 16px 0 0; display: grid; gap: 8px; }
+  .findings li { background: var(--panel); border-left: 3px solid var(--gilt-dim); padding: 10px 14px; border-radius: 0 6px 6px 0; }
+  .findings li.warn { border-left-color: var(--bad); }
+  .findings .where { color: var(--ink-dim); font-size: 13px; }
+
+  table { width: 100%; border-collapse: collapse; }
+  th { text-align: left; font-weight: 600; font-size: 12px; color: var(--ink-dim); padding: 6px 8px; border-bottom: 1px solid var(--line); }
+  td { padding: 8px; border-bottom: 1px solid #221e1a; }
+  td.num, th.num { text-align: right; font-variant-numeric: tabular-nums; }
+  .up { color: var(--good); } .down { color: var(--bad); } .dim { color: var(--ink-faint); }
+
+  .skills { display: grid; grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); gap: 14px; text-align: center; }
+  .skill .name { font-weight: 500; }
+  .skill .mult { font-variant-numeric: tabular-nums; margin-top: 4px; }
+  .skill .mult .arrow { color: var(--gilt); margin: 0 4px; }
+  .skill .bar { height: 4px; background: var(--idle); border-radius: 2px; margin: 8px auto 0; width: 80%; }
+  .skill .bar div { height: 100%; background: var(--gilt); border-radius: 2px; }
+
+  .two { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 24px; }
+  .chips { display: flex; flex-wrap: wrap; gap: 8px; }
+  .chip { border: 1px solid var(--line); border-radius: 14px; padding: 4px 10px; font-size: 13px; }
+  .chip.kept { border-color: var(--gilt-dim); }
+  .chip.lost { color: var(--ink-faint); text-decoration: line-through; }
+
+  .go { display: block; margin: 30px auto 0; background: var(--gilt); color: #1a1408; border: none; font-family: "EB Garamond", serif; font-size: 24px; padding: 14px 48px; border-radius: 6px; cursor: pointer; }
+  .annot { border: 1px dashed var(--gilt-dim); color: var(--gilt); font-size: 12px; padding: 6px 10px; border-radius: 6px; margin: 8px 0 0; }
+</style>
+</head>
+<body>
+<div class="page">
+  <div class="switcher" id="sw">
+    <button data-e="dry" class="on">Vitality ran out</button>
+    <button data-e="early">Ended early</button>
+    <button data-e="out">Stepped through the mirror</button>
+  </div>
+
+  <header>
+    <div class="caps">Run 41</div>
+    <h1 id="h1">Her strength gave out after <span class="t">4:20</span></h1>
+    <div class="bench" id="bench">last run <b>5:10</b> <span class="down">(−0:50)</span> · 3 of 4 milestones</div>
+    <div class="quote" id="quote">“I will be back before he notices I was gone.”</div>
+  </header>
+
+  <section>
+    <h2>Where the time went</h2>
+    <div class="strip">
+      <div class="seg" style="width:34%;background:#d9a54a" title="Wayfinding 1:28 · 34%">✦ Wayfinding</div>
+      <div class="seg" style="width:26%;background:#b8893c" title="Gathering 1:08 · 26%">❋ Gathering</div>
+      <div class="seg" style="width:21%;background:#96702f" title="Instantiation 0:55 · 21%">◈ Instantiation</div>
+      <div class="seg" style="width:14%;background:#745724" title="Study 0:36 · 14%">✎</div>
+      <div class="seg" style="width:5%;background:#53401b" title="Invoking 0:13 · 5%">✧</div>
+    </div>
+    <div class="ticks">
+      <span style="left:24%">1:02 darkness pushed back</span>
+      <span style="left:61%">2:39 lab found</span>
+    </div>
+    <div class="note" style="text-align:center">One slice per skill, widest first; each shows its icon (and its name if it fits). Hover: skill, time, share.</div>
+    <div class="annot">Plan A builds the headline, this strip and the skills below.</div>
+  </section>
+
+  <section>
+    <h2>What she learned</h2>
+    <div class="skills">
+      <div class="skill"><div class="name">✦ Wayfinding</div><div class="mult">×2.1<span class="arrow">›</span>×2.3</div><div class="bar"><div style="width:62%"></div></div></div>
+      <div class="skill"><div class="name">❋ Gathering</div><div class="mult">×1.8<span class="arrow">›</span>×1.9</div><div class="bar"><div style="width:30%"></div></div></div>
+      <div class="skill"><div class="name">◈ Instantiation</div><div class="mult">×1.2<span class="arrow">›</span>×1.4</div><div class="bar"><div style="width:85%"></div></div></div>
+      <div class="skill"><div class="name">✎ Study</div><div class="mult">×1.4<span class="arrow">›</span>×1.5</div><div class="bar"><div style="width:48%"></div></div></div>
+      <div class="skill"><div class="name">✧ Invoking</div><div class="mult dim">×1.0 · unchanged</div><div class="bar"><div style="width:4%"></div></div></div>
+    </div>
+    <div class="note" style="text-align:center;margin-top:10px">Same order as the strip. Hover a skill: level, experience earned this run. Stats (with their icons) get a quieter row below.</div>
+  </section>
+
+  <section>
+    <h2>Milestones</h2>
+    <table>
+      <thead><tr><th>Milestone</th><th class="num">Improvement</th><th class="num">This run</th><th class="num">Last run</th><th class="num">Previous run</th></tr></thead>
+      <tbody>
+        <tr><td>The darkness pushed back</td><td class="num up">−0:18</td><td class="num">1:02</td><td class="num">1:20</td><td class="num">1:31</td></tr>
+        <tr><td>The lab found</td><td class="num down">+0:08</td><td class="num">2:39</td><td class="num">2:31</td><td class="num">2:44</td></tr>
+        <tr><td class="dim">The stone cut</td><td class="num dim">—</td><td class="num dim">not reached</td><td class="num">4:48</td><td class="num">—</td></tr>
+      </tbody>
+    </table>
+    <div class="annot">Plan B. Column meanings to confirm.</div>
+  </section>
+
+  <section class="two">
+    <div>
+      <h2>Changed for good</h2>
+      <div class="chips"><span class="chip kept">The candles stay lit</span><span class="chip kept">A way through the left corridor</span></div>
+    </div>
+    <div>
+      <h2>What she carried</h2>
+      <div class="chips"><span class="chip kept">Ring · kept</span><span class="chip lost">2 wisps</span><span class="chip lost">Candle</span></div>
+    </div>
+  </section>
+
+  <button class="go">Go back for him</button>
+</div>
+<script>
+  const E = {
+    dry:   ["Her strength gave out after", "4:20", 'last run <b>5:10</b> <span class="down">(−0:50)</span> · 3 of 4 milestones', "“I will be back before he notices I was gone.”"],
+    early: ["You called her back after", "3:10", 'last run <b>5:10</b> · 2 of 4 milestones', "“Not yet. Not like this.”"],
+    out:   ["She stepped through the mirror at", "6:02", 'last run <b>5:10</b> · 4 of 4 milestones', "“The glass was warm, as if someone had just left it.”"]
+  };
+  document.getElementById("sw").addEventListener("click", ev => {
+    const b = ev.target.closest("button"); if (!b) return;
+    document.querySelectorAll("#sw button").forEach(x => x.classList.toggle("on", x === b));
+    const [a, t, bench, q] = E[b.dataset.e];
+    document.getElementById("h1").innerHTML = a + ' <span class="t">' + t + "</span>";
+    document.getElementById("bench").innerHTML = bench;
+    document.getElementById("quote").textContent = q;
+  });
+</script>
+</body>
+</html>

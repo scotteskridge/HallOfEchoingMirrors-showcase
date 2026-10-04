@@ -1,0 +1,55 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0e696aadb90452947a6f52d36af651f0, type: 3}
+  m_Name: start_travel
+  m_EditorClassIdentifier: HallOfEchoingMirrors::HallOfEchoingMirrors.Core.BlurbBucket
+  _id: 2fbef240e87e1034ea6a42d34f3a6579
+  bucketId: start_travel
+  enabled: 1
+  description: Setting off along a way to the next room.
+  priority: 20
+  chance: 1
+  cooldownSeconds: 0
+  moment: 1
+  activities: 1
+  tasks: []
+  topics: 
+  rooms: []
+  roomKinds: 
+  fromLoop: 0
+  toLoop: 0
+  needsFlipped: []
+  endsWhenFlipped: []
+  needsHeld: []
+  needsNotHeld: []
+  vitalityBelow: 0
+  taperFromLoop: 0
+  silentFromLoop: 0
+  lines:
+  - I set off, counting frames so that I have something to count.
+  - I go on. The floor makes no promises and I ask for none.
+  - I choose my way and take it before I can argue with myself.
+  - Onward, then. The hall is never once shorter the second time.
+  - I walk briskly, the way one walks past a house one does not wish to be asked
+    into.
+  - I leave without looking back. Looking back here is expensive.
+  - I go, and the frames turn their faces as I pass. I have decided that they do
+    not.
+  - One foot, then the next. It worked on the stairs at home with a child on each
+    hip.
+  - I take the next way before the Hall can offer me a worse one.
+  - I set off at the pace I keep for trains I intend to catch.
+  - Onward. He has to be somewhere, and standing still has never once found him.
+  - I straighten my collar and go. Nobody is watching, but the mirrors are.
+  - I pick a direction. The Hall will tell me later whether it was the right one.
+  - Off again. My feet know the way better than I do, and complain less.
+  - I walk on, hands in my pockets so they cannot reach for anything.

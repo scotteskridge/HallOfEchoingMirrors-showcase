@@ -1,0 +1,45 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 70f8fffa6242ef341b6ebafea3e93bd8, type: 3}
+  m_Name: SearchLeftCorridor
+  m_EditorClassIdentifier: HallOfEchoingMirrors::HallOfEchoingMirrors.Core.TaskDefinition
+  _id: 2f4706814ffe32d4c859525da1ecb8aa
+  displayName: Search the left corridor
+  kind: 1
+  blurbTopic: 0
+  family: {fileID: 11400000, guid: 25e25a7ac3df7ff43a408702fea00c59, type: 2}
+  durationMultiplier: 0.952
+  xpMultiplier: 1
+  startsUnlocked: 0
+  oncePerRun: 0
+  singleAction: 0
+  description: The left corridor is all frames and no doors, so I check each one
+    anyway.
+  skill: {fileID: 11400000, guid: 308a206c54f451f47bf8306715024b0e, type: 2}
+  xpReward: 0
+  trainsAttribute: 0
+  cost: 40
+  costShares:
+  - source: 0
+    percent: 100
+  alwaysCharged: 0
+  extraDrainPerSecond: 0
+  escalatingCharge: 0
+  chargeGrowth: 1
+  needs: []
+  gives: []
+  takes: []
+  easierWith: []
+  drainTimes: 1
+  walksOut: 0
+  requiresAttributes: []
+  requiresSkills: []

@@ -1,0 +1,50 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 70f8fffa6242ef341b6ebafea3e93bd8, type: 3}
+  m_Name: LightACandleInTheCorridor
+  m_EditorClassIdentifier: HallOfEchoingMirrors::HallOfEchoingMirrors.Core.TaskDefinition
+  _id: be514297260b5f843963cd343ef268ab
+  displayName: Light a candle
+  kind: 0
+  blurbTopic: 0
+  family: {fileID: 11400000, guid: eacf9d71bc4f4b8449940aa47724ff93, type: 2}
+  durationMultiplier: 0.165
+  xpMultiplier: 1
+  startsUnlocked: 1
+  oncePerRun: 0
+  singleAction: 0
+  description: One candle at a time, I tell the dark it does not own the corridor.
+  skill: {fileID: 11400000, guid: 308a206c54f451f47bf8306715024b0e, type: 2}
+  xpReward: 0
+  trainsAttribute: 0
+  cost: 0
+  costShares: []
+  alwaysCharged: 0
+  extraDrainPerSecond: 0
+  escalatingCharge: 0
+  chargeGrowth: 1
+  needs:
+  - resource: {fileID: 11400000, guid: 7cf4c7aa9ed9a9f40b4f098ba307fa4b, type: 2}
+    amount: 1
+  - resource: {fileID: 11400000, guid: 03d3e3e441aab59429566b049982dc6a, type: 2}
+    amount: 1
+  gives:
+  - resource: {fileID: 11400000, guid: 37a166cb3ee6dc34a8dc3ee524aadd31, type: 2}
+    amount: 1
+  takes:
+  - resource: {fileID: 11400000, guid: 03d3e3e441aab59429566b049982dc6a, type: 2}
+    amount: 1
+  easierWith: []
+  drainTimes: 1
+  walksOut: 0
+  requiresAttributes: []
+  requiresSkills: []

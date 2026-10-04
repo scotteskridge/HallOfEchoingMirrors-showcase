@@ -1,0 +1,72 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0e696aadb90452947a6f52d36af651f0, type: 3}
+  m_Name: searching
+  m_EditorClassIdentifier: HallOfEchoingMirrors::HallOfEchoingMirrors.Core.BlurbBucket
+  _id: 57802c6fb5e2cc04cb3ba419096519e7
+  bucketId: searching
+  enabled: 1
+  description: Fires on search actions in any hall node.
+  priority: 25
+  chance: 1
+  cooldownSeconds: 0
+  moment: 0
+  activities: 4
+  tasks: []
+  topics: 
+  rooms: []
+  roomKinds: 
+  fromLoop: 0
+  toLoop: 0
+  needsFlipped: []
+  endsWhenFlipped: []
+  needsHeld: []
+  needsNotHeld: []
+  vitalityBelow: 0
+  taperFromLoop: 0
+  silentFromLoop: 0
+  lines:
+  - Nothing. A frame, a wall, a length of floor that goes on being floor.
+  - I run my hand along the moulding. Real wood. Somebody carved this.
+  - There is a seam where two corridors were joined badly.
+  - I find a coat button, brass and quite ordinary. I leave it.
+  - The frames are not all the same size. I do not yet know if that matters.
+  - Behind one glass, a room has been left in the middle of being tidied.
+  - Something has been here before me and was not careful.
+  - I search for a long time and find my own frown looking back.
+  - There is a smell of cold iron, faint, and then not there at all.
+  - The dust is thinner in a line down the middle of the hall. Somebody walks here.
+  - I check behind the frame and under it. The frame is unimpressed.
+  - I find a bent hairpin. Not mine. I put it back.
+  - I lift the corner of a rug that isn't there. My hands have habits.
+  - Nothing here. The nothing is very thorough.
+  - I tap the moulding for a hollow. Solid all the way along, and smug about it.
+  - A scrap of blue wool is caught on a splinter. I leave it hanging.
+  - I check the skirting, the frame and the glass. Then the skirting again, out of
+    spite.
+  - My fingers come away clean. That is suspicious in a place this old.
+  - Two scratches run side by side across the floor, where something was dragged.
+    Long ago, or lately.
+  - I hold my breath and listen. The Hall listens back.
+  - I turn over a loose tile. Underneath, a smaller tile.
+  - A chest of drawers stands in the glass. I reach for the top drawer and find only
+    glass.
+  - A pressed flower is wedged in the moulding. It crumbles when I touch it.
+  - One frame hangs crooked. I straighten it. Nothing happens, but I feel better.
+  - Under the frame there is a line of fine grey dust, like ash.
+  - I find a silver thimble, worn through at the tip. I leave it on the frame.
+  - The glass is scratched in one corner, as if someone tried to write something.
+  - I press each panel in turn. The seventh gives slightly, then thinks better of
+    it.
+  - I search until my eyes ache and the frames start repeating themselves.
+  - Something small rolls away from my foot and is gone before I see what.
+  - A small wooden toy, worn smooth, in a frame that isn't ours. I put it back.

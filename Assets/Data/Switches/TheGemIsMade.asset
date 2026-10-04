@@ -1,0 +1,37 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 315c27de9a194d54796a1ac6d2497658, type: 3}
+  m_Name: TheGemIsMade
+  m_EditorClassIdentifier: HallOfEchoingMirrors::HallOfEchoingMirrors.Core.SwitchDefinition
+  _id: 3e59431db0c12ad4e987fa75b3f12b8c
+  displayName: The Gem Is Made
+  trigger: 3
+  triggerTask: {fileID: 0}
+  requiredTasks: []
+  triggerAttribute: 2
+  triggerLevel: 1
+  resourceToHold: {fileID: 11400000, guid: 797bedceaa75e79498a0cdd60bc29b4b, type: 2}
+  triggerAmount: 1
+  roomToExplore: {fileID: 0}
+  explorePercent: 100
+  unlocksTasks:
+  - {fileID: 11400000, guid: 0cb1ffcc2c9426a41830ea8a35b19d8f, type: 2}
+  locksTasks:
+  - {fileID: 11400000, guid: 0d092eb1f5abc274f8f14a09598acae2, type: 2}
+  - {fileID: 11400000, guid: 089bcf653d3b7d5478804cc322b2b672, type: 2}
+  unlocksPools: 
+  wakesAttributes: 
+  opensWays: []
+  closesWays: []
+  waivesWayNeeds: []
+  reopensSearch: []
+  story: {fileID: 11400000, guid: 0d4ea028ec75d68449cea6f5059840e0, type: 2}

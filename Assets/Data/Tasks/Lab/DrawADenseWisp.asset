@@ -1,0 +1,46 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 70f8fffa6242ef341b6ebafea3e93bd8, type: 3}
+  m_Name: DrawADenseWisp
+  m_EditorClassIdentifier: HallOfEchoingMirrors::HallOfEchoingMirrors.Core.TaskDefinition
+  _id: 56f1064520939f34cb9204836e2f315d
+  displayName: Draw a dense wisp
+  kind: 3
+  blurbTopic: 0
+  family: {fileID: 11400000, guid: 5146d1339a8591f4f9f4dd3f054276fd, type: 2}
+  durationMultiplier: 2.277
+  xpMultiplier: 1
+  startsUnlocked: 1
+  oncePerRun: 0
+  singleAction: 0
+  description: The memory is thick in here, and the sapphires were made to hold it.
+  skill: {fileID: 11400000, guid: 308a206c54f451f47bf8306715024b0e, type: 2}
+  xpReward: 0
+  trainsAttribute: 0
+  cost: 0
+  costShares: []
+  alwaysCharged: 0
+  extraDrainPerSecond: 0
+  escalatingCharge: 0
+  chargeGrowth: 1
+  needs:
+  - resource: {fileID: 11400000, guid: c10929b741a220a40a22b8c3e0fa0b7a, type: 2}
+    amount: 1
+  gives:
+  - resource: {fileID: 11400000, guid: 44389b61fab70e4418f3aba485139bbe, type: 2}
+    amount: 1
+  takes: []
+  easierWith: []
+  drainTimes: 1
+  walksOut: 0
+  requiresAttributes: []
+  requiresSkills: []

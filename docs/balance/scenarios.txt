@@ -1,0 +1,12 @@
+# What-if scenarios for the balance probe (docs/balance-tools.md).
+# One change per line:   scenario name | asset path | field path | value
+# Lines with the same name are one scenario. A line with only a name tries the shipped numbers.
+# Field paths are Unity's serialized paths: see docs/balance/latest/balance_snapshot.csv for every one.
+# Changes are made in memory and put back after each scenario; nothing here is ever saved to the assets.
+# Keep this file short: replace the experiments at the start of each pass, keep "shipped" first.
+
+shipped
+
+drain growth 0.45 | Assets/Data/LoopSettings.asset | drainGrowthPerMinute | 0.45
+
+talk x3.6 | Assets/Data/Tasks/Lab/TalkToRoland.asset | durationMultiplier | 3.6

@@ -1,0 +1,9 @@
+The Left Corridor
+
+The Left Corridor is narrower than it looked from the hall. The frames hang so close their mouldings touch, and every glass shows this same corridor with the lamps out.
+
+Between the frames there are sconces, iron, empty, one every few feet. Somebody meant this place to have light and then thought better of it.
+
+I counted ten before the dark took the count off me.
+
+I can *Search* the Left Corridor. If I bring candles and a way to light them, I can *Light a candle* in those sconces.

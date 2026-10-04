@@ -1,0 +1,52 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0e696aadb90452947a6f52d36af651f0, type: 3}
+  m_Name: ring_refused
+  m_EditorClassIdentifier: HallOfEchoingMirrors::HallOfEchoingMirrors.Core.BlurbBucket
+  _id: 25154b68f846d454e90ff6bb165078e4
+  bucketId: ring_refused
+  enabled: 1
+  description: After she has put it down. Fires occasionally in the corridor.
+  priority: 15
+  chance: 0.3
+  cooldownSeconds: 0
+  moment: 0
+  activities: 0
+  tasks: []
+  topics: 
+  rooms: []
+  roomKinds: 00000000
+  fromLoop: 0
+  toLoop: 0
+  needsFlipped:
+  - {fileID: 11400000, guid: f91314b87e6be3a4d8496a326bf68bd0, type: 2}
+  endsWhenFlipped:
+  - {fileID: 11400000, guid: 397892fc7e3b8ec4f8fb3bf302aaf087, type: 2}
+  needsHeld: []
+  needsNotHeld:
+  - {fileID: 11400000, guid: 7c1447b7d63c053489974a719deb21bc, type: 2}
+  vitalityBelow: 0
+  taperFromLoop: 0
+  silentFromLoop: 0
+  lines:
+  - I left it where it lay. I could not spare what it was taking.
+  - The ring is behind me somewhere. I have thought about it more than I would like.
+  - I told myself it was only a ring. I have told myself worse.
+  - It is only a ring. I will go back for it when I can afford it.
+  - Roland would have told me to leave it. Roland would also have gone back for it.
+  - Putting it down was the sensible thing. I have never liked the sensible thing.
+  - My hand feels lighter, and so does the rest of me. I still look back.
+  - I will need it later. I am almost sure I will need it later.
+  - The drain eased the moment I set it down. So did my temper.
+  - Twenty-one years married, and I have just left his ring on a floor.
+  - I know exactly where it is. That is not the same as having it.
+  - It will keep. The Hall keeps everything; that is rather the problem.

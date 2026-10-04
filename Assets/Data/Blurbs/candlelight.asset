@@ -1,0 +1,50 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0e696aadb90452947a6f52d36af651f0, type: 3}
+  m_Name: candlelight
+  m_EditorClassIdentifier: HallOfEchoingMirrors::HallOfEchoingMirrors.Core.BlurbBucket
+  _id: c67fdfa328df19945a6152c38b6008d8
+  bucketId: candlelight
+  enabled: 1
+  description: While Candlelight follows her (the candles are lit this run).
+  priority: 22
+  chance: 0.5
+  cooldownSeconds: 0
+  moment: 0
+  activities: 0
+  tasks: []
+  topics: 
+  rooms: []
+  roomKinds: 
+  fromLoop: 0
+  toLoop: 0
+  needsFlipped: []
+  endsWhenFlipped: []
+  needsHeld:
+  - resource: {fileID: 11400000, guid: 71307980d3f67fd46933a3e5ee99d182, type: 2}
+    amount: 1
+  needsNotHeld: []
+  vitalityBelow: 0
+  taperFromLoop: 0
+  silentFromLoop: 0
+  lines:
+  - The candles drift after me like ducklings with opinions.
+  - The dark gives ground, slowly, and makes it clear that it minds.
+  - Fifteen small flames, and every one of them is on my side.
+  - The dark backs off a foot and sulks there.
+  - With the candles lit, I can breathe a little easier. Only a little.
+  - The flames lean towards me when I stop, as if to ask why.
+  - The light holds the dark off, and the dark takes less of me.
+  - A candle gutters. I shield it with my hand until it thinks better of it.
+  - I walk slower with the candles. There is no sense leaving them behind.
+  - Wax on my cuff. I will deal with that at home.
+  - In the candlelight, the nearest mirrors turn their faces away.

@@ -1,0 +1,45 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 70f8fffa6242ef341b6ebafea3e93bd8, type: 3}
+  m_Name: Travel
+  m_EditorClassIdentifier: HallOfEchoingMirrors::HallOfEchoingMirrors.Core.TaskDefinition
+  _id: 7be7e62bc451ba644854c9c3687bddfe
+  displayName: Travel
+  kind: 0
+  blurbTopic: 0
+  family: {fileID: 11400000, guid: 204f407886b08cf49a6f6453aefa24fd, type: 2}
+  durationMultiplier: 1
+  xpMultiplier: 1
+  startsUnlocked: 1
+  oncePerRun: 0
+  singleAction: 0
+  description: The Hall is rarely where I left it, so I walk and trust the walking.
+  skill: {fileID: 11400000, guid: 82c6de1d65fcb9b45ac65222f95a9360, type: 2}
+  xpReward: 0
+  cost: 0
+  costShares:
+  - source: 100
+    percent: 100
+  alwaysCharged: 1
+  extraDrainPerSecond: 0
+  escalatingCharge: 3
+  chargeGrowth: 1.08
+  needs: []
+  gives: []
+  takes: []
+  easierWith:
+  - whileHolding: {fileID: 11400000, guid: ead6b2c5b3ae57e4cafc5c3e43eab497, type: 2}
+    costEach: 0.5
+    timeEach: 1
+  drainTimes: 1
+  walksOut: 0
+  requiresAttributes: []

@@ -1,0 +1,16 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bc1b7a14e7a18dc4c98bb8e0c1388b72, type: 3}
+  m_Name: TwoCorridors
+  m_EditorClassIdentifier: HallOfEchoingMirrors::HallOfEchoingMirrors.Core.StoryBeat
+  _id: e1eae97db8ef3854c99faee63b9e5026
+  text: {fileID: 4900000, guid: cde2595730209a9418be2b5ff3d6366c, type: 3}

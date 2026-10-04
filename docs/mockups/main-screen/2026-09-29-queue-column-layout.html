@@ -1,0 +1,333 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Queue Column Layout</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=EB+Garamond:wght@500;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+  /* Mock-up only: a proposal for the main screen with the queue as a column (UI plan 015). */
+  :root {
+    --ground: #17120d; --panel: #211a13; --panel-2: #2a2118; --line: #4a3a26;
+    --gilt: #c9a24a; --gilt-dim: #7d6634; --text: #eadcc2; --muted: #a8977b; --faint: #6f6250;
+    --vital: #d98a3a; --vital-low: #b8452f; --bar: #d6a646; --route: #e2b85a;
+    --pathos: linear-gradient(90deg,#d9822b 0 18%,#e1c13b 18% 33%,#3fa36b 33% 40%,#4f78c9 40% 58%,#8b5bc7 58% 76%,#c93b3b 76% 90%,#3a2f24 90%);
+  }
+  * { box-sizing: border-box; }
+  body { margin: 0; background: #0d0a07; color: var(--text); font: 15px/1.35 Inter, system-ui, sans-serif; }
+  .page { max-width: 1920px; margin: 0 auto; padding: 16px; }
+  .intro { max-width: 980px; margin: 0 auto 14px; }
+  .intro h1 { font: 700 26px "EB Garamond", serif; margin: 0 0 4px; color: var(--gilt); }
+  .intro p { margin: 4px 0; color: var(--muted); }
+  .switch { display: flex; gap: 8px; flex-wrap: wrap; margin: 10px 0 0; }
+  .switch button { font: 600 14px Inter; padding: 7px 14px; border-radius: 6px; border: 1px solid var(--gilt-dim);
+    background: var(--panel); color: var(--text); cursor: pointer; }
+  .switch button[aria-pressed="true"] { background: var(--gilt); color: #1b140c; border-color: var(--gilt); }
+
+  /* The 1920x1080 frame, scaled to fit the window. */
+  .viewport { width: 100%; overflow: hidden; }
+  .frame { width: 1920px; height: 1080px; transform-origin: top left; position: relative;
+    background: radial-gradient(ellipse at 45% 55%, #3a2c1d 0%, #21180f 55%, #120d08 100%);
+    border: 1px solid var(--line); overflow: hidden; }
+
+  /* ---------- Top bar (unchanged in this plan: plan ui-014 slims it) ---------- */
+  .top { position: absolute; left: 0; right: 0; top: 0; height: 104px; background: var(--panel);
+    border-bottom: 1px solid var(--gilt-dim); padding: 10px 14px; }
+  .row1 { display: flex; align-items: center; gap: 14px; }
+  .vital { position: relative; width: 640px; height: 30px; background: #3a2a1d; border-radius: 4px; overflow: hidden; border: 1px solid var(--line); }
+  .vital i { position: absolute; inset: 0 22% 0 0; background: linear-gradient(90deg,var(--vital),#c86a34); }
+  .vital span { position: absolute; inset: 0; display: grid; place-items: center; font: 700 19px "EB Garamond", serif; }
+  .pathos { width: 640px; height: 8px; border-radius: 3px; background: var(--pathos); margin-top: 5px; }
+  .stat { color: var(--muted); font-size: 15px; }
+  .btn { font: 600 15px Inter; padding: 6px 14px; border-radius: 5px; background: var(--panel-2); border: 1px solid var(--line); color: var(--text); }
+  .spacer { flex: 1; }
+  .chips { display: flex; gap: 8px; margin-top: 10px; }
+  .chip { font-size: 13.5px; padding: 3px 9px; border-radius: 4px; background: var(--panel-2); border: 1px solid var(--line); color: var(--text); white-space: nowrap; }
+  .chip b { color: var(--gilt); font-weight: 600; }
+
+  /* ---------- The three columns under the top bar ---------- */
+  .map, .queue, .story, .strip { position: absolute; top: 104px; bottom: 0; transition: left .25s ease, right .25s ease, width .25s ease, opacity .2s; }
+  .map { left: 0; }
+  .story { width: 400px; right: 0; background: var(--panel); border-left: 1px solid var(--gilt-dim); padding: 12px 14px; }
+  .queue { width: 360px; right: 400px; background: var(--panel); border-left: 1px solid var(--gilt-dim); display: flex; flex-direction: column; }
+  .frame.expanded .map { right: 760px; }
+  .frame.collapsed .map { right: 400px; }
+  .frame.collapsed .queue { right: 40px; opacity: 0; pointer-events: none; }
+  .frame.collapsed .story { bottom: 84px; }
+  .strip { top: auto; height: 84px; right: 0; width: 400px; background: var(--panel-2); border-top: 1px solid var(--gilt-dim);
+    border-left: 1px solid var(--gilt-dim); padding: 10px 14px; opacity: 0; pointer-events: none; }
+  .frame.collapsed .strip { opacity: 1; pointer-events: auto; }
+
+  /* ---------- Map ---------- */
+  .map svg { width: 100%; height: 100%; }
+  .pockets { position: absolute; left: 14px; top: 14px; width: 250px; background: rgba(23,18,13,.82); border: 1px solid var(--line);
+    border-radius: 6px; padding: 8px 10px; font-size: 13.5px; }
+  .pockets h4 { margin: 0 0 4px; font: 700 15px "EB Garamond", serif; color: var(--gilt); }
+  .pockets div { display: flex; justify-content: space-between; color: var(--muted); }
+
+  /* Popover, beside its node */
+  .popover { position: absolute; width: 400px; background: var(--panel); border: 1px solid var(--gilt); border-radius: 6px;
+    box-shadow: 0 8px 30px rgba(0,0,0,.6); padding: 12px 14px; transition: left .25s ease; }
+  .popover h3 { margin: 0; font: 700 21px "EB Garamond", serif; }
+  .popover .where { margin: 4px 0 10px; font-size: 13px; color: var(--route); }
+  .popover .where.off { color: var(--muted); }
+  .sec { font-size: 12px; text-transform: uppercase; letter-spacing: .06em; color: var(--faint); margin: 10px 0 4px; }
+  .act { display: flex; align-items: center; gap: 8px; padding: 6px 8px; border-radius: 4px; background: var(--panel-2); margin-bottom: 4px; font-size: 14.5px; }
+  .act .t { flex: 1; }
+  .act .d { color: var(--muted); font-size: 13px; }
+  .play, .sched { width: 28px; height: 24px; border-radius: 4px; display: grid; place-items: center; font-weight: 700; font-size: 13px; }
+  .play { background: #3a2d20; color: var(--faint); border: 1px solid var(--line); }
+  .sched { background: var(--gilt); color: #1b140c; }
+  .act.cant { opacity: .45; }
+  .act.cant .sched { background: #3a2d20; color: var(--faint); }
+  .reason { font-size: 12px; color: var(--muted); margin: -2px 0 6px 8px; }
+
+  /* ---------- Queue column ---------- */
+  .qhead { padding: 12px 14px 8px; border-bottom: 1px solid var(--line); }
+  .qhead h2 { margin: 0; font: 700 22px "EB Garamond", serif; color: var(--gilt); display: flex; align-items: baseline; gap: 10px; }
+  .qhead h2 small { font: 500 13px Inter; color: var(--muted); }
+  .qlist { flex: 1; overflow: hidden; padding: 10px 10px 0; }
+  .stop { border: 1px solid var(--line); border-radius: 6px; margin-bottom: 8px; background: rgba(0,0,0,.18); }
+  .stop.now { border-color: var(--gilt); }
+  .stop.hl { border-color: var(--route); box-shadow: 0 0 0 1px var(--route) inset; }
+  .stophead { display: flex; align-items: center; gap: 8px; padding: 6px 9px; font: 700 16px "EB Garamond", serif; cursor: grab; }
+  .num { width: 22px; height: 22px; border-radius: 50%; background: var(--gilt); color: #1b140c; font: 700 12px Inter; display: grid; place-items: center; flex: none; }
+  .stophead .walk { margin-left: auto; font: 500 12.5px Inter; color: var(--muted); }
+  .qrow { display: flex; align-items: center; gap: 8px; padding: 5px 9px 5px 12px; border-top: 1px solid rgba(74,58,38,.55); font-size: 14px; }
+  .qrow .grip { color: var(--faint); cursor: grab; }
+  .qrow .t { flex: 1; }
+  .qrow .x { color: var(--muted); font-size: 12.5px; }
+  .qrow .rm { color: var(--faint); font-size: 13px; }
+  .qrow.new { background: rgba(226,184,90,.14); }
+  .qrow.new .t::after { content: "  new"; color: var(--route); font-size: 11.5px; text-transform: uppercase; letter-spacing: .06em; }
+  .prog { height: 6px; background: #3a2d20; border-radius: 3px; margin: 0 9px 8px 12px; overflow: hidden; }
+  .prog i { display: block; height: 100%; width: 62%; background: var(--bar); }
+  .qfoot { padding: 8px 14px 12px; border-top: 1px solid var(--line); display: flex; align-items: center; gap: 10px; }
+  .qfoot .sum { flex: 1; font-size: 13px; color: var(--muted); }
+  .fold { font: 600 13px Inter; padding: 6px 10px; border-radius: 5px; border: 1px solid var(--gilt-dim); background: var(--panel-2); color: var(--text); cursor: pointer; }
+
+  /* ---------- Collapsed strip ---------- */
+  .strip .l1 { display: flex; align-items: center; gap: 10px; font-size: 14.5px; }
+  .strip .l1 .t { flex: 1; font-weight: 600; }
+  .strip .l1 .x { color: var(--muted); font-size: 13px; }
+  .strip .prog { margin: 8px 0 4px; }
+  .strip .next { font-size: 12.5px; color: var(--muted); }
+
+  /* ---------- Story ---------- */
+  .story h2 { margin: 0 0 8px; font: 700 22px "EB Garamond", serif; color: var(--gilt); }
+  .card { border: 1px solid var(--line); border-radius: 6px; padding: 8px 10px; margin-bottom: 8px; background: rgba(0,0,0,.18); }
+  .card h5 { margin: 0; font: 700 17px "EB Garamond", serif; }
+  .card .meta { font-size: 12px; color: var(--muted); margin: 1px 0 4px; }
+  .card p { margin: 0; font-size: 13.5px; color: var(--text); }
+  .around { font-size: 13.5px; color: var(--muted); font-style: italic; margin: 0 0 8px; }
+
+  /* Callouts: numbered notes on the picture, listed under it */
+  .call { position: absolute; width: 26px; height: 26px; border-radius: 50%; background: #e0493a; color: #fff; font: 700 14px Inter;
+    display: grid; place-items: center; box-shadow: 0 0 0 3px rgba(0,0,0,.5); z-index: 5; transition: left .25s ease, right .25s ease; }
+  .notes { max-width: 980px; margin: 16px auto 40px; }
+  .notes h2 { font: 700 21px "EB Garamond", serif; color: var(--gilt); margin: 18px 0 6px; }
+  .notes ol { padding-left: 22px; margin: 0; }
+  .notes li { margin: 6px 0; color: var(--text); }
+  .notes li b { color: var(--gilt); }
+  .notes p { color: var(--muted); }
+</style>
+</head>
+<body>
+<div class="page">
+  <div class="intro">
+    <h1>Main screen: the queue as a column</h1>
+    <p>Proposal for UI plan 015, drawn at 1920×1080. The top bar is left as it is (plan ui-014 slims it). Red numbers match the notes below the picture.</p>
+    <div class="switch" role="group" aria-label="Layout state">
+      <button id="bExp" aria-pressed="true">Queue open</button>
+      <button id="bCol" aria-pressed="false">Queue folded</button>
+      <button id="bOn" aria-pressed="true">Popover: room on her route</button>
+      <button id="bOff" aria-pressed="false">Popover: room off her route</button>
+    </div>
+  </div>
+
+  <div class="viewport" id="vp">
+  <div class="frame expanded" id="frame">
+
+    <!-- Top bar -->
+    <div class="top">
+      <div class="row1">
+        <div><div class="vital"><i></i><span>Vitality 52 / 63</span></div><div class="pathos"></div></div>
+        <span class="stat">−1.20 a second</span><span class="stat">Run time 9:03</span>
+        <span class="btn">Resume</span><span class="btn">End run</span>
+        <span class="spacer"></span>
+        <span class="btn">Menu</span><span class="btn">Summary</span>
+      </div>
+      <div class="chips">
+        <span class="chip">Endurance <b>63</b></span><span class="chip">Perception <b>×3.80</b></span><span class="chip">Scholarship <b>+0</b></span>
+        <span class="chip">Attunement <b>off</b></span><span class="chip">Composure <b>×0.69</b></span><span class="chip">Wayfinding <b>×3.54</b></span>
+        <span class="chip">Gathering <b>×6.01</b></span><span class="chip">Instantiate <b>×3.83</b></span><span class="chip">Invoking <b>×1.00</b></span><span class="chip">Studying <b>×1.00</b></span>
+      </div>
+    </div>
+
+    <!-- Map -->
+    <div class="map" id="map">
+      <svg viewBox="0 0 1160 976" preserveAspectRatio="xMinYMid meet" aria-label="Map of the Hall">
+        <defs>
+          <linearGradient id="glass" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#3b3127"/><stop offset="1" stop-color="#1b1510"/></linearGradient>
+        </defs>
+        <!-- corridors -->
+        <g stroke="#6b5a44" stroke-width="3" fill="none">
+          <path d="M150 560 L 400 560"/><path d="M400 560 L 560 440"/><path d="M400 560 L 560 680"/>
+          <path d="M560 440 L 790 400"/><path d="M790 400 L 1000 380"/>
+        </g>
+        <!-- her route (dashed gold) -->
+        <g stroke="#e2b85a" stroke-width="5" fill="none" stroke-dasharray="12 8" opacity=".9">
+          <path d="M1000 380 L 790 400"/><path d="M790 400 L 560 440"/><path d="M560 440 L 400 560"/>
+        </g>
+        <!-- nodes: framed mirrors -->
+        <g font-family="EB Garamond, serif" font-weight="700" font-size="19" fill="#eadcc2" text-anchor="middle">
+          <g><rect x="95" y="490" width="110" height="140" rx="10" fill="url(#glass)" stroke="#c9a24a" stroke-width="3"/><text x="150" y="655">The Smoky Mirror</text></g>
+          <g><rect x="345" y="490" width="110" height="140" rx="10" fill="url(#glass)" stroke="#c9a24a" stroke-width="3"/><text x="400" y="655">A Dark Hall</text></g>
+          <g><rect x="505" y="370" width="110" height="140" rx="10" fill="url(#glass)" stroke="#e2b85a" stroke-width="5"/><text x="560" y="535">The Left Corridor</text></g>
+          <g><rect x="505" y="610" width="110" height="140" rx="10" fill="url(#glass)" stroke="#c9a24a" stroke-width="3"/><text x="560" y="775">The Right Corridor</text></g>
+          <g><rect x="735" y="330" width="110" height="140" rx="10" fill="url(#glass)" stroke="#c9a24a" stroke-width="3"/><text x="790" y="495">The Dark Corridor</text><text x="790" y="516">with Hanging Mirrors</text></g>
+          <g><rect x="945" y="310" width="110" height="140" rx="10" fill="url(#glass)" stroke="#c9a24a" stroke-width="3"/><text x="1000" y="475">The Mirror's</text><text x="1000" y="496">Laboratory</text></g>
+        </g>
+        <!-- Clara -->
+        <circle cx="1068" cy="440" r="9" fill="#f3e6c8"/><text x="1068" y="468" font-family="Inter" font-size="13" fill="#eadcc2" text-anchor="middle">CLARA</text>
+        <!-- stop numbers on the map, matching the queue -->
+        <g font-family="Inter" font-weight="700" font-size="15" text-anchor="middle">
+          <circle cx="1048" cy="318" r="15" fill="#c9a24a"/><text x="1048" y="323" fill="#1b140c">1</text>
+          <circle cx="838" cy="338" r="15" fill="#c9a24a"/><text x="838" y="343" fill="#1b140c">2</text>
+          <circle cx="608" cy="378" r="15" fill="#c9a24a"/><text x="608" y="383" fill="#1b140c">3</text>
+          <circle cx="448" cy="498" r="15" fill="#c9a24a"/><text x="448" y="503" fill="#1b140c">4</text>
+        </g>
+      </svg>
+
+      <div class="pockets">
+        <h4>8/12 pockets</h4>
+        <div><span>Roland's ring</span><span>1 carried</span></div>
+        <div><span>Phial of memory</span><span>2</span></div>
+        <div><span>Hanging candle</span><span>5</span></div>
+        <div><span>Satchel</span><span>1</span></div>
+      </div>
+
+      <!-- Popover: The Left Corridor (on route) / The Right Corridor (off route) -->
+      <div class="popover" id="pop" style="left: 640px; top: 560px;">
+        <h3 id="popTitle">The Left Corridor</h3>
+        <div class="where" id="popWhere">On her route: stop 3. Scheduled actions go in there.</div>
+        <div class="sec">Here</div>
+        <div class="act"><span class="t">Search the Left Corridor</span><span class="d">2.4s</span><span class="play" title="Play: only where she is now">▶</span><span class="sched" title="Schedule">+</span></div>
+        <div class="act"><span class="t">Light the hanging candles</span><span class="d">1.2s ×5</span><span class="play">▶</span><span class="sched">+</span></div>
+        <div class="act cant"><span class="t">Take the loose mirror</span><span class="d">3.0s</span><span class="play">▶</span><span class="sched">+</span></div>
+        <div class="reason">Needs a satchel with room in it.</div>
+        <div class="sec">Ways on</div>
+        <div class="act"><span class="t">A Dark Hall</span><span class="d">6.1s</span><span class="play">▶</span><span class="sched">+</span></div>
+      </div>
+
+      <span class="call" style="left: 626px; top: 546px;">3</span>
+      <span class="call" style="left: 1072px; top: 290px;">4</span>
+      <span class="call" style="left: 14px; top: 180px;">7</span>
+    </div>
+
+    <!-- Queue column -->
+    <div class="queue" id="queue">
+      <div class="qhead"><h2>Queue <small>9 actions · 2:41 left</small></h2></div>
+      <div class="qlist">
+        <div class="stop now">
+          <div class="stophead"><span class="num">1</span>The Mirror's Laboratory<span class="walk">here now</span></div>
+          <div class="qrow"><span class="grip">⋮⋮</span><span class="t">Search the Mirror's Laboratory</span><span class="x">2 of 3 · 0.4s</span><span class="rm">✕</span></div>
+          <div class="prog"><i></i></div>
+          <div class="qrow"><span class="grip">⋮⋮</span><span class="t">Take the ring</span><span class="x">1.0s</span><span class="rm">✕</span></div>
+        </div>
+        <div class="stop">
+          <div class="stophead"><span class="num">2</span>The Dark Corridor<span class="walk">walk 8.5s</span></div>
+          <div class="qrow"><span class="grip">⋮⋮</span><span class="t">Gather a wisp</span><span class="x">×2 · 3.2s</span><span class="rm">✕</span></div>
+        </div>
+        <div class="stop hl" id="stop3">
+          <div class="stophead"><span class="num">3</span>The Left Corridor<span class="walk">walk 7.0s</span></div>
+          <div class="qrow"><span class="grip">⋮⋮</span><span class="t">Instantiate a candle</span><span class="x">×5 · 6.0s</span><span class="rm">✕</span></div>
+          <div class="qrow"><span class="grip">⋮⋮</span><span class="t">Put down all candles</span><span class="x">0.5s</span><span class="rm">✕</span></div>
+          <div class="qrow new"><span class="grip">⋮⋮</span><span class="t">Light the hanging candles</span><span class="x">×5 · 6.0s</span><span class="rm">✕</span></div>
+        </div>
+        <div class="stop">
+          <div class="stophead"><span class="num">4</span>A Dark Hall<span class="walk">walk 6.1s</span></div>
+          <div class="qrow"><span class="grip">⋮⋮</span><span class="t">Search A Dark Hall</span><span class="x">until searched</span><span class="rm">✕</span></div>
+        </div>
+      </div>
+      <div class="qfoot">
+        <span class="sum">Ends in A Dark Hall · vitality left ≈ 11</span>
+        <button class="fold" id="foldBtn" title="Fold the queue to a strip; the map widens">Fold ›</button>
+      </div>
+      <span class="call" style="left: -13px; top: 60px;">1</span>
+      <span class="call" style="left: -13px; top: 330px;">5</span>
+      <span class="call" style="right: 12px; bottom: 58px;">2</span>
+    </div>
+
+    <!-- Folded strip -->
+    <div class="strip" id="strip">
+      <div class="l1"><button class="fold" id="unfoldBtn" title="Open the queue; the map moves left">‹ Queue</button>
+        <span class="t">Search the Mirror's Laboratory</span><span class="x">0.4s</span></div>
+      <div class="prog" style="margin-left:0;margin-right:0"><i></i></div>
+      <div class="next">Next: Take the ring · then 7 more in 3 rooms</div>
+    </div>
+
+    <!-- Story -->
+    <div class="story" id="story">
+      <h2>Story</h2>
+      <p class="around">Her legs gave way… Welcome back. Loop 14 begins.</p>
+      <div class="card"><h5>A Glimmer</h5><div class="meta">1:11 · last run 1:47 · −0:35</div><p>Something worth searching for glints in the right corridor.</p></div>
+      <div class="card"><h5>The Ring</h5><div class="meta">1:11 · last run 1:47 · −0:35</div><p>Roland's ring, in the right corridor. She can take it or leave it.</p></div>
+      <div class="card"><h5>The Darkness Pushed Back</h5><div class="meta">5:28 · last run 5:40 · −0:12</div><p>Fifteen candles lit, and the dark here eases.</p></div>
+      <div class="card"><h5>All Twenty-Five Alight</h5><div class="meta">8:05 · last run 8:19 · −0:13</div><p>The Left Corridor burns bright, and the way opens.</p></div>
+      <span class="call" style="left: -13px; top: 20px;">6</span>
+    </div>
+  </div>
+  </div>
+
+  <div class="notes">
+    <h2>What changes</h2>
+    <ol>
+      <li><b>The queue is a column</b> between the map and the Story, top to bottom, one card per stop (the room, the walk there, then its actions). The action she's doing now is at the top with its progress bar. Drag rows or whole stops up and down; ✕ removes. The header gives the count and the time left.</li>
+      <li><b>Fold button</b> under the queue. Folded, the column becomes a slim strip under the Story box (current action, its bar, what's next) and the map widens by 360 px. Open again, it pushes the map left, not over it. The game remembers the choice.</li>
+      <li><b>Schedule works in any room she can reach.</b> A room already on her route (here stop 3): the action goes in at the end of that visit and the stop lights up in the queue. A room off her route: the queue adds the walk there by the shortest way, then the action (switch the popover above to see its note). Only actions she truly can't do are greyed, with the reason. <em>Play</em> still acts only where she is now.</li>
+      <li><b>Stop numbers on the map</b> match the queue's cards, and her route is a dashed gold line. <em>Optional:</em> it ties the column to the map at a glance.</li>
+      <li><b>No bottom strip.</b> The full-width "Nothing queued" ribbon and the big Queue button are gone: the map runs to the bottom edge. With nothing queued, the column shows the hint instead.</li>
+      <li><b>The Story box is narrower</b> (about 400 px instead of about 480), so the queue fits beside it. Its cards keep their text size.</li>
+      <li><b>Map size:</b> with the queue open, the map gets about 60% of the width under the top bar (about 45% today, with a slab under it). Folded, about 80%.</li>
+    </ol>
+    <h2>Not in this mock-up</h2>
+    <p>The slim top bar, backdrop and one material (plan ui-014), the tooltip redesign and the Button/Chip prefabs. The popover beside its node is shown because the columns move the map and the popover must follow it.</p>
+  </div>
+</div>
+
+<script>
+  // Scale the 1920x1080 frame to the window's width.
+  const frame = document.getElementById('frame'), vp = document.getElementById('vp');
+  function fit() { const s = Math.min(1, vp.clientWidth / 1920); frame.style.transform = `scale(${s})`; vp.style.height = (1080 * s) + 'px'; }
+  addEventListener('resize', fit); fit();
+
+  function setFold(folded) {
+    frame.classList.toggle('collapsed', folded); frame.classList.toggle('expanded', !folded);
+    document.getElementById('bExp').setAttribute('aria-pressed', !folded);
+    document.getElementById('bCol').setAttribute('aria-pressed', folded);
+    
+  }
+  document.getElementById('bExp').onclick = () => setFold(false);
+  document.getElementById('bCol').onclick = () => setFold(true);
+  document.getElementById('foldBtn').onclick = () => setFold(true);
+  document.getElementById('unfoldBtn').onclick = () => setFold(false);
+
+  function setRoute(on) {
+    document.getElementById('bOn').setAttribute('aria-pressed', on);
+    document.getElementById('bOff').setAttribute('aria-pressed', !on);
+    document.getElementById('popTitle').textContent = on ? 'The Left Corridor' : 'The Right Corridor';
+    const w = document.getElementById('popWhere');
+    w.textContent = on ? 'On her route: stop 3. Scheduled actions go in there.'
+                       : 'Not on her route. Schedule adds the walk here first: 3 rooms, 21.6s.';
+    w.classList.toggle('off', !on);
+    document.getElementById('stop3').classList.toggle('hl', on);
+    document.querySelector('.qrow.new').style.display = on ? '' : 'none';
+    
+  }
+  document.getElementById('bOn').onclick = () => setRoute(true);
+  document.getElementById('bOff').onclick = () => setRoute(false);
+</script>
+</body>
+</html>

@@ -1,0 +1,90 @@
+{
+  "hooks": {
+    "SessionStart": [
+      {
+        "matcher": "startup|clear",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "echo '{\"systemMessage\":\"Role sessions: type /design, /writing, /ui-work or /workflow to focus this chat.\"}'"
+          }
+        ]
+      },
+      {
+        "matcher": "startup|clear|resume|compact",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "python \"$CLAUDE_PROJECT_DIR/.claude/hooks/lane-context.py\""
+          }
+        ]
+      }
+    ],
+    "PostToolUse": [
+      {
+        "matcher": "Edit|Write",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "python \"$CLAUDE_PROJECT_DIR/.claude/hooks/check-code-rules.py\""
+          }
+        ]
+      }
+    ]
+  },
+  "permissions": {
+    "allow": [
+      "mcp__unityMCP__read_console",
+      "mcp__unityMCP__get_test_job",
+      "mcp__unityMCP__find_gameobjects",
+      "mcp__unityMCP__refresh_unity",
+      "mcp__unityMCP__run_tests",
+      "mcp__unityMCP__manage_camera",
+      "mcp__unityMCP__find_in_file",
+      "mcp__UnityMCP__read_console",
+      "mcp__UnityMCP__get_test_job",
+      "mcp__UnityMCP__find_gameobjects",
+      "mcp__UnityMCP__refresh_unity",
+      "mcp__UnityMCP__run_tests",
+      "mcp__UnityMCP__manage_camera",
+      "mcp__UnityMCP__find_in_file",
+      "mcp__unity-standalone__read_console",
+      "mcp__unity-standalone__get_test_job",
+      "mcp__unity-standalone__find_gameobjects",
+      "mcp__unity-standalone__refresh_unity",
+      "mcp__unity-standalone__run_tests",
+      "mcp__unity-standalone__manage_camera",
+      "mcp__unity-standalone__find_in_file",
+      "Bash(git status *)",
+      "Bash(git diff *)",
+      "Bash(git log *)",
+      "Bash(git show *)",
+      "Bash(grep *)",
+      "Bash(wc *)",
+      "Bash(ls *)",
+      "PowerShell(git status *)",
+      "PowerShell(git diff *)",
+      "PowerShell(git log *)",
+      "PowerShell(git show *)"
+    ],
+    "deny": [
+      "Read(./Library/**)",
+      "Read(./Temp/**)",
+      "Read(./Logs/**)",
+      "Read(./obj/**)",
+      "Read(./UserSettings/**)",
+      "Read(./Build/**)",
+      "Read(./Builds/**)",
+      "Read(./DesignNotes/Archive/**)",
+      "Edit(./ProjectSettings/**)",
+      "Edit(./Packages/packages-lock.json)",
+      "Edit(**/*.meta)"
+    ],
+    "ask": [
+      "Edit(**/*.unity)",
+      "Edit(**/*.prefab)",
+      "Edit(**/*.asset)",
+      "Edit(**/Resources/**)"
+    ]
+  }
+}

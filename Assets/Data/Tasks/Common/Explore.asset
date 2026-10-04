@@ -1,0 +1,45 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 70f8fffa6242ef341b6ebafea3e93bd8, type: 3}
+  m_Name: Explore
+  m_EditorClassIdentifier: HallOfEchoingMirrors::HallOfEchoingMirrors.Core.TaskDefinition
+  _id: c705626d970ed774ea5cd7872f2ca254
+  displayName: Search
+  kind: 0
+  blurbTopic: 0
+  family: {fileID: 11400000, guid: 56590762b9b257640ad20b82f496a819, type: 2}
+  durationMultiplier: 1.667
+  xpMultiplier: 1
+  startsUnlocked: 0
+  oncePerRun: 0
+  singleAction: 0
+  description: Every room hides something, and I am the one who has to go and lift
+    the corner.
+  skill: {fileID: 11400000, guid: 82c6de1d65fcb9b45ac65222f95a9360, type: 2}
+  xpReward: 0
+  trainsAttribute: 0
+  cost: 5
+  costShares:
+  - source: 0
+    percent: 100
+  alwaysCharged: 1
+  extraDrainPerSecond: 0
+  escalatingCharge: 0
+  chargeGrowth: 1
+  needs: []
+  gives: []
+  takes: []
+  easierWith: []
+  drainTimes: 1
+  walksOut: 0
+  requiresAttributes: []
+  requiresSkills: []

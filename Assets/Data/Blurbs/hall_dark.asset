@@ -1,0 +1,75 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0e696aadb90452947a6f52d36af651f0, type: 3}
+  m_Name: hall_dark
+  m_EditorClassIdentifier: HallOfEchoingMirrors::HallOfEchoingMirrors.Core.BlurbBucket
+  _id: 2f9ac29c81b4d2b438d1ff2d12947073
+  bucketId: hall_dark
+  enabled: 1
+  description: The open dark with the floating mirrors. Unlocks after loop 2's discovery.
+  priority: 20
+  chance: 1
+  cooldownSeconds: 0
+  moment: 0
+  activities: 0
+  tasks: []
+  topics: 
+  rooms:
+  - {fileID: 11400000, guid: 38371d1a8178e19408cba87e0062495d, type: 2}
+  roomKinds: 
+  fromLoop: 0
+  toLoop: 0
+  needsFlipped: []
+  endsWhenFlipped: []
+  needsHeld: []
+  needsNotHeld: []
+  vitalityBelow: 0
+  taperFromLoop: 0
+  silentFromLoop: 0
+  lines:
+  - The walls have gone. The mirrors remain, turning on nothing, like leaves that
+    forgot to fall.
+  - There is no floor here and I am walking on it regardless.
+  - Hundreds of mirrors, each looking out on somewhere that is not here.
+  - A drawing room with the curtains shut against a summer that never ended.
+  - A stair goes up into cloud. Nothing at the top of it that I can see.
+  - One mirror shows a garden I planted. The roses are wrong by a season.
+  - They all turn slowly, and none of them turn together.
+  - I have begun to think of them as windows, which is a comfort and probably a mistake.
+  - The dark is patient. I am not, and it knows.
+  - Some of these are mine, some are his. I can tell which at a glance, and wish
+    I couldn't.
+  - One mirror holds me at twenty, very sure of herself. I do not look twice.
+  - If I look too long at one, the others seem to lean.
+  - No sound reaches here except my own breathing, and that only sometimes.
+  - Somewhere in all this glass there is a way home. I am not looking for it yet.
+  - I keep my eyes on the middle distance. The mirrors at the edges are the ones
+    that look back.
+  - I turn all the way round. Every direction is equally far from anywhere.
+  - A mirror drifts past close enough to touch. I don't. It has the look of something
+    that bites.
+  - Rain runs down the inside of one frame. It is quite dry in here.
+  - In one mirror the lamps are lit. In the next, they never were.
+  - One shows a bakery I have never visited, and I am hungry regardless.
+  - Far off, a single frame catches light and loses it. I mark where.
+  - No draught, no smell, no edges. I would give a great deal for a wall.
+  - I hold my own elbow for company and keep walking.
+  - A mirror turns to show its back. Black, and no less watchful.
+  - The near mirrors are dark and the far ones bright. I have decided that is a matter
+    of temperature.
+  - A mirror drifts by showing a street in snow. My breath does not fog.
+  - I pick a bright frame and walk towards it. It keeps its distance.
+  - The quiet here is heavy. I carry it like a wet coat.
+  - One mirror shows a nursery, the cot empty and neatly made. I keep walking.
+  - I say something aloud, just to hear it. The dark lets it go nowhere.
+  - A child's shoe lies in one frame, laces undone. I make myself walk on.
+  - In one mirror a table is laid for four. I only ever count three.

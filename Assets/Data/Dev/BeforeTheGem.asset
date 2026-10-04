@@ -1,0 +1,51 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0a24bc584e65166478c2427cd8037933, type: 3}
+  m_Name: BeforeTheGem
+  m_EditorClassIdentifier: HallOfEchoingMirrors::HallOfEchoingMirrors.Core.DevJumpStage
+  displayName: Before the gem
+  switches:
+  - {fileID: 11400000, guid: 89bb586902104394ba857ae7f1b4d2ef, type: 2}
+  - {fileID: 11400000, guid: f8035e0617f75904ab082ffddac2b476, type: 2}
+  - {fileID: 11400000, guid: 3ae8e2d65d1538c49af2415717aaf2fa, type: 2}
+  - {fileID: 11400000, guid: 3a3d893d1ab50b342a869e829f31a7ef, type: 2}
+  - {fileID: 11400000, guid: f91314b87e6be3a4d8496a326bf68bd0, type: 2}
+  - {fileID: 11400000, guid: 9622d996765e18a4b9ed9b5fc4457cc9, type: 2}
+  - {fileID: 11400000, guid: 66243353fd3d65b4fab3ed7b1a6affca, type: 2}
+  - {fileID: 11400000, guid: 248ddba90ae0a904b90ce69e3f80d814, type: 2}
+  - {fileID: 11400000, guid: 2cb8b6aa1c77865418597432fba092e7, type: 2}
+  - {fileID: 11400000, guid: 397892fc7e3b8ec4f8fb3bf302aaf087, type: 2}
+  keptItems:
+  - resource: {fileID: 11400000, guid: 1a147652ceb5e144a9803c3cde78268c, type: 2}
+    amount: 3
+  - resource: {fileID: 11400000, guid: b1052af6113d55642ac1942c09b0049c, type: 2}
+    amount: 10
+  - resource: {fileID: 11400000, guid: da6b99149d4e6334ab77d8ef7cba19b8, type: 2}
+    amount: 1
+  - resource: {fileID: 11400000, guid: c10929b741a220a40a22b8c3e0fa0b7a, type: 2}
+    amount: 1
+  roomsSearched:
+  - room: {fileID: 11400000, guid: 445362699ea22a447a9921bfec9c0fad, type: 2}
+    percent: 100
+  - room: {fileID: 11400000, guid: e781590954dbb9d47b382aba8d96c4af, type: 2}
+    percent: 100
+  - room: {fileID: 11400000, guid: 95a467d8fe36e794ea19377edd5d7f43, type: 2}
+    percent: 100
+  - room: {fileID: 11400000, guid: 778d1dab1c70eb645a28211bb68a814b, type: 2}
+    percent: 100
+  - room: {fileID: 11400000, guid: 38371d1a8178e19408cba87e0062495d, type: 2}
+    percent: 100
+  - room: {fileID: 11400000, guid: 4c436ce34ae4d0547b4aa82d4f950fb5, type: 2}
+    percent: 25
+  skillMastery:
+  - skill: {fileID: 11400000, guid: de509d302798fec44bca37396e7e58f7, type: 2}
+    level: 8

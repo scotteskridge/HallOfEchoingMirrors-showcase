@@ -1,0 +1,623 @@
+# GAME TEXT - English
+# Hall of Echoing Mirrors
+#
+# Every line of on-screen text the game writes, in one place. (Names of rooms, tasks, items and
+# switches are on their own assets; story passages and blurbs have their own files.)
+#
+# HOW TO EDIT
+#   Each line is   key: text
+#   Change the text freely. Never change the key: it's how the game finds the line.
+#   {words in braces} are filled in by the game (a number, a name). Move them, keep the braces.
+#   Any number can be written as 1st, 2nd, 3rd...: put :ordinal inside the braces, e.g. {loop:ordinal}.
+#   \n starts a new line. <b>bold</b> and <i>italics</i> work.
+#   ## starts a section (the section name goes in front of each key: "results.time").
+#   Lines starting with # are notes, ignored by the game.
+#   Save the file and the game updates, even while playing.
+#   A missing key shows on screen as [section.key?], with a warning in the Console.
+
+
+## common
+sure: Sure? Click again
+same: same
+# Lists: each further item is added with this, e.g. "Search, Study, Gather".
+list: {list}, {item}
+# Something held against its maximum, e.g. "3/5".
+out_of: {held}/{max}
+# A count of something, e.g. "2 Mirror shards".
+amount: {amount} {item}
+percent: {percent}%
+# In place of a number that doesn't exist yet (no last run to compare with).
+none: -
+
+
+## ordinals
+# How {number:ordinal} is written. English: one = 1st, 21st; two = 2nd; three = 3rd; other = 4th, 11th, 12th, 13th.
+one: {n}st
+two: {n}nd
+three: {n}rd
+other: {n}th
+
+
+## attributes
+# Clara's five attributes, wherever they're named.
+endurance: Endurance
+perception: Perception
+scholarship: Scholarship
+attunement: Attunement
+composure: Composure
+
+
+## hues
+# The seven pathos pools' names, wherever a pool is named (bars, tips, feed, reasons, costs).
+amber: Amber
+citrine: Citrine
+emerald: Emerald
+sapphire: Sapphire
+iolite: Iolite
+amethyst: Amethyst
+ruby: Ruby
+
+
+## costs
+# Who pays for an action, in task rows and the map ("12 from all pools"). Vitality's own name is names.vitality.
+all_pools: all pools
+# One part of a cost, e.g. "12 Vitality" or "5 Amber".
+part: {amount} {source}
+# Each further part of a cost, e.g. "5 Amber + 5 Citrine".
+and: {list} + {item}
+
+
+## run
+# Why the game has paused, and the pause and end-run buttons.
+pause_reason.queue_empty: Clara needs to know what to do next.
+pause_reason.single_action: {task} is done. What next?
+pause_reason.new_way: A new way: {room}.
+pause_reason.paused: Paused.
+pause_reason.resumed: Picked up where you left off. Resume when you're ready.
+pause: Pause
+resume: Resume
+end_run: End run
+
+
+## feed
+# Small notes in the story feed (Clara's own lines come from the blurbs).
+welcome.first: Choose what Clara does: > to do it now, + to add it to the queue.
+welcome.back: Welcome back. Loop {loop} begins.
+loop_started: Loop {loop}
+pool_empty: {pool} is empty. Vitality pays the rest.
+ended.walked_out: She walks out after {seconds}s, carrying what she found.
+ended.early: Run ended early after {seconds}s. The anchor pulls Clara back.
+ended.exhausted: Vitality spent after {seconds}s. The anchor pulls Clara back.
+arrived: → {room}
+# A room she has now worked in enough runs to know by heart (said when the run ends).
+known_by_heart: {room}: she knows it by heart now. What she does here stays queued for next time, if every room before it is known too.
+# Said once, when Feed your hours to the flames gives her planning and room speed (plan 049; echoes the Quickened Hours description).
+planning_unlocked: The candles burn to her rhythm now. She can plan each run before it begins, and rooms she knows by heart pass faster.
+way_found: A new way: {from} to {to}.
+way_found.paused: Queue the trip (on the map, or in Actions) and she'll go.
+skipped: {task} skipped: {reason}.
+switch: {switch}.
+switch.new_task: New task: {task}.
+switch.new_pool: New pool: {pool} (from the next loop).
+switch.locked_task: No longer possible: {task}.
+queue_ran_out: Nothing left in the queue.
+held_off: {task}: the darkness draws back.
+
+
+## notices
+# The red-edged box in the bottom right when an action can't be done.
+cant: Can't {task}: {reason}
+cant_travel: Can't travel to {room}: {reason}
+
+
+## results
+# The Summary page, shown when a run ends.
+# The two buttons at the foot of the page: start the next run now, or look at the carried plan first.
+repeat_button: Repeat
+repeat_tip: <b>Repeat</b>: start the next run now, doing what is already in the queue. Anything she has learned by heart is carried over.
+plan_button: Plan
+plan_tip: <b>Plan</b>: look at the queue for the next run, and change it, before it starts.
+# Before planning is earned (Feed your hours to the flames): one button, and a line above it. Placeholder wording (plan 055).
+go_back_button: Go back in
+go_back_tip: <b>Go back in</b>: start the next run now, from the Smoky Mirror. What she has learned stays with her.
+go_back_line: I wake at the Smoky Mirror. Again.
+go_back_line_tip: Every run begins here. What she has learned, searched and changed in the hall stays; what she carried does not.
+# A small caption above the headline.
+run_caption: Loop {loop}
+# The headline at the top of the page: how the run ended and how long it lasted.
+headline.exhausted: Her strength gave out after {time}.
+headline.ended_early: Clara ended the run early, after {time}.
+headline.walked_out: Clara stepped through the mirror after {time}.
+# Under the headline: the run before this one, and the difference ("+0:50", "-0:50" or "same").
+vs_last: Last run {time} ({delta})
+# Under that: how many actions she finished, and the longest run before this one (or the mark for beating it).
+actions_line: {actions} actions
+actions_longest_line: {actions} actions · Longest {time}
+actions_new_longest_line: {actions} actions · {mark}
+by_heart_suffix: · Known by heart: {rooms}
+# How many trips she made, and what their growing charge cost her in vitality.
+moves_suffix: · Moves: {moves}, costing {vitality} vitality
+# The same for each task whose rising charge took vitality: "· Practise the cut: 4, costing 9.4 vitality".
+charge_suffix: · {task}: {goes}, costing {vitality} vitality
+# What Endurance banked when the run ended: more vitality from the next run on.
+kept_suffix: · +{vitality} vitality kept
+time_heading: Where the time went
+learned_heading: What she learned
+# Hover pop-up over one slice of the time strip.
+slice_tip: {skill}: {time} ({percent}% of the run)
+# The slice for actions that train no skill.
+other: Other
+# One skill's chip: its speed from mastery before and after the run (kept between runs).
+skill_mult: ×{before} › ×{after}
+skill_unchanged: ×{value} · unchanged
+skill_tip: {skill}: level {level} this run, {mastery}
+# The mark shown when this run beat the longest run before it.
+new_longest: Longest yet
+# Hover pop-up over the actions and longest line.
+longest_tip: The longest run before this one: the one to beat. Runs you end early don't count.
+# The milestones table: heading, column titles, and what fills a cell with nothing to show.
+milestones_heading: Milestones
+col.milestone: Milestone
+col.improvement: Change
+col.this_run: This run
+col.last_run: Last run
+col.previous_run: Run before
+# In the This run column, for a milestone she did not reach this run.
+not_reached: not reached
+# In the Change column, for a milestone reached for the very first time.
+new_milestone: new
+# The two lists under the table, each with a line for when it is empty.
+changed_heading: Changed for good
+changed_none: Nothing changed this time.
+carried_heading: What she carried
+carried_none: Nothing came out with her.
+# One kept resource as a chip: "Mirrors found 3 → 5".
+chip_kept: {item} {before} → {after}
+# Hover pop-ups over those chips.
+kept: {item}: {before} → {after} (kept)
+carried_out: Carried out: {item} (waiting in the lab)
+left_behind: Left behind: {item} (the anchor only pulls her back)
+changed_for_good: Something changed for good: {switch}
+# The quiet row of stats: a stat's level this run, and how its mastery went.
+stat_chip: {stat} {level}
+level: level {level}
+mastery.gained: mastery {before} → {after}
+mastery.maxed: mastery {level} (at its maximum)
+mastery.progress: mastery {level}
+mastery.toward: (+{percent}% toward {next})
+
+
+## stats
+# The row of chips under the vitality bar: each stat or skill and what it's doing now.
+brief: {name} {effect}
+# What each stat is doing now: on its chip after its name, and in its pop-up.
+effect_endurance: <b>+{value}</b> vitality kept
+effect_perception: sees hidden things
+effect_scholarship: <b>+{value}</b> per study
+effect_attunement: <b>×{value}</b> restoring
+effect_attunement_asleep: asleep
+effect_composure: <b>×{value}</b> drain growth
+brief_skill: {name} <b>×{value}</b>
+
+## pockets
+# The small overlay on the map's left side: what she carries.
+heading: {used}/{slots} pockets
+chip: {item} {amount}
+# A carried or kept one notes it after its amount: "Roland's ring 1 carried".
+chip_lasts: {chip} {lasts}
+# One being used (a wisp): the chip, then how long until it's spent.
+in_use: {chip}  {timer}
+timer: {seconds}s
+# Below what she carries: what's on the floor where she is, and how many of each it holds.
+floor: On the floor here  {limit}
+floor_limit: up to {space} of each
+# Last: what isn't an object, this run's and kept.
+knowledge: Knowledge and progress
+# A container she carries, on its own line: what's in it and how full it is (one kind, or several).
+pouch_line_one: {container}: {item} {used}/{capacity}
+pouch_line: {container}: {items} ({used}/{capacity})
+pouch_empty: {container}: empty 0/{capacity}
+
+
+## main
+# The main page: the top bar.
+vitality: {name}  {current} / {max}
+drain: −{rate} a second
+clock: Run time {time}
+# Added to the clock once she has moved: how many trips this run.
+moves: · Moves {count}
+speed: ×{speed}
+gem: Pathos {current}/{max}
+# The small button at the vitality bar's right end: hides or shows the stats row.
+stats_hide: −
+stats_show: +
+
+## actions
+# An action's row in the room popover, with Play and Schedule.
+play_button: >
+schedule_button: +
+carry_button: C
+# How long it takes her now (her skill included): seconds a go, or times a second once it is under a second.
+details: {seconds}s
+details_per_second: {times}/s
+play_tip: <b>Play</b>: put this at the top of the queue and start it now. Whatever she was doing waits underneath and keeps its progress.
+schedule_tip: <b>Schedule</b>: add this to the end of her last visit to this room. If the queue doesn't go there yet, she walks here first.
+carry_tip: <b>Carry</b>: do this now (on top of the queue), gathering only what she can carry. It stops once her pockets (and any container for it, like a pouch) are full, and never makes things just to leave them on the floor. Schedule keeps going until the floor here is full too.
+tip_time: Takes {seconds}s.
+tip_per_second: Completes {times} times a second.
+tip_speed: Faster with her {skill} skill: ×{speed} now.
+tip_xp: Gives {xp} XP to {targets} as it runs, and the same again to their mastery.
+tip_gives: Gives: {items}
+tip_needs: Needs: {items}
+# A skill gate: this run's level plus mastery must reach it.
+tip_needs_skill: Needs her {skill} skill at {level} (has {has}).
+tip_cost: Costs: {cost}
+tip_charge_rises: Each go this run costs {percent}% more than the last. Done {count} so far.
+tip_extra_drain: Burns {rate} extra vitality a second while she does it.
+tip_hold_off: Holds off the darkness: the drain ×{times} for the rest of the run.
+and: {a} and {b}
+item: {amount} {item}
+item_held: {amount} {item} (has {held} of {max})
+repeat.trip: A trip: done once she arrives.
+repeat.explore: One long go, until the room is fully searched ({percent}% so far). The bar is kept between runs, so she only searches a room once.
+repeat.single: A single action: done once, then the game pauses so you can choose what's next.
+repeat.once: Once a run.
+repeat.pick_up: Once: takes all of them from the floor here that fit in her pockets.
+repeat.put_down: Once: puts all of them in her pockets on the floor here (as many as it holds).
+repeat.until_full: Repeats until she can hold no more.
+repeat.forever: Repeats until you take it out of the queue.
+
+## queue
+# The main page's queue: what Clara will do, top first.
+to_top_button: ^
+remove_button: x
+to_top_tip: <b>To the top</b>: do this now. Whatever she's doing waits underneath and keeps its progress.
+remove_tip: <b>Remove</b>: take this out of the queue. If it's the one she's doing, she stops at once.
+row_tip: She works the top of the queue. When it's done, it leaves the queue and the next one starts.
+left: {seconds}s left
+waiting: waiting, {percent}% done
+next: waiting
+carry_only: (Carry: until her pockets and containers are full)
+# An action the queue put on top to get what a blocked one needs.
+supplying: (for {task}: {item})
+done_times: · done {count}
+times_left: · {count} more
+# A queued trip: what it will charge, counting the trips queued before it.
+trip_charge: · costs {cost}
+trip_charge_tip: Counts what she holds now, not what she'll pick up or put down on the way.
+# The Queue column: one card per stop (a visit to a room), top to bottom.
+stop_tip: <b>Stop {number}: {room}</b>\nWhat she'll do here, top to bottom. A trip starts each stop after the first.
+stop_empty: Nothing to do here yet.
+# Planning the next run with nothing carried over: rooms she has worked in {runs} runs are carried by heart.
+stop_empty_planning: Nothing carried over yet. Once she has worked in a room in {runs} runs, what she did there is queued for her here.
+return: return
+actions_count: Actions queued: {count}
+actions_count_tip: Every action in the queue, trips included. She works through them top to bottom.
+# Warnings ahead: an entry that will be refused when it's reached (the reason shows under it), and its stop.
+warning_mark: ⚠
+# A refused action named with its reason (a folded block lists its refused actions this way).
+action_with_reason: {action}: {reason}
+warnings.one: · 1 warning
+warnings.many: · {count} warnings
+warning_tip: <b>⚠ Some actions here won't start</b>: the reason is under each marked row. Change the plan, or they'll be skipped when she gets to them.
+# A folded block hides its rows, so its tip lists the reasons itself ({reasons}: one line each).
+warning_tip_folded: <b>⚠ Some actions here won't start</b>:\n{reasons}\nChange the plan, or they'll be skipped when she gets to them.
+# Dragging in the Queue column: a row, or a whole stop by its heading or its trip.
+drag_tip: Drag a row to move it. Drag a stop by its heading or its trip to move everything done there. Esc cancels.
+drag_stop: Stop {number}: {room}
+cant_move: can't go here: {reason}
+# A block: the actions carried from a room known by heart, folded into one card.
+by_heart: by heart
+by_heart_actions.one: {badge} · 1 action
+by_heart_actions.many: {badge} · {count} actions
+by_heart_running: {badge} · {done} of {total} · {action}
+by_heart_tip: <b>By heart</b>: she knows this room well enough to do these actions without thinking, so they carry over from the last run. Fold or open the block with the button on the right.
+fold_block_button: -
+unfold_block_button: +
+block_fold_tip: <b>Fold</b>: show this block as one line.
+block_unfold_tip: <b>Open</b>: show every action in this block, to remove or move them one by one.
+remove_block_tip: <b>Remove</b>: take every action of this block out of the queue. If one is running, she stops at once.
+# A stop that won't be queued for the next run: its room isn't known by heart yet, or an earlier stop's isn't.
+not_by_heart: · by heart in {runs} of {needed} runs
+carry_blocked: · won't carry: an earlier room isn't by heart
+not_carried_tip: <b>Won't carry over</b>: next run starts with only what she did in rooms known by heart, up to the first room that isn't (known after working there in {needed} runs). What she does here, and in every stop after it, she will have to queue again.
+# Folds every by-heart block at once, or opens them all when none is open.
+fold_all_button: Fold all
+open_all_button: Open all
+fold_all_tip: <b>Fold all</b>: show every by-heart block as one line.
+open_all_tip: <b>Open all</b>: show every action in every by-heart block.
+# Folding the column to a strip under the Story box, and opening it again.
+fold: Fold >
+unfold: < Queue
+fold_tip: <b>Fold</b>: shrink the queue to a strip under the Story box, and give the map the room. Press Q to fold or open it. It remembers your choice.
+unfold_tip: <b>Queue</b>: open the whole queue again (Q). The map moves over to make room.
+
+## ribbon
+# The folded queue's strip under the Story box: what Clara is doing now, and what comes next.
+then: then: {action}
+empty: Nothing queued. Click a room on the map to plan her next step.
+empty_between_runs: Nothing planned for the next run yet. Click a room on the map to plan her first step.
+room_speed: ×{speed}
+speed_held: held at your speed
+
+## story
+# The milestone cards in the main page's Story box: reached this run, among the Around her lines.
+read_more: Read more
+read_more_tip: <b>Read more</b>: the whole passage.
+times: {time}   last run {last}  {delta}
+times_first: {time}   first time
+times_no_last: {time}   (not reached last run)
+faster: −{delta}
+slower: +{delta}
+times_tip: <b>Run time</b> when she reached this milestone, against the run before. Faster runs mean she's getting better at the hall.
+
+## inventory
+# Item wording shared by the pockets overlay's tooltips (ItemTips): how long each lasts, and what it does.
+lasts.this_run: this run
+lasts.kept: kept
+lasts.carried: carried
+tip.this_run: Lasts this run only: gone when the run ends.
+tip.kept: Kept for good, from run to run.
+tip.carried: Carried: kept only if she walks out. If the anchor pulls her back, it's left behind.
+tip.carry_cost: Carrying it costs {cost} a second.
+tip.in_pocket: Takes a pocket.
+tip.container: Carried outside her pockets. Holds up to {max} of: {items}. New ones go in here first, then her pockets, then the floor.
+tip.adds_pockets: Adds {pockets} pockets while she has it.
+tip.adds_floor: Each one lets her keep {space} more of every item on a room's floor (more light to see by).
+tip.adds_floor_in_step: Lets her keep {now} more of every item on a room's floor now, up to {space} more with all {max} (more light to see by).
+tip.holds_off: Lowers how much vitality she loses each second: ×{times} now (×{full} at {count}; more don't help). The drain still grows each minute.
+tip.restores: Restores {amount} vitality over {seconds}s. She uses one on her own as soon as none of it would be wasted. The timer beside it counts down the one in use.
+
+## tips
+# Hover pop-ups: what something does and how its numbers work.
+# A stat's or skill's pop-up: its name and what it does now, a table of its level and mastery, then small print.
+stat_heading: {name}  {effect}
+skill_heading: {name}  ×{speed} speed
+col_level: Level
+col_xp: XP
+col_speed: Speed
+row_run: This run
+row_mastery: Mastery
+row_total: Total
+# XP towards the next level, in the table's XP column.
+xp: {xp} / {needed}
+# In the XP column once mastery can't go any higher.
+xp_at_max: max
+# A speed in the table's Speed column.
+speed_cell: ×{speed}
+stat_rule: Levels reset every run; mastery is kept. What it does counts both.
+skill_uses: Makes these faster: {tasks}.
+skill_rule: Levels reset every run; mastery is kept. Each level ×{per_level} speed, each mastery ×{per_mastery}.
+mastery_at_max: Mastery is the most it can be for now.
+xp_rule: Every action gives XP to its skill as it runs, and the same again to its mastery. Stats learn from what she does: searching trains Perception, studying Scholarship, instantiating Attunement; Endurance grows from what she loses, and Composure from time in the hall and from carrying what costs her.
+endurance: How much she can take. After every run, {share}% of the vitality she lost is banked as more vitality for every run to come, and each level makes that {per_level}% bigger (+{vitality} kept so far). It also lets her use a restoration item even if {overflow} of it would be wasted ({waste} now).
+perception: How much she sees. Some hidden things and ways stay hidden below a Perception level. It doesn't make searching any faster.
+scholarship: What she can comprehend. Some actions need a Scholarship level. Every {every} levels, each study gives one more (+{now} now).
+attunement: How well she draws on what she holds. Each level makes a restoration item give back {per_level}% more (×{now} now), and hue costs cheaper.
+attunement_asleep: It is asleep: it still learns, but does nothing until something wakes it.
+costs_off: (Action costs are off for now, so the cheaper hue costs do nothing yet.)
+composure: How slowly the hall notices her. Each level slows the drain's growth (×{per_level} a level, ×{now} now), softens a task's own extra drain (×{extra} now) and eases what carried things cost her.
+learns_faster: {skills} learn {percent}% faster for each level.
+vitality: <b>{name}</b>: {current} of {max}.\nWhen it runs out, the anchor pulls Clara back to the real world and the run ends. What she's learnt and found for good stays with her.
+drain: <b>Drain</b>: {rate} a second now.\nIt starts at {base} a second and grows {growth}% every minute (×{grown} so far), so every run ends in time.\nComposure slows its growth: ×{composure}.
+clock: <b>Run time</b>: how long this run has lasted. Time paused doesn't count.
+clock_moves: Moves this run: {count}. Every move costs more vitality than the last (hover Travel for the price), and it starts again each run.
+speed: <b>Speed</b>: how fast time passes. Click a speed to choose it. Clara does exactly the same at any speed.
+speed_locked: <b>×{speed}</b>: not earned yet.
+pause: <b>Pause</b>: stop the clock. The queue can be changed while paused.
+end_run: <b>End run</b>: the anchor pulls Clara back now. Click twice to be sure.
+popover_close: <b>Close</b> this room's popover. Clicking the empty map closes it too.
+stats_toggle: <b>Stats row</b>: show or hide the row of stats and skills under the vitality bar.
+pockets_overlay: <b>Pockets</b>: {used} of {slots} used.\nEvery object takes one pocket; a satchel or the like adds more for the run. When they're full, what she makes or gathers is put down on the floor. Drag it by any chip or heading to move it; double-click one to put it back.
+pockets_floor: <b>On the floor here</b>\nWhat she has put down in this room. She can keep up to {space} of each thing here: beyond that it's too dark to see what she's left. More light lets her keep more (candles lit add room).\nPick things up again from the room's popover (the queue also picks them up when an action needs them). Everything here is gone when the run ends.
+pockets_floor_chip: <b>{item}</b>\nOn the floor of this room: {amount}. The floor holds up to {space} of each item, any number of different items. Pick them up from the room's popover. Gone when the run ends.
+pockets_knowledge:<b>Knowledge and progress</b>\nWhat isn't an object: what she knows, what she has done this run (such as candles lit), and what she keeps between runs. None of it takes a pocket.
+pool: <b>{name}</b>: {current} of {max}.\nPathos for {name} workings. Actions that use this hue draw on it, and what it can't cover comes out of vitality. It fills again each run.
+pool_costs_off: Action costs are switched off for now, so it stays full.
+restoring: +{rate} a second coming back ({left} still to come).
+drain_extra: {action}: +{rate} a second until it's done.
+drain_held_off: Held off: ×{times} (from actions that hold off the darkness this run).
+gem: <b>Clara's gem</b>: the whole bar is the gem full. Each hue she has learnt fills a slice in its colour.
+gem_pool: {name}: {current} of {max}
+# An action's pop-up (plan ui-036a): the small-caps line above the title, "Search · The Hall".
+kicker: {verb} · {room}
+kicker_explore: Search
+kicker_travel: Travel
+kicker_other: Action
+kicker_search: Search
+kicker_study: Study
+kicker_gather: Gather
+kicker_assist: Assist
+kicker_take: Take
+kicker_work: Work
+kicker_instantiate: Instantiate
+# The label column of its rows.
+row_takes: Takes
+row_costs: Costs
+row_trains: Trains
+row_faster: Faster with
+row_gives: Gives
+row_needs: Needs
+row_also: Also
+# Small words after a big number.
+unit_vitality: vitality
+now: now
+# Takes: what it was before her skill sped it up. Costs: why it never gets cheaper.
+from_base: from {seconds}s base
+flat_cost: flat · skill cannot reduce it
+# Trains: one chip for each thing it trains, then the rule.
+chip_xp: {name} +{xp}
+mastery_rule: and the same again to their mastery, which is kept
+faster_value: {skill} ×{speed}
+need_skill: Her {skill} skill at {level} (has {has})
+# The footer's count of a search: steps done of the room's total.
+count: {done} / {total}
+# The compact form (Pick up and Put down): "1.0s  no cost · trains nothing", and what moves on the right.
+compact_line: {cost} · {trains}
+compact_free: no cost
+compact_trains: trains {targets}
+compact_trains_nothing: trains nothing
+compact_pick_up: floor → {amount}
+compact_put_down: {amount} → floor
+
+
+## reasons
+# Why a queued action was skipped (in the feed).
+not_here: can't be done at {room}
+no_longer_possible: no longer possible
+done_this_run: already done this run
+no_cost_family: not finished yet (it has no time set)
+already_have: there's already one this run
+needs: needs {amount} {item}
+needs_attribute: needs {attribute} {level}
+needs_skill: needs {skill} {level} (has {has})
+needs_pool: needs the {pool} pool
+nothing_to_explore: there's nothing to search here
+nothing_to_pick_up: there's no {item} on the floor here
+nothing_to_put_down: she has no {item} in her pockets
+floor_full: there's no room on the floor here for more {item}
+cant_carry_more: her pockets and containers are full (no room for {item})
+no_room: her pockets are full (no room for {item})
+cant_hold_more: she can't hold any more {item}, in her pockets or on the floor here
+# PLACEHOLDER wording (plan 013): a this-run count already at its maximum, e.g. every candle lit.
+count_at_max: all {max} {item} are already done this run
+fully_explored: {room} is fully searched
+already_there: she's already there
+no_way: no way from {room}
+way_not_found: she hasn't found that way yet
+no_found_way: she hasn't found a way to {room}
+way_shut: the way is shut for now
+# The Dark Corridor's shut way (plan 049). Must name the Left Corridor's candles: it is the only on-screen pointer to the candle task.
+shut_dark_corridor: too dark to go in; lighting the Left Corridor's candles might show the way
+# Planning between runs only covers rooms she knows by heart (plan 049). Keeps the progress count and the way out.
+not_by_heart_plan: she doesn't know {room} by heart yet ({runs} of {needed} runs), so it can only be done during a run
+trip: to {room}, {reason}
+
+
+## names
+# How the common verbs read in the build ("Travel to the Left Corridor", "Search the Smoky Mirror").
+trip: {verb} to {room}
+explore: {verb} {room}
+# Pick up / Put down for an item: its "Name in actions" (e.g. "all wisps", "the tome").
+floor_action: {verb} {item}
+# Clara's life bar (hue pools are named under ## hues).
+vitality: Vitality
+
+
+## popover
+# A room's popover over the map: its search bar, actions, floor and ways on.
+searched: searched {done}/{total}
+tip.searched: How much of this room she has searched. Searching is one long action, and the bar is kept for good, even partway: what she finds (an action, an item or a way on) stays found in every later run.
+# The room's name, then what she found here that has done its job (e.g. Mirrors Found, once every way it opens is open).
+title_known: {room} · {known}
+known_item: {item} {amount}
+known_more: {list}, {item}
+tip.known: Found by searching here, and kept. It has done its job: everything it counted towards has happened, so it's shown here rather than with what she knows.
+# One kind of item on the room's floor, and how many of it the floor holds.
+floor_chip: {amount} {item} · {max} fit
+tip.floor_chip: Lying on this room's floor. Each kind of item has its own floor space: the number after the dot. Pick it up with the rows below.
+# One way on from the room: where it leads and how long the trip takes.
+way_chip: {room} · {details}
+play_between_runs_tip: Nothing is running yet: plan it with +
+play_elsewhere: <b>Play</b>: she isn't here, so this goes at the start of her last visit to this room. If the queue doesn't go there yet, she walks here first.
+carry_elsewhere: <b>Carry</b>: she isn't here, so this goes at the end of her last visit to this room (after the walk there, if the queue doesn't go there yet). When its turn comes it gathers only what she can still carry, and stops once her pockets and containers are full.
+on_route: On her route: stop {stop}
+known_by_heart: Known by heart
+runs_worked.one: Worked here in 1 run · by heart at {needed}
+runs_worked.many: Worked here in {runs} runs · by heart at {needed}
+not_worked: Not worked yet
+tip.by_heart: How well she knows this room. Each run she works here counts once, however many actions she does. Once she has worked here in enough runs she knows it by heart: what she does here is queued for the next run, as long as every room before it is known too, and the clock runs faster while she works here.
+adds_walk: Not on her route yet: she walks here first ({time})
+
+
+## map
+# The queue's route drawn on the map, and Clara's token.
+clara_token: CLARA
+token_tip: <b>Clara</b>: where she is. On a trip she walks the gold line, and the part she has walked disappears behind her.
+# The numbered badge on a room the route stops at: badge_tip for one stop, badge_tip_many for a room she comes back to. {stops} is its stop numbers, e.g. "1, 3".
+badge_tip: <b>Stop {stops}</b> on the queue's route. Stop 1 is where she is now, so the numbers move down as she goes.
+badge_tip_many: <b>Stops {stops}</b> on the queue's route: she comes back to this room. Stop 1 is where she is now, so the numbers move down as she goes.
+# A dot under a room for one kind of item lying on its floor. {amount} is how many, {item} its name.
+floor_dot_tip: <b>{amount} {item}</b> on the floor
+# The speed after a room's name, for a room she knows by heart. {speed} is how many times faster the clock runs there; {runs} the runs she has worked in it.
+room_speed: ×{speed}
+room_speed_tip: <b>Known by heart</b>: she has worked here in {runs} runs, so the clock runs ×{speed} faster while she works here (a trip runs at its slower end). A skipped action, a refused one or a milestone drops it back to your speed until the action after it is done.
+# The planning screen's map tags: the mark after a room's tag for a stop that won't carry over, and the hover text above the speed line when stops there will be refused ({reasons}: one line each, as in the queue).
+not_carried_mark: won't carry over
+warning_tip: <b>⚠ Will be refused here</b>:\n{reasons}
+
+# The planning screen's room speed line (once room speed is unlocked): {now} is the speed there now, {next} after one more run.
+speed_line: ×{now} here · ×{next} after 1 more run
+speed_full: ×{now}, full speed
+
+
+## plan
+# The planning screen: between runs, the map on the left and the queue on the right.
+title: Plan the next run · Loop {loop}
+carried.one: 1 action carried
+carried.many: {count} actions carried
+carried_none: Nothing carried over
+clear: Clear plan
+clear_tip: <b>Clear plan</b>: take everything out of the queue, carried actions included, and start the plan again.
+ends_in: Ends in {room}
+nothing_queued: Nothing queued yet
+empty_hint: Click a room on the map and add what she should do there. Rooms she knows by heart are queued for her already.
+begin: Begin
+begin_tip: <b>Begin</b>: start run {loop} with this plan. It starts paused, so look it over first.
+carried_tip: <b>Carried</b>: what she did last run in rooms she knows by heart, queued for this one. You can change any of it.
+ends_in_tip: Where she will be when the whole plan has run. Only rooms she has worked in {needed} runs are carried over.
+
+## menu
+# The Menu page: save slots.
+choose_slot: Choose a slot: start a new game, or load one in progress.
+saved: Saved to slot {slot}.
+couldnt_save: Couldn't save to slot {slot}: {error}.
+couldnt_delete: Couldn't delete slot {slot}: {error}.
+new_game: New game
+delete: Delete
+started: New game started in slot {slot}.
+loaded: Loaded slot {slot}.
+couldnt_load: Couldn't load slot {slot}: {error}.
+deleted: Slot {slot} deleted.
+slot: Slot {slot}
+slot_line: {name}: {details}
+slot_details: {loops}, {passages}
+playing: (playing)
+unreadable: can't be read ({error})
+# Why a save can't be read (shown in the two lines above).
+damaged: the save file is damaged ({detail})
+empty_file: the save file is empty
+slot_empty: the slot is empty
+too_new: the save is from a newer version of the game
+empty: empty
+loops.one: 1 loop
+loops.many: {count} loops
+passages.one: 1 passage
+passages.many: {count} passages
+saved_at: Saved {when}
+# How a save's date and time is written (.NET format: day, short month, 24-hour time).
+date_format: d MMM, HH:mm
+unknown_time: at an unknown time
+confirm_new: Slot {slot} has a saved game. Click New game again to replace it.
+confirm_delete: Click Delete again to erase slot {slot}. This can't be undone.
+
+## scene
+# Labels typed into the scene (buttons, headings, tabs). Keys made by the Scene Labels tool.
+menuscreen_achievementsbutton: Achievements (coming later)
+menuscreen_savenowbutton: Save now
+menuscreen_settingsbutton: Settings (coming later)
+menuscreen_title: The Hall of Echoing Mirrors
+mainscreen_queue: Queue
+mainscreen_story: Story
+summaryscreen_story: This run's story
+screentabs_maintab: Main
+screentabs_menutab: Menu
+screentabs_plantab: Summary
+storypopuppanel_continuebutton: Continue
+mainscreen_endrunbutton: End run
+mainscreen_pausebutton: Pause
+mainscreen_speedbutton: ×1
+popover_here: Here
+popover_floor: On the floor
+popover_ways: Ways on
+popover_close: ×

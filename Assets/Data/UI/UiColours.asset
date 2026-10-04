@@ -1,0 +1,79 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2849caabb871efe4faad11d8dd31d28b, type: 3}
+  m_Name: UiColours
+  m_EditorClassIdentifier: HallOfEchoingMirrors::HallOfEchoingMirrors.UI.UiColours
+  _colours:
+  - role: 0
+    colour: {r: 0.11764706, g: 0.09803922, b: 0.078431375, a: 0.9411765}
+  - role: 1
+    colour: {r: 0.16862746, g: 0.14117648, b: 0.11764706, a: 0.9411765}
+  - role: 2
+    colour: {r: 0.09019608, g: 0.07450981, b: 0.05882353, a: 0.9411765}
+  - role: 3
+    colour: {r: 0.09019608, g: 0.07450981, b: 0.05882353, a: 0.3764706}
+  - role: 4
+    colour: {r: 0.07058824, g: 0.05882353, b: 0.047058824, a: 0.8235294}
+  - role: 5
+    colour: {r: 0.12941177, g: 0.105882354, b: 0.08627451, a: 0.98039216}
+  - role: 6
+    colour: {r: 0.16862746, g: 0.14117648, b: 0.11764706, a: 0.9490196}
+  - role: 7
+    colour: {r: 0.18431373, g: 0.15294118, b: 0.12941177, a: 1}
+  - role: 8
+    colour: {r: 0.18431373, g: 0.15294118, b: 0.12941177, a: 0.078431375}
+  - role: 9
+    colour: {r: 0.08627451, g: 0.07058824, b: 0.05490196, a: 0.9607843}
+  - role: 10
+    colour: {r: 0.08627451, g: 0.07058824, b: 0.05490196, a: 0.92156863}
+  - role: 11
+    colour: {r: 0.22745098, g: 0.19215687, b: 0.16078432, a: 1}
+  - role: 12
+    colour: {r: 0.2901961, g: 0.16470589, b: 0.14117648, a: 1}
+  - role: 13
+    colour: {r: 0.22745098, g: 0.18039216, b: 0.11764706, a: 0.9019608}
+  - role: 14
+    colour: {r: 0.30588236, g: 0.25882354, b: 0.21176471, a: 1}
+  - role: 15
+    colour: {r: 0.8784314, g: 0.6509804, b: 0.3137255, a: 1}
+  - role: 16
+    colour: {r: 0.11764706, g: 0.078431375, b: 0.03137255, a: 1}
+  - role: 17
+    colour: {r: 0.92941177, g: 0.8901961, b: 0.81960785, a: 1}
+  - role: 18
+    colour: {r: 0.65882355, g: 0.6039216, b: 0.5254902, a: 1}
+  - role: 19
+    colour: {r: 0.3529412, g: 0.3137255, b: 0.26666668, a: 1}
+  - role: 20
+    colour: {r: 0.72156864, g: 0.2784314, b: 0.2901961, a: 1}
+  - role: 21
+    colour: {r: 0.8784314, g: 0.6509804, b: 0.3137255, a: 1}
+  - role: 22
+    colour: {r: 0.56078434, g: 0.72156864, b: 0.78431374, a: 1}
+  - role: 23
+    colour: {r: 0.8784314, g: 0.6509804, b: 0.3137255, a: 1}
+  - role: 24
+    colour: {r: 0.43137255, g: 0.56078434, b: 0.38431373, a: 1}
+  - role: 25
+    colour: {r: 0.8784314, g: 0.6509804, b: 0.3137255, a: 1}
+  - role: 26
+    colour: {r: 0.8784314, g: 0.6509804, b: 0.3137255, a: 1}
+  - role: 27
+    colour: {r: 0.8509804, g: 0.5254902, b: 0.47843137, a: 1}
+  - role: 28
+    colour: {r: 0.56078434, g: 0.69803923, b: 0.47843137, a: 1}
+  - role: 29
+    colour: {r: 0.8509804, g: 0.5372549, b: 0.2901961, a: 1}
+  - role: 30
+    colour: {r: 0.0627451, g: 0.050980393, b: 0.039215688, a: 1}
+  - role: 31
+    colour: {r: 0.2901961, g: 0.24313726, b: 0.19607843, a: 1}

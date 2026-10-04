@@ -1,0 +1,37 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a032cadcee9e19b43b302dcedfdcf540, type: 3}
+  m_Name: Densewisp
+  m_EditorClassIdentifier: HallOfEchoingMirrors::HallOfEchoingMirrors.Core.ResourceDefinition
+  _id: 44389b61fab70e4418f3aba485139bbe
+  displayName: Dense wisp
+  nameInActions: 
+  description: 'A slow, thick wisp of memory. It takes longer to drink and gives back four times as much.'
+  kind: 1
+  lasts: 0
+  hideOnceUsed: 0
+  startingMax: 0
+  carryCostPerSecond: 0
+  alwaysCharged: 0
+  goesInPocket: 1
+  onlyInContainers: 1
+  addsPockets: 0
+  addsFloorSpace: 0
+  holds: []
+  holdsHowMany: 0
+  restoreVitality: 40
+  restoreSeconds: 6
+  drainAtFull: 1
+  countsUpTo: 0
+  unlocksSpeed: 0
+  unlocksRoomSpeed: 0
+  unlocksPlanning: 0

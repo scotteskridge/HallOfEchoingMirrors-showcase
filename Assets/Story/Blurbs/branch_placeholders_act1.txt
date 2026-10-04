@@ -1,0 +1,126 @@
+# THE BRANCH - ACT I
+# Hall of Echoing Mirrors
+#
+# Rewritten 2026-09-29 against DesignNotes/Writing Guides/ProseVoiceGuide.md.
+#
+# Same format as the other blurb files. Re-run Import Blurbs after editing.
+# start_... buckets speak the moment an action begins; the rest speak while she's at it.
+#
+# VOICE: Clara at 41, first person, present tense. Dry, impatient, not frightened.
+# Every line is 20 words or fewer.
+
+
+## start_gather_wisp
+# Beginning to gather a wisp.
+
+I hold out my hand and wait, the way one waits for a cat to decide.
+There is a thread of light near the glass. I go after it slowly.
+I cup my hands. The trick is not to want it too obviously.
+A thread of light drifts past. I let it think it was its own idea.
+A wisp drifts off the old glass. I keep very still and let it come.
+Slowly now. A wisp shies away if I reach like I mean it.
+I open my hand under the thread of light and wait for it to settle.
+There is one by the frame's edge, thin as cotton. I go for it.
+Twenty-one years, and I am back to catching light in my hands like a first-year.
+I hold my breath. The wisp doesn't care, but I feel more careful.
+The light hangs by the glass, deciding. I give it all the time it needs, and not a second more.
+A thread of light, low by the skirting. I crouch for it.
+I want this one badly, which is exactly how to lose it.
+
+
+## gathering_wisps
+# While gathering wisps.
+
+The wisp is warm, the way a cup is warm after the tea has gone.
+They drift towards whatever is still. I am learning to be still.
+I pocket another. It hums against my hip like a small, polite bee.
+Each one gives back a little of what the hall takes. A little.
+I close my hand slowly. Too fast, and it slips away like steam.
+This one is dimmer than the last. I take it anyway.
+Each wisp is a small lost thing. I try not to wonder whose.
+A wisp settles on my sleeve and stays, as if it had been waiting.
+I hold very still. Somewhere, a wisp decides I am furniture.
+They are easier to catch when I am not looking straight at them.
+
+
+## start_instantiate
+# Beginning to make something solid out of a mirror.
+
+I put my hand to the glass and ask the reflection for the real thing.
+I find the object in the mirror and do not let myself doubt it.
+Roland would call this closure. I call it not taking no for an answer.
+Dozens of frames on every wall, and only a handful with anything close enough to reach.
+I choose my frame. Pick the wrong one and I am only a woman with her hand against a window.
+The thing behind the glass is close enough. I reach in and insist.
+I fix the shape in mind first: the weight, the edges, where the light sits on it.
+Hand flat on the glass. The cold goes up my arm, and I keep it there.
+This is the first thing I ever taught a student, and the hardest to do tired.
+I look at the thing behind the glass until it starts to look like mine.
+A reflection is only a promise. I am here to collect on one.
+The glass resists, then thinks better of it.
+I make myself certain. Doubt is what leaves you holding air.
+
+
+## instantiating
+# While instantiating (flint and steel, candles, the phial, the satchel).
+
+The glass resists, then gives, like a drawer that sticks in damp weather.
+It comes out cold and a little too perfect, as mirrored things do.
+I hold the shape in my mind until my hand agrees with it.
+Somewhere, someone is missing this. I try not to wonder who.
+My arm is in the glass to the elbow. I do not think too hard about where my hand is.
+The other mirrors go on showing their rooms. Only this one lets me in.
+The glass closes round my wrist like cold water. I keep hold.
+It slips once. I set my jaw and try again.
+The thing in the glass has the right weight before it has the right shape.
+My fingertips go numb first. They always do.
+It comes out the way a splinter does: slowly, then all at once.
+The reflection frowns at me as I take from it. I frown back.
+For a moment I hold two of it, one on each side of the glass. Then only one.
+
+
+## candlelight
+# While Candlelight follows her (the candles are lit this run).
+
+The candles drift after me like ducklings with opinions.
+The dark gives ground, slowly, and makes it clear that it minds.
+Fifteen small flames, and every one of them is on my side.
+The dark backs off a foot and sulks there.
+With the candles lit, I can breathe a little easier. Only a little.
+The flames lean towards me when I stop, as if to ask why.
+The light holds the dark off, and the dark takes less of me.
+A candle gutters. I shield it with my hand until it thinks better of it.
+I walk slower with the candles. There is no sense leaving them behind.
+Wax on my cuff. I will deal with that at home.
+In the candlelight, the nearest mirrors turn their faces away.
+
+
+## satchel
+# While she has the satchel this run.
+
+Twenty-one years on, the leather still smells of Evercrest chalk.
+Room for more. The hall, I suspect, has noticed.
+Plenty of room. I intend to use all of it.
+The satchel bumps my hip at every step, the way it did on the walk to lectures.
+Everything I carry has a place now. I feel almost organised.
+The strap finds the old groove in my shoulder as if it never left.
+I check the buckle without thinking. Twenty-one years of habit.
+There is ink on the lining from an examination I nearly failed.
+My hands are free again. I had forgotten how much I like that.
+It is heavier than it was this morning. That is the point of it.
+I pack it the way Roland never does: heaviest at the bottom.
+A tutor once called it a disgrace. It has outlasted her.
+
+
+## hall_shifted
+# Searching in a later run: the hall has moved things since last time.
+
+I know this room. It no longer knows me.
+Everything I found yesterday has been tidied away, like a lesson I was meant to learn twice.
+The frames have been rehung. Somebody here has a great deal of time.
+The frame I marked last time has moved three along. The mark has moved with it.
+The door that was on my left is on my right. I did not turn round.
+Different rooms in the glass. Same dust.
+Everything I learnt here has been shuffled and dealt again.
+I remember this room exactly, and it is wrong in five places.
+Someone has been in here since. Someone always has.

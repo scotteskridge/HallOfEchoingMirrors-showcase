@@ -1,0 +1,16 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bc1b7a14e7a18dc4c98bb8e0c1388b72, type: 3}
+  m_Name: TheManaStone
+  m_EditorClassIdentifier: HallOfEchoingMirrors::HallOfEchoingMirrors.Core.StoryBeat
+  _id: a82ec74468b2d114ba2ab61f4f9e4a60
+  text: {fileID: 4900000, guid: 41a30f4f7cc6ec346843c9ea5e8eacd6, type: 3}

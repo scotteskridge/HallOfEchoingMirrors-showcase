@@ -1,0 +1,36 @@
+# Keep text files with Unix (LF) line endings, as Unity writes them. This stops git warning
+# "LF will be replaced by CRLF" on every commit.
+* text=auto eol=lf
+
+# Binary files: never touch their line endings.
+*.png binary
+*.jpg binary
+*.jpeg binary
+*.gif binary
+*.psd binary
+*.aseprite binary
+*.ttf binary
+*.otf binary
+*.wav binary
+*.mp3 binary
+*.ogg binary
+*.fbx binary
+*.exr binary
+*.dll binary
+*.tga binary
+*.tif binary
+*.tiff binary
+*.bmp binary
+*.webp binary
+*.flac binary
+*.mp4 binary
+*.pdf binary
+*.xlsx binary
+*.docx binary
+*.zip binary
+*.unitypackage binary
+
+# Unity's YAML assets are text but huge: keep them out of language stats and diffs of the raw files.
+*.unity linguist-generated
+*.prefab linguist-generated
+*.asset linguist-generated

@@ -1,0 +1,18 @@
+---
+name: wrap-up
+description: "End-of-task checklist: verify, review, update the docs, teach, and prepare a commit. Use when a task's implementation is finished."
+model: sonnet
+effort: medium
+allowed-tools: Bash(git status *) Bash(git diff *) Bash(git log *) Bash(wc *)
+disable-model-invocation: true
+---
+Finish the current task.
+
+1. **Verify.** Follow CLAUDE.md → "Checking your work": compile check, Console, and the EditMode tests for the area touched. Paste the result lines. If anything fails, fix the cause and re-run; don't continue until it passes. If you can't run tests yourself, give me the exact Test Runner steps and wait for my result.
+2. **Review.** Use the `reviewer` subagent on the current diff (name the plan file if there is one). Fix every item that affects correctness or the project rules. For anything you choose not to fix, say why. Don't chase style comments.
+3. **Docs.** Add a `DesignNotes/decisions-log.md` entry for any decision made during the task, and propose the matching GDD § edit (including label changes such as [DIRECTION] → [BUILT]); apply it on my OK. If a feature was finished, add one line at the top of `docs/CHANGELOG.md`: what the player can now do or see, in player language (no class names, British spelling), with the plan in brackets at the end. If gameplay, content or balance numbers changed, run `/sync-state`. If `decisions-log.md` has entries more than two weeks old, move them to the top of `decisions-log-older.md` (oldest stay at the bottom) and update its header date. If a plan file was used, set its status to Done and note anything that changed from the plan. Then, if nothing is left to do on it (no pending in-Unity check, manual step or follow-up part), move it into `docs/plans/finished/` with `git mv` (plus any `NNN-refs` folder it links to), and fix every link to its old path (grep `docs/plans/` in `docs/`, `DesignNotes/` and `.claude/`). If something is still pending, leave it in `docs/plans/` and say what is waiting; move it once that is done. Plans that were rolled back or superseded go to `finished/` too. Keep `docs/plans/README.md` in step: remove a moved plan from its *Open plans* list, and for a plan that stays open, update its **Left to do:** line (under its Status) and its row there. If a new system, helper or `Simulation.*.cs` file was added, propose the one line that should go in the matching `.claude/rules/` file. Update `docs/BACKLOG.md`: remove the finished item from *Now*, and add one line for each future feature or follow-up that came up during the task. UI and look work (screens, layout, look, UI polish and UI clean-up) is tracked in `docs/UI-BACKLOG.md`: remove finished items from whichever backlog held them, and add each follow-up to the backlog where it belongs.
+4. **Rules check.** If I corrected you on the same kind of thing more than once this session, propose one short line for CLAUDE.md or a rules file that would have prevented it. Show it; don't add it.
+5. **Teach.** Plain-language summary: what changed, why, which one or two files I should open to understand it, and any new C# or Unity idea I met (with a one-sentence explanation).
+6. **Try it.** Numbered steps to see the change in Unity: what to open, what to press, what should happen.
+7. **Commit.** Propose a commit message (a summary line, then a few lines on *why*). Commit only if I say yes. Then, in a lane, follow `docs/parallel-lanes.md` → *Finishing a task* so the other lanes get the work.
+8. Tell me the task is done and suggest `/clear` before the next one, and name the model for the next step in one line: Opus for planning, design or a hard bug; Sonnet for building from a plan, playtest fixes and wrap-up.

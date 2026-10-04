@@ -1,0 +1,49 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 70f8fffa6242ef341b6ebafea3e93bd8, type: 3}
+  m_Name: FeedYourHoursToTheFlames
+  m_EditorClassIdentifier: HallOfEchoingMirrors::HallOfEchoingMirrors.Core.TaskDefinition
+  _id: db260be1819fd714181e165e3c8708f2
+  displayName: Feed your hours to the flames
+  kind: 0
+  blurbTopic: 0
+  family: {fileID: 11400000, guid: 2198053b19dfc7b4896a81d62b8331a8, type: 2}
+  durationMultiplier: 2.204
+  xpMultiplier: 1
+  startsUnlocked: 0
+  oncePerRun: 0
+  singleAction: 0
+  description: 'Twenty-five candles, every one of them leaning towards me. If I burn
+    my hours hard, for as long as it takes, they will burn to my rhythm ever after:
+    rooms I know by heart will pass faster. I can only ever do this once, and it
+    drains me while I do.'
+  skill: {fileID: 11400000, guid: 927fd6aaaaca00a49aa41f71bc706839, type: 2}
+  xpReward: 0
+  trainsAttribute: 0
+  cost: 0
+  costShares: []
+  alwaysCharged: 0
+  extraDrainPerSecond: 2
+  escalatingCharge: 0
+  chargeGrowth: 1
+  needs:
+  - resource: {fileID: 11400000, guid: 37a166cb3ee6dc34a8dc3ee524aadd31, type: 2}
+    amount: 10
+  gives:
+  - resource: {fileID: 11400000, guid: da6b99149d4e6334ab77d8ef7cba19b8, type: 2}
+    amount: 1
+  takes: []
+  easierWith: []
+  drainTimes: 1
+  walksOut: 0
+  requiresAttributes: []
+  requiresSkills: []

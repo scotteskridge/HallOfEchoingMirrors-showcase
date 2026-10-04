@@ -1,0 +1,45 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 70f8fffa6242ef341b6ebafea3e93bd8, type: 3}
+  m_Name: TakeTheEarrings
+  m_EditorClassIdentifier: HallOfEchoingMirrors::HallOfEchoingMirrors.Core.TaskDefinition
+  _id: f99c1ae920855d34bb1c25223aba6584
+  displayName: Take the earrings
+  kind: 5
+  blurbTopic: 0
+  family: {fileID: 11400000, guid: 87c552d6338b70a4b8db2d5ba468af10, type: 2}
+  durationMultiplier: 0.342
+  xpMultiplier: 1
+  startsUnlocked: 1
+  oncePerRun: 0
+  singleAction: 0
+  description: The blue box he never managed to hand me, back on the corner of the
+    bench.
+  skill: {fileID: 0}
+  xpReward: 0
+  trainsAttribute: 0
+  cost: 0
+  costShares: []
+  alwaysCharged: 0
+  extraDrainPerSecond: 0
+  escalatingCharge: 0
+  chargeGrowth: 1
+  needs: []
+  gives:
+  - resource: {fileID: 11400000, guid: c10929b741a220a40a22b8c3e0fa0b7a, type: 2}
+    amount: 1
+  takes: []
+  easierWith: []
+  drainTimes: 1
+  walksOut: 0
+  requiresAttributes: []
+  requiresSkills: []

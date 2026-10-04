@@ -1,0 +1,9 @@
+Two Corridors
+
+A Dark Hall has stopped pretending to be one room. Two corridors lead off it.
+
+The Left Corridor is dark, and the dark looks deliberate, as though someone has turned the lamps down for me. The Right Corridor runs straight, its frames hung shoulder to shoulder like a crowd waiting for a train.
+
+Roland would toss a coin. He says a coin is the only honest counsel in a laboratory. I have never once let him toss it.
+
+Both corridors are on the map now, and I can *Travel* to either. Every step costs vitality, so I had better decide what I want before I walk.

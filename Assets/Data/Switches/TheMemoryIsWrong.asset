@@ -1,0 +1,34 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 315c27de9a194d54796a1ac6d2497658, type: 3}
+  m_Name: TheMemoryIsWrong
+  m_EditorClassIdentifier: HallOfEchoingMirrors::HallOfEchoingMirrors.Core.SwitchDefinition
+  _id: 248ddba90ae0a904b90ce69e3f80d814
+  displayName: The Memory Is Wrong
+  trigger: 4
+  triggerTask: {fileID: 0}
+  requiredTasks: []
+  triggerAttribute: 2
+  triggerLevel: 1
+  resourceToHold: {fileID: 0}
+  triggerAmount: 5
+  roomToExplore: {fileID: 11400000, guid: 4c436ce34ae4d0547b4aa82d4f950fb5, type: 2}
+  explorePercent: 34
+  unlocksTasks:
+  - {fileID: 11400000, guid: c02944b0aabefb7429f2a75268a05f36, type: 2}
+  locksTasks: []
+  unlocksPools: 
+  wakesAttributes: 
+  opensWays: []
+  closesWays: []
+  waivesWayNeeds: []
+  story: {fileID: 11400000, guid: ec6e566b5054c484f8363f183d7d11de, type: 2}

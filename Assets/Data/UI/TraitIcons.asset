@@ -1,0 +1,25 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 47be44b9e8197994c8fc0d2233dd1b49, type: 3}
+  m_Name: TraitIcons
+  m_EditorClassIdentifier: HallOfEchoingMirrors::HallOfEchoingMirrors.UI.TraitIcons
+  _stats:
+  - stat: 1
+    icon: {fileID: 2647768380210548595, guid: 3b51627192aee394c9fe0b034743f1d2, type: 3}
+  - stat: 2
+    icon: {fileID: -7031610752885690007, guid: 64ce60d6e4457bb4a906d03f2ab688cd, type: 3}
+  - stat: 3
+    icon: {fileID: -6929373896935689232, guid: bf6f8335d3a7e0646aade523da7306c9, type: 3}
+  - stat: 4
+    icon: {fileID: 5184429483953868444, guid: f05f35b8d7231834d8bf0c1d987448e3, type: 3}
+  - stat: 5
+    icon: {fileID: -758305172019424886, guid: ed77a63ed5d8f4d439bc36f976c9f040, type: 3}

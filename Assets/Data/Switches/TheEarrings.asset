@@ -1,0 +1,35 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 315c27de9a194d54796a1ac6d2497658, type: 3}
+  m_Name: TheEarrings
+  m_EditorClassIdentifier: HallOfEchoingMirrors::HallOfEchoingMirrors.Core.SwitchDefinition
+  _id: 2eef6365cef591e45bc5bf79cc55bee0
+  displayName: The Earrings
+  trigger: 3
+  triggerTask: {fileID: 0}
+  requiredTasks: []
+  triggerAttribute: 2
+  triggerLevel: 1
+  resourceToHold: {fileID: 11400000, guid: c10929b741a220a40a22b8c3e0fa0b7a, type: 2}
+  triggerAmount: 1
+  roomToExplore: {fileID: 0}
+  explorePercent: 100
+  unlocksTasks: []
+  locksTasks:
+  - {fileID: 11400000, guid: f99c1ae920855d34bb1c25223aba6584, type: 2}
+  unlocksPools: 
+  wakesAttributes: 
+  opensWays: []
+  closesWays: []
+  waivesWayNeeds: []
+  reopensSearch: []
+  story: {fileID: 11400000, guid: 7d641b798255ca84b986c4c7ac6d3354, type: 2}

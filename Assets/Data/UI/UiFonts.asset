@@ -1,0 +1,40 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0ce1d13c57e6c1c428c92393cac88be7, type: 3}
+  m_Name: UiFonts
+  m_EditorClassIdentifier: HallOfEchoingMirrors::HallOfEchoingMirrors.UI.UiFonts
+  _styles:
+  - role: 1
+    font: {fileID: 11400000, guid: ee48dcabe6437d945a81edac6a9a3ace, type: 2}
+    size: 48
+    lineSpacing: 0
+  - role: 2
+    font: {fileID: 11400000, guid: bec63a1e0ef7c9642a7ab28cb2d8e191, type: 2}
+    size: 24
+    lineSpacing: 0
+  - role: 3
+    font: {fileID: 11400000, guid: 72d4bee7ab884f949872118598b3a775, type: 2}
+    size: 19
+    lineSpacing: 0
+  - role: 4
+    font: {fileID: 11400000, guid: 72d4bee7ab884f949872118598b3a775, type: 2}
+    size: 22
+    lineSpacing: 8
+  - role: 0
+    font: {fileID: 11400000, guid: 166662486fc45704394d2a0cd4df7165, type: 2}
+    size: 17
+    lineSpacing: 4
+  - role: 5
+    font: {fileID: 11400000, guid: 166662486fc45704394d2a0cd4df7165, type: 2}
+    size: 14
+    lineSpacing: 4
+  _autoSizeFloor: 0.85

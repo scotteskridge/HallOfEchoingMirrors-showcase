@@ -1,0 +1,71 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 519f4f541b1f9894a9f72218ed300513, type: 3}
+  m_Name: TheSmokyMirror
+  m_EditorClassIdentifier: HallOfEchoingMirrors::HallOfEchoingMirrors.Core.NodeDefinition
+  _id: 445362699ea22a447a9921bfec9c0fad
+  planned: 0
+  planningNote: 
+  displayName: The Smoky Mirror
+  kind: 0
+  hue: 0
+  depth: 0
+  alwaysOnMap: 0
+  ways:
+  - to: {fileID: 11400000, guid: e781590954dbb9d47b382aba8d96c4af, type: 2}
+    bothWays: 1
+    startsOpen: 0
+    needs: []
+    foundAtExplored: 100
+    needsPerception: 0
+    story: {fileID: 11400000, guid: b8a1c319fa59ade4fb806c8c9c388f14, type: 2}
+    showWhileShut: 1
+    shutMessageKey: 
+  - to: {fileID: 11400000, guid: f287158caa3f2f649bc7f78588c8ebfb, type: 2}
+    bothWays: 1
+    startsOpen: 0
+    needs: []
+    foundAtExplored: 100
+    needsPerception: 0
+    story: {fileID: 11400000, guid: b8a1c319fa59ade4fb806c8c9c388f14, type: 2}
+    showWhileShut: 0
+    shutMessageKey: 
+  - to: {fileID: 11400000, guid: 7b35d4d5e0e84884c96e7856514e301c, type: 2}
+    bothWays: 0
+    startsOpen: 0
+    needs: []
+    foundAtExplored: 100
+    needsPerception: 0
+    story: {fileID: 11400000, guid: b8a1c319fa59ade4fb806c8c9c388f14, type: 2}
+    showWhileShut: 0
+    shutMessageKey: 
+  tasks:
+  - {fileID: 11400000, guid: 13d3cca25b6fd8b4c8743eed89534253, type: 2}
+  - {fileID: 11400000, guid: 0cb1ffcc2c9426a41830ea8a35b19d8f, type: 2}
+  exploresToFill: 3
+  foundBySearching:
+  - task: {fileID: 11400000, guid: fae64a557da720a48bfc11140e524972, type: 2}
+    atSearched: 33
+    needsPerception: 0
+    afterSwitch: {fileID: 0}
+  eachExploreGives: []
+  firstEntry: {fileID: 0}
+  leaving:
+    cost: 1
+    time: 1
+  entering:
+    cost: 1
+    time: 1
+  exploring:
+    cost: 0.33
+    time: 0.75
+  mapPosition: {x: 0, y: 0.04}

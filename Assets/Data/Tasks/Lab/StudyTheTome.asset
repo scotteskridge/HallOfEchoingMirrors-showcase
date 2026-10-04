@@ -1,0 +1,47 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 70f8fffa6242ef341b6ebafea3e93bd8, type: 3}
+  m_Name: StudyTheTome
+  m_EditorClassIdentifier: HallOfEchoingMirrors::HallOfEchoingMirrors.Core.TaskDefinition
+  _id: 7be687b6320e96347b704cd4916966ba
+  displayName: Study the tome
+  kind: 2
+  blurbTopic: 0
+  family: {fileID: 11400000, guid: 0ffec062789112849a45ec6f1ecfd87d, type: 2}
+  durationMultiplier: 0.285
+  xpMultiplier: 1
+  startsUnlocked: 1
+  oncePerRun: 1
+  singleAction: 0
+  description: The words shift on the page, and I keep hold of the ones that stay
+    still.
+  skill: {fileID: 11400000, guid: 31bf2f8da18f0b944b3a982e9998cc33, type: 2}
+  xpReward: 0
+  trainsAttribute: 0
+  cost: 10
+  costShares:
+  - source: 0
+    percent: 100
+  alwaysCharged: 0
+  extraDrainPerSecond: 0
+  escalatingCharge: 0
+  chargeGrowth: 1
+  needs: []
+  gives:
+  - resource: {fileID: 11400000, guid: 1a147652ceb5e144a9803c3cde78268c, type: 2}
+    amount: 1
+  takes: []
+  easierWith: []
+  drainTimes: 1
+  walksOut: 0
+  requiresAttributes: []
+  requiresSkills: []

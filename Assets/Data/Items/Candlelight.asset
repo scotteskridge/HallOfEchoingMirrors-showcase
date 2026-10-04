@@ -1,0 +1,35 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a032cadcee9e19b43b302dcedfdcf540, type: 3}
+  m_Name: Candlelight
+  m_EditorClassIdentifier: HallOfEchoingMirrors::HallOfEchoingMirrors.Core.ResourceDefinition
+  _id: 71307980d3f67fd46933a3e5ee99d182
+  displayName: Candles lit in A Dark Hall
+  nameInActions: 
+  description: 'Candles burning in A Dark Hall. All fifteen push the darkness back:
+    the drain is halved and she can see to keep more on the floor.'
+  kind: 0
+  lasts: 0
+  hideOnceUsed: 0
+  startingMax: 15
+  carryCostPerSecond: 0
+  alwaysCharged: 0
+  goesInPocket: 0
+  addsPockets: 0
+  addsFloorSpace: 5
+  holds: []
+  holdsHowMany: 0
+  restoreVitality: 0
+  restoreSeconds: 2.5
+  drainAtFull: 0.5
+  countsUpTo: 15
+  unlocksSpeed: 0

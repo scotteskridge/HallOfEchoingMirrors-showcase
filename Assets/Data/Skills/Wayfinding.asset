@@ -1,0 +1,19 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 692efc219e313054ea00c22d174943cb, type: 3}
+  m_Name: Wayfinding
+  m_EditorClassIdentifier: HallOfEchoingMirrors::HallOfEchoingMirrors.Core.SkillDefinition
+  _id: 82c6de1d65fcb9b45ac65222f95a9360
+  displayName: Wayfinding
+  description: Travelling the hall and exploring its rooms.
+  learnsFasterWith: 1
+  _icon: {fileID: 8194448823346374097, guid: fb35108c012108a4f81680e8ea5a5b7f, type: 3}

@@ -1,0 +1,43 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 70f8fffa6242ef341b6ebafea3e93bd8, type: 3}
+  m_Name: PickUp
+  m_EditorClassIdentifier: HallOfEchoingMirrors::HallOfEchoingMirrors.Core.TaskDefinition
+  _id: de9110c6f5692a14bb612ebac2598124
+  displayName: Pick up
+  kind: 3
+  blurbTopic: 0
+  family: {fileID: 11400000, guid: 6d6e35836af93f74b859cc8e95655d0c, type: 2}
+  durationMultiplier: 0.667
+  xpMultiplier: 1
+  startsUnlocked: 1
+  oncePerRun: 0
+  singleAction: 0
+  description: If it's small enough to lift, I want it in my hand before the room
+    changes its mind.
+  skill: {fileID: 11400000, guid: 308a206c54f451f47bf8306715024b0e, type: 2}
+  xpReward: 0
+  trainsAttribute: 0
+  cost: 0
+  costShares: []
+  alwaysCharged: 0
+  extraDrainPerSecond: 0
+  escalatingCharge: 0
+  chargeGrowth: 1
+  needs: []
+  gives: []
+  takes: []
+  easierWith: []
+  drainTimes: 1
+  walksOut: 0
+  requiresAttributes: []
+  requiresSkills: []

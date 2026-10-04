@@ -1,0 +1,38 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a032cadcee9e19b43b302dcedfdcf540, type: 3}
+  m_Name: Whitesapphireearrings
+  m_EditorClassIdentifier: HallOfEchoingMirrors::HallOfEchoingMirrors.Core.ResourceDefinition
+  _id: c10929b741a220a40a22b8c3e0fa0b7a
+  displayName: White sapphire earrings
+  nameInActions: 
+  description: Roland's gift, attuned to me. Each holds one dense wisp.
+  kind: 3
+  lasts: 1
+  hideOnceUsed: 0
+  startingMax: 1
+  carryCostPerSecond: 0
+  alwaysCharged: 0
+  goesInPocket: 0
+  onlyInContainers: 0
+  addsPockets: 0
+  addsFloorSpace: 0
+  holds:
+  - {fileID: 11400000, guid: 44389b61fab70e4418f3aba485139bbe, type: 2}
+  holdsHowMany: 10
+  restoreVitality: 0
+  restoreSeconds: 5
+  drainAtFull: 1
+  countsUpTo: 0
+  unlocksSpeed: 0
+  unlocksRoomSpeed: 0
+  unlocksPlanning: 0

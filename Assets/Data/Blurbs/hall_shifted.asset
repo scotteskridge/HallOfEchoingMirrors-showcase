@@ -1,0 +1,47 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0e696aadb90452947a6f52d36af651f0, type: 3}
+  m_Name: hall_shifted
+  m_EditorClassIdentifier: HallOfEchoingMirrors::HallOfEchoingMirrors.Core.BlurbBucket
+  _id: 0afb34bb9bb6b394bb8ad3309ad566d9
+  bucketId: hall_shifted
+  enabled: 1
+  description: 'Searching in a later run: the hall has moved things since last time.'
+  priority: 23
+  chance: 0.5
+  cooldownSeconds: 0
+  moment: 0
+  activities: 6
+  tasks: []
+  topics: 
+  rooms: []
+  roomKinds: 
+  fromLoop: 3
+  toLoop: 0
+  needsFlipped: []
+  endsWhenFlipped: []
+  needsHeld: []
+  needsNotHeld: []
+  vitalityBelow: 0
+  taperFromLoop: 5
+  silentFromLoop: 8
+  lines:
+  - I know this room. It no longer knows me.
+  - Everything I found yesterday has been tidied away, like a lesson I was meant
+    to learn twice.
+  - The frames have been rehung. Somebody here has a great deal of time.
+  - The frame I marked last time has moved three along. The mark has moved with it.
+  - The door that was on my left is on my right. I did not turn round.
+  - Different rooms in the glass. Same dust.
+  - Everything I learnt here has been shuffled and dealt again.
+  - I remember this room exactly, and it is wrong in five places.
+  - Someone has been in here since. Someone always has.

@@ -1,0 +1,57 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0e696aadb90452947a6f52d36af651f0, type: 3}
+  m_Name: ring_carried
+  m_EditorClassIdentifier: HallOfEchoingMirrors::HallOfEchoingMirrors.Core.BlurbBucket
+  _id: a00214a9aaa22b9459ff7b72e2ad1e57
+  bucketId: ring_carried
+  enabled: 1
+  description: While the ring is in hand. These should ache - it is taxing her. Say
+    plainly that it costs her.
+  priority: 40
+  chance: 1
+  cooldownSeconds: 0
+  moment: 0
+  activities: 0
+  tasks: []
+  topics: 
+  rooms: []
+  roomKinds: 
+  fromLoop: 0
+  toLoop: 0
+  needsFlipped: []
+  endsWhenFlipped: []
+  needsHeld:
+  - resource: {fileID: 11400000, guid: 7c1447b7d63c053489974a719deb21bc, type: 2}
+    amount: 1
+  needsNotHeld: []
+  vitalityBelow: 0
+  taperFromLoop: 0
+  silentFromLoop: 0
+  lines:
+  - The ring weighs nothing, yet every step with it costs me.
+  - I am tiring faster with it in my hand, and I know exactly why.
+  - It is warm, which an empty stone has no business being.
+  - The longer I hold it, the less of me there is to hold it with.
+  - With it in my hand I feel him more clearly. That is precisely the trouble.
+  - It wants something. It was built to want something.
+  - Twice now I have caught myself turning it. He used to do that.
+  - The hall is quieter while I hold it. I do not trust that.
+  - Something had to leave my pockets to make room for it. I have stopped asking
+    what.
+  - He carried this for years and never once complained. I am beginning to resent
+    that.
+  - Every step with the ring is a step I pay for twice.
+  - I could put it down and stop paying. I keep walking.
+  - I have carried a sleeping child up three flights with less effort than this ring.
+  - It grows heavier the further I take it. Not in the hand. Everywhere else.
+  - The open claws catch on my sleeve. Even the ring is impatient.

@@ -1,0 +1,72 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 519f4f541b1f9894a9f72218ed300513, type: 3}
+  m_Name: Junction
+  m_EditorClassIdentifier: HallOfEchoingMirrors::HallOfEchoingMirrors.Core.NodeDefinition
+  _id: e781590954dbb9d47b382aba8d96c4af
+  displayName: A Dark Hall
+  kind: 0
+  hue: 0
+  depth: 1
+  alwaysOnMap: 0
+  ways:
+  - to: {fileID: 11400000, guid: 95a467d8fe36e794ea19377edd5d7f43, type: 2}
+    bothWays: 1
+    startsOpen: 1
+    needs: []
+    foundAtExplored: 100
+    needsPerception: 0
+    story: {fileID: 11400000, guid: e1eae97db8ef3854c99faee63b9e5026, type: 2}
+    showWhileShut: 0
+    shutMessageKey: 
+  - to: {fileID: 11400000, guid: 778d1dab1c70eb645a28211bb68a814b, type: 2}
+    bothWays: 1
+    startsOpen: 1
+    needs: []
+    foundAtExplored: 100
+    needsPerception: 0
+    story: {fileID: 11400000, guid: e1eae97db8ef3854c99faee63b9e5026, type: 2}
+    showWhileShut: 0
+    shutMessageKey: 
+  tasks: []
+  exploresToFill: 5
+  foundBySearching:
+  - task: {fileID: 11400000, guid: fae64a557da720a48bfc11140e524972, type: 2}
+    atSearched: 33
+    needsPerception: 0
+    afterSwitch: {fileID: 0}
+  - task: {fileID: 11400000, guid: f690018e940868d4588a9bc5c8b85c5d, type: 2}
+    atSearched: 66
+    needsPerception: 0
+    afterSwitch: {fileID: 0}
+  - task: {fileID: 11400000, guid: e6e3471f1e51d49439240323b0099ea1, type: 2}
+    atSearched: 66
+    needsPerception: 0
+    afterSwitch: {fileID: 0}
+  - task: {fileID: 11400000, guid: 398f11ff203ae434ba18059120634d72, type: 2}
+    atSearched: 66
+    needsPerception: 0
+    afterSwitch: {fileID: 0}
+  eachExploreGives: []
+  firstEntry: {fileID: 11400000, guid: 6bbd2998b2c034f4daf0add28b87176e, type: 2}
+  leaving:
+    cost: 1
+    time: 1
+  entering:
+    cost: 1
+    time: 1
+  exploring:
+    cost: 0.5
+    time: 0.75
+  mapPosition: {x: 1.18, y: 0.05}
+  planned: 0
+  planningNote: 

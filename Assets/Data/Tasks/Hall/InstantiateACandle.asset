@@ -1,0 +1,45 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 70f8fffa6242ef341b6ebafea3e93bd8, type: 3}
+  m_Name: InstantiateACandle
+  m_EditorClassIdentifier: HallOfEchoingMirrors::HallOfEchoingMirrors.Core.TaskDefinition
+  _id: e6e3471f1e51d49439240323b0099ea1
+  displayName: Instantiate a candle
+  kind: 7
+  blurbTopic: 2
+  family: {fileID: 11400000, guid: 8252376589a65704aa37b0bf947eebb3, type: 2}
+  durationMultiplier: 0.242
+  xpMultiplier: 1
+  startsUnlocked: 1
+  oncePerRun: 0
+  singleAction: 0
+  description: Most of these mirrors only show me somewhere else, but this one has
+    a candle standing close enough to take.
+  skill: {fileID: 11400000, guid: 4b28336817266c14f8cef922929ad439, type: 2}
+  xpReward: 0
+  trainsAttribute: 0
+  cost: 0
+  costShares: []
+  alwaysCharged: 0
+  extraDrainPerSecond: 0
+  escalatingCharge: 0
+  chargeGrowth: 1
+  needs: []
+  gives:
+  - resource: {fileID: 11400000, guid: 03d3e3e441aab59429566b049982dc6a, type: 2}
+    amount: 1
+  takes: []
+  easierWith: []
+  drainTimes: 1
+  walksOut: 0
+  requiresAttributes: []
+  requiresSkills: []

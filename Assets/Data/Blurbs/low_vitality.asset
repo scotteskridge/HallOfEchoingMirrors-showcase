@@ -1,0 +1,61 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0e696aadb90452947a6f52d36af651f0, type: 3}
+  m_Name: low_vitality
+  m_EditorClassIdentifier: HallOfEchoingMirrors::HallOfEchoingMirrors.Core.BlurbBucket
+  _id: 8b763dd216210d14fa0ba13542b6d507
+  bucketId: low_vitality
+  enabled: 1
+  description: Fires when vitality drops below a threshold. Should feel like effort,
+    not panic.
+  priority: 50
+  chance: 0.6
+  cooldownSeconds: 0
+  moment: 0
+  activities: 0
+  tasks: []
+  topics: 
+  rooms: []
+  roomKinds: 
+  fromLoop: 0
+  toLoop: 0
+  needsFlipped: []
+  endsWhenFlipped: []
+  needsHeld: []
+  needsNotHeld: []
+  vitalityBelow: 0.3
+  taperFromLoop: 0
+  silentFromLoop: 0
+  lines:
+  - My hands have gone cold and are staying that way.
+  - I am slower now. I notice it in the turns.
+  - The tiredness is in my chest, not my legs. I felt it once before, beside the
+    reservoir.
+  - Something is being taken, and I can feel where from.
+  - Not long now. I have learned roughly how long.
+  - I have been emptied before, though never by anything that meant it.
+  - I should turn back. I am aware that I should turn back.
+  - The frames have begun to blur, and I do not think the fault is mine.
+  - I would give a great deal for a hot cup of tea and a chair.
+  - My vitality is running low. I can hear it, like a tap in another room.
+  - My knees have started making decisions without me.
+  - I lean on a frame for a moment. Only a moment.
+  - I am running low, and the Hall is in no hurry at all.
+  - My breath comes short on the easy stretches now.
+  - I have a little left. I intend to spend it well.
+  - My sight greys at the edges, the way it did after each confinement.
+  - Every step costs a little more than the last. I am keeping count.
+  - My hands are shaking. I put them in my pockets, where they are nobody's business.
+  - When I blink, my eyes take a moment longer to open again.
+  - I feel thin, like a letter held up to the light.
+  - If I stop now, someone at home goes on waiting. I don't stop.
+  - I promised them I would bring him back. I am rationing what is left.

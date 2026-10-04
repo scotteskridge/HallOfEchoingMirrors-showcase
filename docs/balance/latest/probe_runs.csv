@@ -1,0 +1,251 @@
+﻿scenario,policy,run,seconds,ending,reached,died_in,doing,vitality_lost,travel_paid,stopped_because,notes,skills
+shipped,A: wisps only,1,1.7,Exhausted,searching (mirror 0 % hall 0 % right 0 % left 0 %),HallMirror,ChaseRoland,50,0,,LostRoland@1s,Wayfinding 0+0 Gathering 0+0
+shipped,A: wisps only,2,88.8,Exhausted,searching (mirror 100 % hall 100 % right 91 % left 0 %),RightCorridor,Explore,150,6.24,,AGlimmer@78s; FoundTheRing@84s,Wayfinding 12+7 Gathering 1+0 Instantiate 0+0
+shipped,A: wisps only,3,81.2,Exhausted,corridors searched,LeftCorridor,InstantiateASatchel,130,13.518,,,Wayfinding 11+12 Gathering 1+1 Instantiate 0+0
+shipped,A: wisps only,4,60.9,Exhausted,corridors searched,LeftCorridor,Travel,80,7.432,,,Wayfinding 4+13 Gathering 0+2 Instantiate 4+2
+shipped,A: wisps only,5,60.8,Exhausted,corridors searched,LeftCorridor,Travel,80,7.605,,,Wayfinding 4+14 Gathering 0+2 Instantiate 4+4
+shipped,A: wisps only,6,60.7,Exhausted,corridors searched,LeftCorridor,Travel,80,7.811,,,Wayfinding 5+15 Gathering 0+2 Instantiate 4+5
+shipped,A: wisps only,7,60.6,Exhausted,corridors searched,LeftCorridor,Travel,80,7.964,,,Wayfinding 5+15 Gathering 0+2 Instantiate 4+7
+shipped,A: wisps only,8,60.5,Exhausted,corridors searched,LeftCorridor,Travel,80,8.097,,,Wayfinding 5+16 Gathering 0+3 Instantiate 4+8
+shipped,A: wisps only,9,60.4,Exhausted,corridors searched,LeftCorridor,Travel,80,8.233,,,Wayfinding 5+17 Gathering 0+3 Instantiate 4+9
+shipped,A: wisps only,10,60.3,Exhausted,corridors searched,LeftCorridor,Travel,80,8.37,,,Wayfinding 5+18 Gathering 0+3 Instantiate 4+10
+shipped,A: wisps only,11,60.2,Exhausted,corridors searched,LeftCorridor,Travel,80,8.509,,,Wayfinding 5+19 Gathering 0+3 Instantiate 4+11
+shipped,A: wisps only,12,60.1,Exhausted,corridors searched,LeftCorridor,Travel,80,8.6,,,Wayfinding 5+19 Gathering 0+3 Instantiate 4+12
+shipped,A: wisps only,13,60,Exhausted,corridors searched,LeftCorridor,Travel,80,8.714,,,Wayfinding 5+20 Gathering 0+4 Instantiate 4+13
+shipped,A: wisps only,14,60,Exhausted,corridors searched,LeftCorridor,Travel,80,8.8,,,Wayfinding 5+21 Gathering 0+4 Instantiate 4+14
+shipped,A: wisps only,15,59.9,Exhausted,corridors searched,LeftCorridor,Travel,80,8.921,,,Wayfinding 5+21 Gathering 0+4 Instantiate 4+14
+shipped,A: wisps only,16,59.8,Exhausted,corridors searched,LeftCorridor,Travel,80,9.009,,,Wayfinding 5+22 Gathering 0+4 Instantiate 4+15
+shipped,A: wisps only,17,59.8,Exhausted,corridors searched,LeftCorridor,Travel,80,9.072,,,Wayfinding 5+23 Gathering 0+5 Instantiate 4+16
+shipped,A: wisps only,18,59.7,Exhausted,corridors searched,LeftCorridor,Travel,80,9.193,,,Wayfinding 5+23 Gathering 0+5 Instantiate 4+16
+shipped,A: wisps only,19,59.7,Exhausted,corridors searched,LeftCorridor,Travel,80,9.242,,,Wayfinding 5+24 Gathering 0+5 Instantiate 4+17
+shipped,A: wisps only,20,59.6,Exhausted,corridors searched,LeftCorridor,Travel,80,9.347,,,Wayfinding 5+24 Gathering 0+5 Instantiate 4+17
+shipped,A: wisps only,21,59.5,Exhausted,corridors searched,LeftCorridor,Travel,80,9.402,,,Wayfinding 5+25 Gathering 0+5 Instantiate 4+18
+shipped,A: wisps only,22,59.5,Exhausted,corridors searched,LeftCorridor,Travel,80,9.474,,,Wayfinding 5+25 Gathering 0+6 Instantiate 4+19
+shipped,A: wisps only,23,59.4,Exhausted,corridors searched,LeftCorridor,Travel,80,9.554,,,Wayfinding 6+26 Gathering 0+6 Instantiate 4+19
+shipped,A: wisps only,24,59.4,Exhausted,corridors searched,LeftCorridor,Travel,80,9.638,,,Wayfinding 6+26 Gathering 0+6 Instantiate 4+19
+shipped,A: wisps only,25,59.3,Exhausted,corridors searched,LeftCorridor,Travel,80,9.671,,,Wayfinding 6+26 Gathering 0+6 Instantiate 4+20
+shipped,A: wisps only,26,59.3,Exhausted,corridors searched,Junction,GatherAWisp,80,9.739,,,Wayfinding 6+27 Gathering 0+6 Instantiate 4+20
+shipped,A: wisps only,27,59.3,Exhausted,corridors searched,Junction,GatherAWisp,80,9.739,,,Wayfinding 6+27 Gathering 0+6 Instantiate 4+21
+shipped,A: wisps only,28,59.3,Exhausted,corridors searched,Junction,GatherAWisp,80,9.739,,,Wayfinding 6+28 Gathering 0+7 Instantiate 4+21
+shipped,A: wisps only,29,59.3,Exhausted,corridors searched,Junction,GatherAWisp,80,9.739,,,Wayfinding 6+28 Gathering 0+7 Instantiate 4+22
+shipped,A: wisps only,30,59.3,Exhausted,corridors searched,Junction,GatherAWisp,80,9.739,,,Wayfinding 6+29 Gathering 0+7 Instantiate 4+22
+shipped,"B: 15 hall candles, no phials",1,1.7,Exhausted,searching (mirror 0 % hall 0 % right 0 % left 0 %),HallMirror,ChaseRoland,50,0,,LostRoland@1s,Wayfinding 0+0 Gathering 0+0
+shipped,"B: 15 hall candles, no phials",2,88.8,Exhausted,searching (mirror 100 % hall 100 % right 91 % left 0 %),RightCorridor,Explore,150,6.24,,AGlimmer@78s; FoundTheRing@84s,Wayfinding 12+7 Gathering 1+0 Instantiate 0+0
+shipped,"B: 15 hall candles, no phials",3,81.2,Exhausted,corridors searched,LeftCorridor,Travel,130,13.605,,,Wayfinding 11+12 Gathering 1+1 Instantiate 0+0
+shipped,"B: 15 hall candles, no phials",4,208.2,Exhausted,dark corridor 0 %,LeftCorridor,FeedYourHoursToTheFlames,269.91,13.518,,TheDarknessPushedBack@109s; AllTwentyFiveAlight@203s,Wayfinding 7+13 Gathering 10+7 Instantiate 10+6 Invoking 0+0
+shipped,"B: 15 hall candles, no phials",5,201.2,Exhausted,dark corridor 0 %,LeftCorridor,Travel,249.986,16.387,,,Wayfinding 8+15 Gathering 10+11 Instantiate 10+10 Invoking 0+0
+shipped,"B: 15 hall candles, no phials",6,195.7,Exhausted,dark corridor 0 %,LeftCorridor,Travel,239.845,16.996,,,Wayfinding 8+17 Gathering 10+14 Instantiate 10+13 Invoking 0+0
+shipped,"B: 15 hall candles, no phials",7,190,Exhausted,dark corridor 0 %,LeftCorridor,FeedYourHoursToTheFlames,239.989,13.518,,,Wayfinding 7+18 Gathering 10+16 Instantiate 10+15 Invoking 1+0
+shipped,"B: 15 hall candles, no phials",8,194.1,Exhausted,dark corridor 9 %,HangingMirrors,Explore,239.992,17.6,,,Wayfinding 9+20 Gathering 10+18 Instantiate 10+17 Invoking 0+0
+shipped,"B: 15 hall candles, no phials",9,193.3,Exhausted,dark corridor 22 %,HangingMirrors,Explore,239.993,17.6,,,Wayfinding 10+21 Gathering 10+20 Instantiate 10+19 Invoking 0+0
+shipped,"B: 15 hall candles, no phials",10,185.3,Exhausted,dark corridor 22 %,LeftCorridor,FeedYourHoursToTheFlames,239.902,13.518,,,Wayfinding 7+22 Gathering 10+22 Instantiate 10+21 Invoking 1+1
+shipped,"B: 15 hall candles, no phials",11,191.9,Exhausted,dark corridor 42 %,HangingMirrors,Explore,239.96,17.6,,,Wayfinding 10+23 Gathering 10+23 Instantiate 10+22 Invoking 0+1
+shipped,"B: 15 hall candles, no phials",12,187,Exhausted,dark corridor 57 %,HangingMirrors,Explore,229.92,17.6,,MirrorsInTheDark@183s,Wayfinding 9+24 Gathering 10+24 Instantiate 10+23 Invoking 0+1
+shipped,"B: 15 hall candles, no phials",13,179.3,Exhausted,dark corridor 57 %,LeftCorridor,FeedYourHoursToTheFlames,229.973,13.518,,,Wayfinding 7+25 Gathering 10+25 Instantiate 10+24 Invoking 1+2
+shipped,"B: 15 hall candles, no phials",14,186,Exhausted,dark corridor 77 %,HangingMirrors,Explore,229.999,17.6,,,Wayfinding 10+26 Gathering 10+26 Instantiate 10+25 Invoking 0+2
+shipped,"B: 15 hall candles, no phials",15,185.2,Exhausted,lab (insight 0),HangingMirrors,,229.961,17.6,,TheOtherLaboratory@185s,Wayfinding 11+27 Gathering 10+27 Instantiate 10+26 Invoking 0+2
+shipped,"B: 15 hall candles, no phials",16,173.6,Exhausted,lab (insight 0),LeftCorridor,FeedYourHoursToTheFlames,219.924,13.518,,,Wayfinding 7+27 Gathering 10+28 Instantiate 10+27 Invoking 1+3
+shipped,"B: 15 hall candles, no phials",17,225.2,Exhausted,lab (insight 0),OtherLaboratory,Explore,379.919,43.46,,,Wayfinding 14+29 Gathering 11+29 Instantiate 11+28 Invoking 0+3
+shipped,"B: 15 hall candles, no phials",18,223.5,Exhausted,lab (insight 0),OtherLaboratory,TakeTheEarrings,379.989,43.46,,TheMemoryIsWrong@222s,Wayfinding 14+30 Gathering 11+30 Instantiate 11+29 Invoking 0+3 Studying 0+0 Convincing 0+0
+shipped,"B: 15 hall candles, no phials",19,225.7,Exhausted,lab (insight 0),Junction,Travel,359.892,27.131,,,Wayfinding 11+31 Gathering 11+31 Instantiate 10+30 Invoking 5+5 Studying 0+0 Convincing 0+0
+shipped,"B: 15 hall candles, no phials",20,234.2,Exhausted,lab (insight 0),OtherLaboratory,TakeTheEarrings,409.998,56.932,,,Wayfinding 16+32 Gathering 12+31 Instantiate 11+30 Invoking 0+5 Studying 0+0 Convincing 0+0
+shipped,"B: 15 hall candles, no phials",21,233.4,Exhausted,lab (insight 0),OtherLaboratory,DrawADenseWisp,410.001,56.931,,TheEarrings@233s,Wayfinding 16+33 Gathering 12+32 Instantiate 11+31 Invoking 0+5 Studying 0+0 Convincing 0+0
+shipped,"B: 15 hall candles, no phials",22,231.4,Exhausted,lab (insight 0),OtherLaboratory,DrawADenseWisp,409.965,56.932,,,Wayfinding 16+34 Gathering 12+33 Instantiate 11+32 Invoking 0+5 Studying 0+0 Convincing 0+0
+shipped,"B: 15 hall candles, no phials",23,230.3,Exhausted,lab (insight 0),OtherLaboratory,,410.001,56.931,,,Wayfinding 16+35 Gathering 12+34 Instantiate 11+32 Invoking 0+5 Studying 0+0 Convincing 0+0
+shipped,"B: 15 hall candles, no phials",24,488.9,Exhausted,gem made,HallMirror,,1828.381,90.973,,"WhatHeDidThatNight@291s; talk at insight 3, 41 vitality, 309s; RolandTakesTheRing@375s; craft at 45 vitality, 426s; TheGemIsMade@465s",Wayfinding 19+36 Gathering 24+36 Instantiate 11+33 Invoking 0+5 Studying 1+0 Convincing 13+8 Crafting 10+6
+shipped,"B: 15 hall candles, no phials",25,217.5,WalkedOut,gem made,HallMirror,,304.046,56.931,,Home@217s,Wayfinding 15+37 Gathering 12+36 Instantiate 10+34 Invoking 0+5 Studying 0+0 Convincing 0+8 Crafting 0+6
+shipped,"C: 15 hall candles, 10 phials (tidy)",1,1.7,Exhausted,searching (mirror 0 % hall 0 % right 0 % left 0 %),HallMirror,ChaseRoland,50,0,,LostRoland@1s,Wayfinding 0+0 Gathering 0+0
+shipped,"C: 15 hall candles, 10 phials (tidy)",2,88.8,Exhausted,searching (mirror 100 % hall 100 % right 91 % left 0 %),RightCorridor,Explore,150,6.24,,AGlimmer@78s; FoundTheRing@84s,Wayfinding 12+7 Gathering 1+0 Instantiate 0+0
+shipped,"C: 15 hall candles, 10 phials (tidy)",3,81.2,Exhausted,corridors searched,LeftCorridor,Travel,130,13.605,,,Wayfinding 11+12 Gathering 1+1 Instantiate 0+0
+shipped,"C: 15 hall candles, 10 phials (tidy)",4,211.6,Exhausted,dark corridor 0 %,LeftCorridor,Travel,269.91,16.385,,TheDarknessPushedBack@109s; AllTwentyFiveAlight@203s,Wayfinding 8+14 Gathering 10+7 Instantiate 10+6 Invoking 0+0
+shipped,"C: 15 hall candles, 10 phials (tidy)",5,418.2,Exhausted,dark corridor 77 %,HangingMirrors,Explore,1025.026,26.768,,MirrorsInTheDark@406s,Wayfinding 15+18 Gathering 22+18 Instantiate 12+11 Invoking 5+2
+shipped,"C: 15 hall candles, 10 phials (tidy)",6,414.8,Exhausted,lab (insight 0),OtherLaboratory,DrawADenseWisp,1152.681,72.645,,TheOtherLaboratory@293s; TheMemoryIsWrong@377s; TheEarrings@381s,Wayfinding 19+22 Gathering 23+24 Instantiate 13+15 Invoking 0+2 Studying 0+0 Convincing 0+0
+shipped,"C: 15 hall candles, 10 phials (tidy)",7,455.5,Exhausted,lab (insight 3),OtherLaboratory,TalkToRoland,1519.867,56.931,,"WhatHeDidThatNight@368s; talk at insight 3, 36 vitality, 391s",Wayfinding 16+24 Gathering 23+28 Instantiate 13+18 Invoking 0+3 Studying 1+0 Convincing 13+8
+shipped,"C: 15 hall candles, 10 phials (tidy)",8,503,Exhausted,gem made,HangingMirrors,Travel,1833.29,70.235,,"talk at insight 6, 38 vitality, 370s; RolandTakesTheRing@408s; craft at 46 vitality, 451s; TheGemIsMade@490s",Wayfinding 17+27 Gathering 25+32 Instantiate 13+20 Invoking 0+3 Studying 1+1 Convincing 13+13 Crafting 10+6
+shipped,"C: 15 hall candles, 10 phials (tidy)",9,303.4,WalkedOut,gem made,HallMirror,,494.683,56.931,,Home@303s,Wayfinding 15+28 Gathering 18+33 Instantiate 12+22 Invoking 0+3 Studying 0+1 Convincing 0+13 Crafting 0+6
+shipped,"D: 8 hall candles, 5 phials (loose)",1,1.7,Exhausted,searching (mirror 0 % hall 0 % right 0 % left 0 %),HallMirror,ChaseRoland,50,0,,LostRoland@1s,Wayfinding 0+0 Gathering 0+0
+shipped,"D: 8 hall candles, 5 phials (loose)",2,88.8,Exhausted,searching (mirror 100 % hall 100 % right 91 % left 0 %),RightCorridor,Explore,150,6.24,,AGlimmer@78s; FoundTheRing@84s,Wayfinding 12+7 Gathering 1+0 Instantiate 0+0
+shipped,"D: 8 hall candles, 5 phials (loose)",3,81.2,Exhausted,corridors searched,LeftCorridor,Travel,130,13.605,,,Wayfinding 11+12 Gathering 1+1 Instantiate 0+0
+shipped,"D: 8 hall candles, 5 phials (loose)",4,129.7,Exhausted,corridors searched,Junction,,169.963,9.739,,,Wayfinding 6+13 Gathering 5+4 Instantiate 7+4
+shipped,"D: 8 hall candles, 5 phials (loose)",5,123.6,Exhausted,corridors searched,LeftCorridor,Travel,159.961,9.497,,,Wayfinding 5+14 Gathering 5+6 Instantiate 7+7
+shipped,"D: 8 hall candles, 5 phials (loose)",6,174.3,Exhausted,dark corridor 0 %,LeftCorridor,Travel,250.001,14.443,,AllTwentyFiveAlight@171s,Wayfinding 7+16 Gathering 9+9 Instantiate 9+11 Invoking 0+0
+shipped,"D: 8 hall candles, 5 phials (loose)",7,173.8,Exhausted,dark corridor 0 %,LeftCorridor,Travel,249.938,15.897,,,Wayfinding 8+17 Gathering 9+12 Instantiate 9+13 Invoking 0+0
+shipped,"D: 8 hall candles, 5 phials (loose)",8,173.5,Exhausted,dark corridor 0 %,LeftCorridor,Travel,250.001,17.099,,,Wayfinding 8+19 Gathering 9+14 Instantiate 9+15 Invoking 0+0
+shipped,"D: 8 hall candles, 5 phials (loose)",9,173.2,Exhausted,dark corridor 0 %,Junction,Travel,250.001,18.055,,,Wayfinding 9+20 Gathering 9+16 Instantiate 9+17 Invoking 0+0
+shipped,"D: 8 hall candles, 5 phials (loose)",10,351.4,Exhausted,dark corridor 41 %,HangingMirrors,Explore,953.823,37.463,,,Wayfinding 15+23 Gathering 19+21 Instantiate 11+19 Invoking 5+2
+shipped,"D: 8 hall candles, 5 phials (loose)",11,285.9,Exhausted,lab (insight 0),Junction,Travel,619.9,54.896,,MirrorsInTheDark@249s; TheOtherLaboratory@268s,Wayfinding 18+25 Gathering 13+23 Instantiate 11+21 Invoking 0+2
+shipped,"D: 8 hall candles, 5 phials (loose)",12,342.6,Exhausted,lab (insight 1),OtherLaboratory,DrawADenseWisp,1144.002,43.46,,TheMemoryIsWrong@254s; TheEarrings@258s; WhatHeDidThatNight@335s,Wayfinding 14+27 Gathering 22+27 Instantiate 12+23 Invoking 0+2 Studying 1+0 Convincing 0+0
+shipped,"D: 8 hall candles, 5 phials (loose)",13,379.6,Exhausted,lab (insight 4),OtherLaboratory,TalkToRoland,1412.67,43.46,,"talk at insight 4, 7 vitality, 344s",Wayfinding 14+28 Gathering 22+30 Instantiate 12+24 Invoking 0+3 Studying 1+1 Convincing 8+5
+shipped,"D: 8 hall candles, 5 phials (loose)",14,434.4,Exhausted,talked to Roland,OtherLaboratory,CraftTheGem,1796.67,43.46,,"talk at insight 6, 21 vitality, 321s; RolandTakesTheRing@360s; craft at 28 vitality, 411s; TheGemCracks@434s",Wayfinding 14+30 Gathering 25+33 Instantiate 12+25 Invoking 0+3 Studying 1+2 Convincing 13+11 Crafting 8+5
+shipped,"D: 8 hall candles, 5 phials (loose)",15,353.8,WalkedOut,gem made,HallMirror,,912.161,72.645,,"craft at 46 vitality, 282s; TheGemIsMade@324s; Home@353s",Wayfinding 17+31 Gathering 19+35 Instantiate 11+26 Invoking 0+3 Studying 0+2 Convincing 0+11 Crafting 8+8
+drain growth 0.45,A: wisps only,1,1.7,Exhausted,searching (mirror 0 % hall 0 % right 0 % left 0 %),HallMirror,ChaseRoland,50,0,,LostRoland@1s,Wayfinding 0+0 Gathering 0+0
+drain growth 0.45,A: wisps only,2,87.5,Exhausted,searching (mirror 100 % hall 100 % right 83 % left 0 %),RightCorridor,Explore,150,6.24,,AGlimmer@78s; FoundTheRing@84s,Wayfinding 12+7 Gathering 1+0 Instantiate 0+0
+drain growth 0.45,A: wisps only,3,80.2,Exhausted,searching (mirror 100 % hall 100 % right 100 % left 86 %),LeftCorridor,Explore,130,13.518,,,Wayfinding 11+11 Gathering 1+1 Instantiate 0+0
+drain growth 0.45,A: wisps only,4,59.6,Exhausted,corridors searched,LeftCorridor,InstantiateASatchel,80,6.24,,,Wayfinding 5+12 Gathering 0+2 Instantiate 3+2
+drain growth 0.45,A: wisps only,5,60,Exhausted,corridors searched,LeftCorridor,Travel,80,7.384,,,Wayfinding 4+13 Gathering 0+2 Instantiate 4+4
+drain growth 0.45,A: wisps only,6,59.9,Exhausted,corridors searched,LeftCorridor,Travel,80,7.583,,,Wayfinding 4+14 Gathering 0+2 Instantiate 4+5
+drain growth 0.45,A: wisps only,7,59.8,Exhausted,corridors searched,LeftCorridor,Travel,80,7.708,,,Wayfinding 5+15 Gathering 0+2 Instantiate 4+7
+drain growth 0.45,A: wisps only,8,59.7,Exhausted,corridors searched,LeftCorridor,Travel,80,7.866,,,Wayfinding 5+16 Gathering 0+3 Instantiate 4+8
+drain growth 0.45,A: wisps only,9,59.6,Exhausted,corridors searched,LeftCorridor,Travel,80,8,,,Wayfinding 5+17 Gathering 0+3 Instantiate 4+9
+drain growth 0.45,A: wisps only,10,59.5,Exhausted,corridors searched,LeftCorridor,Travel,80,8.106,,,Wayfinding 5+18 Gathering 0+3 Instantiate 4+10
+drain growth 0.45,A: wisps only,11,59.5,Exhausted,corridors searched,LeftCorridor,Travel,80,8.253,,,Wayfinding 5+18 Gathering 0+3 Instantiate 4+11
+drain growth 0.45,A: wisps only,12,59.4,Exhausted,corridors searched,LeftCorridor,Travel,80,8.393,,,Wayfinding 5+19 Gathering 0+3 Instantiate 4+12
+drain growth 0.45,A: wisps only,13,59.3,Exhausted,corridors searched,LeftCorridor,Travel,80,8.444,,,Wayfinding 5+20 Gathering 0+4 Instantiate 4+13
+drain growth 0.45,A: wisps only,14,59.2,Exhausted,corridors searched,LeftCorridor,Travel,80,8.534,,,Wayfinding 5+20 Gathering 0+4 Instantiate 4+14
+drain growth 0.45,A: wisps only,15,59.2,Exhausted,corridors searched,LeftCorridor,Travel,80,8.679,,,Wayfinding 5+21 Gathering 0+4 Instantiate 4+14
+drain growth 0.45,A: wisps only,16,59.1,Exhausted,corridors searched,LeftCorridor,Travel,80,8.763,,,Wayfinding 5+22 Gathering 0+4 Instantiate 4+15
+drain growth 0.45,A: wisps only,17,59,Exhausted,corridors searched,LeftCorridor,Travel,80,8.826,,,Wayfinding 5+22 Gathering 0+5 Instantiate 4+16
+drain growth 0.45,A: wisps only,18,59,Exhausted,corridors searched,LeftCorridor,Travel,80,8.946,,,Wayfinding 5+23 Gathering 0+5 Instantiate 4+16
+drain growth 0.45,A: wisps only,19,58.9,Exhausted,corridors searched,LeftCorridor,Travel,80,8.977,,,Wayfinding 5+23 Gathering 0+5 Instantiate 4+17
+drain growth 0.45,A: wisps only,20,58.9,Exhausted,corridors searched,LeftCorridor,Travel,80,9.098,,,Wayfinding 5+24 Gathering 0+5 Instantiate 4+17
+drain growth 0.45,A: wisps only,21,58.8,Exhausted,corridors searched,LeftCorridor,Travel,80,9.16,,,Wayfinding 5+24 Gathering 0+5 Instantiate 4+18
+drain growth 0.45,A: wisps only,22,58.8,Exhausted,corridors searched,LeftCorridor,Travel,80,9.222,,,Wayfinding 5+25 Gathering 0+6 Instantiate 4+18
+drain growth 0.45,A: wisps only,23,58.7,Exhausted,corridors searched,LeftCorridor,Travel,80,9.316,,,Wayfinding 5+25 Gathering 0+6 Instantiate 4+19
+drain growth 0.45,A: wisps only,24,58.7,Exhausted,corridors searched,LeftCorridor,Travel,80,9.347,,,Wayfinding 5+26 Gathering 0+6 Instantiate 4+19
+drain growth 0.45,A: wisps only,25,58.6,Exhausted,corridors searched,LeftCorridor,Travel,80,9.443,,,Wayfinding 5+26 Gathering 0+6 Instantiate 4+20
+drain growth 0.45,A: wisps only,26,58.6,Exhausted,corridors searched,LeftCorridor,Travel,80,9.468,,,Wayfinding 5+27 Gathering 0+6 Instantiate 4+20
+drain growth 0.45,A: wisps only,27,58.5,Exhausted,corridors searched,LeftCorridor,Travel,80,9.573,,,Wayfinding 6+27 Gathering 0+6 Instantiate 4+21
+drain growth 0.45,A: wisps only,28,58.5,Exhausted,corridors searched,LeftCorridor,Travel,80,9.573,,,Wayfinding 6+27 Gathering 0+7 Instantiate 4+21
+drain growth 0.45,A: wisps only,29,58.4,Exhausted,corridors searched,LeftCorridor,Travel,80,9.677,,,Wayfinding 6+28 Gathering 0+7 Instantiate 4+22
+drain growth 0.45,A: wisps only,30,58.4,Exhausted,corridors searched,LeftCorridor,Travel,80,9.711,,,Wayfinding 6+28 Gathering 0+7 Instantiate 4+22
+drain growth 0.45,"B: 15 hall candles, no phials",1,1.7,Exhausted,searching (mirror 0 % hall 0 % right 0 % left 0 %),HallMirror,ChaseRoland,50,0,,LostRoland@1s,Wayfinding 0+0 Gathering 0+0
+drain growth 0.45,"B: 15 hall candles, no phials",2,87.5,Exhausted,searching (mirror 100 % hall 100 % right 83 % left 0 %),RightCorridor,Explore,150,6.24,,AGlimmer@78s; FoundTheRing@84s,Wayfinding 12+7 Gathering 1+0 Instantiate 0+0
+drain growth 0.45,"B: 15 hall candles, no phials",3,80.2,Exhausted,searching (mirror 100 % hall 100 % right 100 % left 86 %),LeftCorridor,Explore,130,13.518,,,Wayfinding 11+11 Gathering 1+1 Instantiate 0+0
+drain growth 0.45,"B: 15 hall candles, no phials",4,186.8,Exhausted,corridors searched,Junction,GatherAWisp,279.768,17.6,,TheDarknessPushedBack@144s,Wayfinding 9+14 Gathering 8+6 Instantiate 8+5
+drain growth 0.45,"B: 15 hall candles, no phials",5,197.2,Exhausted,dark corridor 0 %,LeftCorridor,FeedYourHoursToTheFlames,259.924,13.518,,AllTwentyFiveAlight@195s,Wayfinding 7+15 Gathering 10+10 Instantiate 10+9 Invoking 0+0
+drain growth 0.45,"B: 15 hall candles, no phials",6,194,Exhausted,dark corridor 0 %,LeftCorridor,Travel,249.896,15.819,,,Wayfinding 8+17 Gathering 10+13 Instantiate 10+12 Invoking 0+0
+drain growth 0.45,"B: 15 hall candles, no phials",7,193.9,Exhausted,dark corridor 0 %,LeftCorridor,Travel,249.847,17.229,,,Wayfinding 8+18 Gathering 10+16 Instantiate 10+15 Invoking 0+0
+drain growth 0.45,"B: 15 hall candles, no phials",8,187.9,Exhausted,dark corridor 0 %,LeftCorridor,FeedYourHoursToTheFlames,249.996,13.518,,,Wayfinding 7+19 Gathering 10+18 Instantiate 10+17 Invoking 1+0
+drain growth 0.45,"B: 15 hall candles, no phials",9,192.5,Exhausted,dark corridor 8 %,HangingMirrors,Explore,249.968,17.6,,,Wayfinding 9+21 Gathering 10+20 Instantiate 10+19 Invoking 0+0
+drain growth 0.45,"B: 15 hall candles, no phials",10,191.8,Exhausted,dark corridor 21 %,HangingMirrors,Explore,249.9,17.6,,,Wayfinding 10+22 Gathering 10+21 Instantiate 10+20 Invoking 0+0
+drain growth 0.45,"B: 15 hall candles, no phials",11,184.2,Exhausted,dark corridor 21 %,LeftCorridor,FeedYourHoursToTheFlames,249.931,13.518,,,Wayfinding 7+23 Gathering 10+23 Instantiate 10+22 Invoking 1+1
+drain growth 0.45,"B: 15 hall candles, no phials",12,186.6,Exhausted,dark corridor 33 %,HangingMirrors,Explore,240.001,17.6,,,Wayfinding 9+24 Gathering 10+24 Instantiate 10+23 Invoking 0+1
+drain growth 0.45,"B: 15 hall candles, no phials",13,186.1,Exhausted,dark corridor 48 %,HangingMirrors,Explore,239.963,17.6,,,Wayfinding 9+25 Gathering 10+25 Instantiate 10+24 Invoking 0+1
+drain growth 0.45,"B: 15 hall candles, no phials",14,178.8,Exhausted,dark corridor 48 %,LeftCorridor,FeedYourHoursToTheFlames,239.91,13.518,,,Wayfinding 7+26 Gathering 10+26 Instantiate 10+25 Invoking 1+2
+drain growth 0.45,"B: 15 hall candles, no phials",15,184.9,Exhausted,dark corridor 68 %,HangingMirrors,Explore,239.876,17.6,,MirrorsInTheDark@176s,Wayfinding 10+27 Gathering 10+27 Instantiate 10+26 Invoking 0+2
+drain growth 0.45,"B: 15 hall candles, no phials",16,180.4,Exhausted,dark corridor 84 %,HangingMirrors,Explore,230.001,17.6,,,Wayfinding 10+27 Gathering 10+28 Instantiate 10+27 Invoking 0+2
+drain growth 0.45,"B: 15 hall candles, no phials",17,173.4,Exhausted,dark corridor 84 %,LeftCorridor,FeedYourHoursToTheFlames,229.968,13.518,,,Wayfinding 7+28 Gathering 10+29 Instantiate 10+28 Invoking 1+3
+drain growth 0.45,"B: 15 hall candles, no phials",18,180,Exhausted,lab (insight 0),HangingMirrors,Travel,229.866,18.318,,TheOtherLaboratory@178s,Wayfinding 10+29 Gathering 10+29 Instantiate 10+29 Invoking 0+3
+drain growth 0.45,"B: 15 hall candles, no phials",19,222.3,Exhausted,lab (insight 0),HangingMirrors,Travel,389.951,42.824,,,Wayfinding 14+30 Gathering 11+30 Instantiate 11+29 Invoking 0+3
+drain growth 0.45,"B: 15 hall candles, no phials",20,221.9,Exhausted,lab (insight 0),LeftCorridor,Travel,369.95,24.969,,,Wayfinding 11+31 Gathering 11+31 Instantiate 10+30 Invoking 5+5
+drain growth 0.45,"B: 15 hall candles, no phials",21,233.5,Exhausted,lab (insight 0),OtherLaboratory,,429.909,56.932,,,Wayfinding 16+32 Gathering 12+32 Instantiate 11+31 Invoking 0+5
+drain growth 0.45,"B: 15 hall candles, no phials",22,230.3,Exhausted,lab (insight 0),HangingMirrors,Travel,419.968,56.601,,,Wayfinding 16+33 Gathering 12+33 Instantiate 11+32 Invoking 0+5
+drain growth 0.45,"B: 15 hall candles, no phials",23,228.6,Exhausted,lab (insight 0),OtherLaboratory,Explore,420.001,56.932,,TheMemoryIsWrong@228s,Wayfinding 16+34 Gathering 12+33 Instantiate 11+32 Invoking 0+5 Studying 0+0 Convincing 0+0
+drain growth 0.45,"B: 15 hall candles, no phials",24,228.8,Exhausted,lab (insight 0),OtherLaboratory,TakeTheEarrings,420.001,56.931,,,Wayfinding 16+35 Gathering 12+34 Instantiate 11+33 Invoking 0+5 Studying 0+0 Convincing 0+0
+drain growth 0.45,"B: 15 hall candles, no phials",25,228.5,Exhausted,lab (insight 0),OtherLaboratory,,419.992,56.931,,TheEarrings@228s,Wayfinding 16+36 Gathering 12+34 Instantiate 11+33 Invoking 0+5 Studying 0+0 Convincing 0+0
+drain growth 0.45,"B: 15 hall candles, no phials",26,226.8,Exhausted,lab (insight 0),OtherLaboratory,DrawADenseWisp,419.97,56.931,,,Wayfinding 16+37 Gathering 12+35 Instantiate 11+34 Invoking 0+5 Studying 0+0 Convincing 0+0
+drain growth 0.45,"B: 15 hall candles, no phials",27,226.2,Exhausted,lab (insight 0),OtherLaboratory,DrawADenseWisp,419.904,56.931,,,Wayfinding 16+37 Gathering 12+36 Instantiate 11+35 Invoking 0+5 Studying 0+0 Convincing 0+0
+drain growth 0.45,"B: 15 hall candles, no phials",28,459.9,Exhausted,talked to Roland,OtherLaboratory,CraftTheGem,1833.374,56.931,,"WhatHeDidThatNight@290s; talk at insight 3, 34 vitality, 310s; RolandTakesTheRing@376s; craft at 36 vitality, 431s; TheGemCracks@459s",Wayfinding 16+38 Gathering 25+38 Instantiate 11+35 Invoking 0+5 Studying 1+0 Convincing 13+8 Crafting 9+5
+drain growth 0.45,"B: 15 hall candles, no phials",29,326.3,WalkedOut,gem made,HallMirror,,657.941,90.973,,"craft at 46 vitality, 258s; TheGemIsMade@300s; Home@326s",Wayfinding 18+39 Gathering 17+39 Instantiate 10+36 Invoking 0+5 Studying 0+0 Convincing 0+8 Crafting 8+9
+drain growth 0.45,"C: 15 hall candles, 10 phials (tidy)",1,1.7,Exhausted,searching (mirror 0 % hall 0 % right 0 % left 0 %),HallMirror,ChaseRoland,50,0,,LostRoland@1s,Wayfinding 0+0 Gathering 0+0
+drain growth 0.45,"C: 15 hall candles, 10 phials (tidy)",2,87.5,Exhausted,searching (mirror 100 % hall 100 % right 83 % left 0 %),RightCorridor,Explore,150,6.24,,AGlimmer@78s; FoundTheRing@84s,Wayfinding 12+7 Gathering 1+0 Instantiate 0+0
+drain growth 0.45,"C: 15 hall candles, 10 phials (tidy)",3,80.2,Exhausted,searching (mirror 100 % hall 100 % right 100 % left 86 %),LeftCorridor,Explore,130,13.518,,,Wayfinding 11+11 Gathering 1+1 Instantiate 0+0
+drain growth 0.45,"C: 15 hall candles, 10 phials (tidy)",4,186.8,Exhausted,corridors searched,Junction,GatherAWisp,279.768,17.6,,TheDarknessPushedBack@144s,Wayfinding 9+14 Gathering 8+6 Instantiate 8+5
+drain growth 0.45,"C: 15 hall candles, 10 phials (tidy)",5,198.8,Exhausted,dark corridor 0 %,LeftCorridor,Travel,259.924,14.887,,AllTwentyFiveAlight@195s,Wayfinding 8+15 Gathering 10+10 Instantiate 10+9 Invoking 0+0
+drain growth 0.45,"C: 15 hall candles, 10 phials (tidy)",6,418.2,Exhausted,dark corridor 60 %,HangingMirrors,Explore,1169.422,26.768,,MirrorsInTheDark@414s,Wayfinding 14+19 Gathering 23+20 Instantiate 12+13 Invoking 5+2
+drain growth 0.45,"C: 15 hall candles, 10 phials (tidy)",7,418.4,Exhausted,lab (insight 0),OtherLaboratory,DrawADenseWisp,1317.563,72.645,,TheOtherLaboratory@298s; TheMemoryIsWrong@394s; TheEarrings@397s,Wayfinding 19+23 Gathering 24+26 Instantiate 13+16 Invoking 0+2 Studying 0+0 Convincing 0+0
+drain growth 0.45,"C: 15 hall candles, 10 phials (tidy)",8,374.8,Exhausted,lab (insight 1),OtherLaboratory,DrawADenseWisp,1081.289,56.931,,WhatHeDidThatNight@370s,Wayfinding 16+25 Gathering 23+29 Instantiate 13+19 Invoking 0+2 Studying 1+0 Convincing 0+0
+drain growth 0.45,"C: 15 hall candles, 10 phials (tidy)",9,422.7,Exhausted,lab (insight 4),OtherLaboratory,TalkToRoland,1460.584,56.931,,"talk at insight 4, 29 vitality, 381s",Wayfinding 16+27 Gathering 24+32 Instantiate 13+21 Invoking 0+3 Studying 1+1 Convincing 10+6
+drain growth 0.45,"C: 15 hall candles, 10 phials (tidy)",10,455,Exhausted,talked to Roland,OtherLaboratory,CraftTheGem,1682.642,56.931,,"talk at insight 6, 38 vitality, 359s; RolandTakesTheRing@397s; craft at 20 vitality, 440s; TheGemCracks@455s",Wayfinding 16+29 Gathering 26+35 Instantiate 13+23 Invoking 0+3 Studying 1+2 Convincing 13+12 Crafting 7+4
+drain growth 0.45,"C: 15 hall candles, 10 phials (tidy)",11,405.8,WalkedOut,gem made,HallMirror,,1048.599,90.972,,"craft at 47 vitality, 335s; TheGemIsMade@377s; Home@405s",Wayfinding 18+31 Gathering 22+37 Instantiate 12+25 Invoking 0+3 Studying 0+2 Convincing 0+12 Crafting 8+8
+drain growth 0.45,"D: 8 hall candles, 5 phials (loose)",1,1.7,Exhausted,searching (mirror 0 % hall 0 % right 0 % left 0 %),HallMirror,ChaseRoland,50,0,,LostRoland@1s,Wayfinding 0+0 Gathering 0+0
+drain growth 0.45,"D: 8 hall candles, 5 phials (loose)",2,87.5,Exhausted,searching (mirror 100 % hall 100 % right 83 % left 0 %),RightCorridor,Explore,150,6.24,,AGlimmer@78s; FoundTheRing@84s,Wayfinding 12+7 Gathering 1+0 Instantiate 0+0
+drain growth 0.45,"D: 8 hall candles, 5 phials (loose)",3,80.2,Exhausted,searching (mirror 100 % hall 100 % right 100 % left 86 %),LeftCorridor,Explore,130,13.518,,,Wayfinding 11+11 Gathering 1+1 Instantiate 0+0
+drain growth 0.45,"D: 8 hall candles, 5 phials (loose)",4,152.8,Exhausted,corridors searched,LeftCorridor,Travel,239.976,15.296,,,Wayfinding 8+14 Gathering 6+4 Instantiate 7+4
+drain growth 0.45,"D: 8 hall candles, 5 phials (loose)",5,120.4,Exhausted,corridors searched,LeftCorridor,Travel,159.927,8.747,,,Wayfinding 5+15 Gathering 5+6 Instantiate 7+7
+drain growth 0.45,"D: 8 hall candles, 5 phials (loose)",6,120.4,Exhausted,corridors searched,LeftCorridor,Travel,159.934,9.435,,,Wayfinding 5+16 Gathering 5+8 Instantiate 7+10
+drain growth 0.45,"D: 8 hall candles, 5 phials (loose)",7,168.4,Exhausted,corridors searched,LeftCorridor,LightACandleInTheCorridor,249.983,13.518,,,Wayfinding 7+17 Gathering 9+11 Instantiate 9+13
+drain growth 0.45,"D: 8 hall candles, 5 phials (loose)",8,168.1,Exhausted,dark corridor 0 %,LeftCorridor,Travel,249.994,14.692,,AllTwentyFiveAlight@165s,Wayfinding 8+18 Gathering 9+13 Instantiate 9+15 Invoking 0+0
+drain growth 0.45,"D: 8 hall candles, 5 phials (loose)",9,167.9,Exhausted,dark corridor 0 %,LeftCorridor,Travel,250.001,15.594,,,Wayfinding 8+20 Gathering 9+15 Instantiate 9+17 Invoking 0+0
+drain growth 0.45,"D: 8 hall candles, 5 phials (loose)",10,167.6,Exhausted,dark corridor 0 %,LeftCorridor,Travel,249.974,16.567,,,Wayfinding 8+21 Gathering 9+17 Instantiate 9+18 Invoking 0+0
+drain growth 0.45,"D: 8 hall candles, 5 phials (loose)",11,167.3,Exhausted,dark corridor 0 %,LeftCorridor,Travel,249.957,17.466,,,Wayfinding 9+22 Gathering 9+19 Instantiate 9+20 Invoking 0+0
+drain growth 0.45,"D: 8 hall candles, 5 phials (loose)",12,167,Exhausted,dark corridor 0 %,Junction,Travel,249.923,18.329,,,Wayfinding 9+23 Gathering 9+20 Instantiate 9+21 Invoking 0+0
+drain growth 0.45,"D: 8 hall candles, 5 phials (loose)",13,272.4,Exhausted,dark corridor 0 %,LeftCorridor,FeedYourHoursToTheFlames,637.818,31.91,,,Wayfinding 12+24 Gathering 13+22 Instantiate 11+22 Invoking 4+2
+drain growth 0.45,"D: 8 hall candles, 5 phials (loose)",14,276.8,Exhausted,dark corridor 95 %,HangingMirrors,Explore,640.002,37.463,,MirrorsInTheDark@261s,Wayfinding 17+27 Gathering 13+24 Instantiate 11+24 Invoking 0+2
+drain growth 0.45,"D: 8 hall candles, 5 phials (loose)",15,316.4,Exhausted,lab (insight 0),OtherLaboratory,TakeTheEarrings,920.403,90.973,,TheOtherLaboratory@238s; TheMemoryIsWrong@314s,Wayfinding 19+29 Gathering 16+26 Instantiate 12+25 Invoking 0+2 Studying 0+0 Convincing 0+0
+drain growth 0.45,"D: 8 hall candles, 5 phials (loose)",16,381.7,Exhausted,lab (insight 0),HangingMirrors,Travel,1391.775,65.698,,,Wayfinding 16+31 Gathering 22+30 Instantiate 12+26 Invoking 5+5 Studying 0+0 Convincing 0+0
+drain growth 0.45,"D: 8 hall candles, 5 phials (loose)",17,381.4,Exhausted,lab (insight 0),OtherLaboratory,DrawADenseWisp,1493.784,72.645,,TheEarrings@347s,Wayfinding 17+32 Gathering 26+33 Instantiate 12+28 Invoking 0+5 Studying 0+0 Convincing 0+0
+drain growth 0.45,"D: 8 hall candles, 5 phials (loose)",18,390,Exhausted,lab (insight 2),OtherLaboratory,DrawADenseWisp,1606.31,72.645,,WhatHeDidThatNight@380s,Wayfinding 17+33 Gathering 26+36 Instantiate 12+29 Invoking 0+5 Studying 1+0 Convincing 0+0
+drain growth 0.45,"D: 8 hall candles, 5 phials (loose)",19,385.9,Exhausted,lab (insight 5),OtherLaboratory,TalkToRoland,1576.669,72.645,,"talk at insight 5, 4 vitality, 384s",Wayfinding 17+34 Gathering 26+38 Instantiate 12+30 Invoking 0+5 Studying 1+1 Convincing 0+0
+drain growth 0.45,"D: 8 hall candles, 5 phials (loose)",20,390.6,Exhausted,lab (insight 6),OtherLaboratory,TalkToRoland,1611.278,72.645,,"talk at insight 6, 43 vitality, 360s",Wayfinding 17+36 Gathering 26+40 Instantiate 12+30 Invoking 0+5 Studying 1+2 Convincing 10+6
+drain growth 0.45,"D: 8 hall candles, 5 phials (loose)",21,388.5,Exhausted,lab (insight 6),OtherLaboratory,TalkToRoland,1592.595,72.645,,"talk at insight 6, 39 vitality, 350s",Wayfinding 17+37 Gathering 26+42 Instantiate 12+31 Invoking 0+5 Studying 0+2 Convincing 13+12
+drain growth 0.45,"D: 8 hall candles, 5 phials (loose)",22,390.4,Exhausted,talked to Roland,OtherLaboratory,DrawADenseWisp,1608.723,72.645,,"talk at insight 6, 31 vitality, 346s; RolandTakesTheRing@383s",Wayfinding 17+37 Gathering 26+43 Instantiate 12+32 Invoking 0+5 Studying 0+2 Convincing 13+16
+drain growth 0.45,"D: 8 hall candles, 5 phials (loose)",23,397.5,Exhausted,gem made,LeftCorridor,Travel,1391.273,96.596,,"craft at 48 vitality, 343s; TheGemIsMade@382s",Wayfinding 19+38 Gathering 25+44 Instantiate 11+33 Invoking 0+5 Studying 0+2 Convincing 0+16 Crafting 10+6
+drain growth 0.45,"D: 8 hall candles, 5 phials (loose)",24,303.6,WalkedOut,gem made,HallMirror,,744.098,72.645,,Home@303s,Wayfinding 17+39 Gathering 22+45 Instantiate 11+33 Invoking 0+5 Studying 0+2 Convincing 0+16 Crafting 0+6
+talk x3.6,A: wisps only,1,1.7,Exhausted,searching (mirror 0 % hall 0 % right 0 % left 0 %),HallMirror,ChaseRoland,50,0,,LostRoland@1s,Wayfinding 0+0 Gathering 0+0
+talk x3.6,A: wisps only,2,88.8,Exhausted,searching (mirror 100 % hall 100 % right 91 % left 0 %),RightCorridor,Explore,150,6.24,,AGlimmer@78s; FoundTheRing@84s,Wayfinding 12+7 Gathering 1+0 Instantiate 0+0
+talk x3.6,A: wisps only,3,81.2,Exhausted,corridors searched,LeftCorridor,InstantiateASatchel,130,13.518,,,Wayfinding 11+12 Gathering 1+1 Instantiate 0+0
+talk x3.6,A: wisps only,4,60.9,Exhausted,corridors searched,LeftCorridor,Travel,80,7.432,,,Wayfinding 4+13 Gathering 0+2 Instantiate 4+2
+talk x3.6,A: wisps only,5,60.8,Exhausted,corridors searched,LeftCorridor,Travel,80,7.605,,,Wayfinding 4+14 Gathering 0+2 Instantiate 4+4
+talk x3.6,A: wisps only,6,60.7,Exhausted,corridors searched,LeftCorridor,Travel,80,7.811,,,Wayfinding 5+15 Gathering 0+2 Instantiate 4+5
+talk x3.6,A: wisps only,7,60.6,Exhausted,corridors searched,LeftCorridor,Travel,80,7.964,,,Wayfinding 5+15 Gathering 0+2 Instantiate 4+7
+talk x3.6,A: wisps only,8,60.5,Exhausted,corridors searched,LeftCorridor,Travel,80,8.097,,,Wayfinding 5+16 Gathering 0+3 Instantiate 4+8
+talk x3.6,A: wisps only,9,60.4,Exhausted,corridors searched,LeftCorridor,Travel,80,8.233,,,Wayfinding 5+17 Gathering 0+3 Instantiate 4+9
+talk x3.6,A: wisps only,10,60.3,Exhausted,corridors searched,LeftCorridor,Travel,80,8.37,,,Wayfinding 5+18 Gathering 0+3 Instantiate 4+10
+talk x3.6,A: wisps only,11,60.2,Exhausted,corridors searched,LeftCorridor,Travel,80,8.509,,,Wayfinding 5+19 Gathering 0+3 Instantiate 4+11
+talk x3.6,A: wisps only,12,60.1,Exhausted,corridors searched,LeftCorridor,Travel,80,8.6,,,Wayfinding 5+19 Gathering 0+3 Instantiate 4+12
+talk x3.6,A: wisps only,13,60,Exhausted,corridors searched,LeftCorridor,Travel,80,8.714,,,Wayfinding 5+20 Gathering 0+4 Instantiate 4+13
+talk x3.6,A: wisps only,14,60,Exhausted,corridors searched,LeftCorridor,Travel,80,8.8,,,Wayfinding 5+21 Gathering 0+4 Instantiate 4+14
+talk x3.6,A: wisps only,15,59.9,Exhausted,corridors searched,LeftCorridor,Travel,80,8.921,,,Wayfinding 5+21 Gathering 0+4 Instantiate 4+14
+talk x3.6,A: wisps only,16,59.8,Exhausted,corridors searched,LeftCorridor,Travel,80,9.009,,,Wayfinding 5+22 Gathering 0+4 Instantiate 4+15
+talk x3.6,A: wisps only,17,59.8,Exhausted,corridors searched,LeftCorridor,Travel,80,9.072,,,Wayfinding 5+23 Gathering 0+5 Instantiate 4+16
+talk x3.6,A: wisps only,18,59.7,Exhausted,corridors searched,LeftCorridor,Travel,80,9.193,,,Wayfinding 5+23 Gathering 0+5 Instantiate 4+16
+talk x3.6,A: wisps only,19,59.7,Exhausted,corridors searched,LeftCorridor,Travel,80,9.242,,,Wayfinding 5+24 Gathering 0+5 Instantiate 4+17
+talk x3.6,A: wisps only,20,59.6,Exhausted,corridors searched,LeftCorridor,Travel,80,9.347,,,Wayfinding 5+24 Gathering 0+5 Instantiate 4+17
+talk x3.6,A: wisps only,21,59.5,Exhausted,corridors searched,LeftCorridor,Travel,80,9.402,,,Wayfinding 5+25 Gathering 0+5 Instantiate 4+18
+talk x3.6,A: wisps only,22,59.5,Exhausted,corridors searched,LeftCorridor,Travel,80,9.474,,,Wayfinding 5+25 Gathering 0+6 Instantiate 4+19
+talk x3.6,A: wisps only,23,59.4,Exhausted,corridors searched,LeftCorridor,Travel,80,9.554,,,Wayfinding 6+26 Gathering 0+6 Instantiate 4+19
+talk x3.6,A: wisps only,24,59.4,Exhausted,corridors searched,LeftCorridor,Travel,80,9.638,,,Wayfinding 6+26 Gathering 0+6 Instantiate 4+19
+talk x3.6,A: wisps only,25,59.3,Exhausted,corridors searched,LeftCorridor,Travel,80,9.671,,,Wayfinding 6+26 Gathering 0+6 Instantiate 4+20
+talk x3.6,A: wisps only,26,59.3,Exhausted,corridors searched,Junction,GatherAWisp,80,9.739,,,Wayfinding 6+27 Gathering 0+6 Instantiate 4+20
+talk x3.6,A: wisps only,27,59.3,Exhausted,corridors searched,Junction,GatherAWisp,80,9.739,,,Wayfinding 6+27 Gathering 0+6 Instantiate 4+21
+talk x3.6,A: wisps only,28,59.3,Exhausted,corridors searched,Junction,GatherAWisp,80,9.739,,,Wayfinding 6+28 Gathering 0+7 Instantiate 4+21
+talk x3.6,A: wisps only,29,59.3,Exhausted,corridors searched,Junction,GatherAWisp,80,9.739,,,Wayfinding 6+28 Gathering 0+7 Instantiate 4+22
+talk x3.6,A: wisps only,30,59.3,Exhausted,corridors searched,Junction,GatherAWisp,80,9.739,,,Wayfinding 6+29 Gathering 0+7 Instantiate 4+22
+talk x3.6,"B: 15 hall candles, no phials",1,1.7,Exhausted,searching (mirror 0 % hall 0 % right 0 % left 0 %),HallMirror,ChaseRoland,50,0,,LostRoland@1s,Wayfinding 0+0 Gathering 0+0
+talk x3.6,"B: 15 hall candles, no phials",2,88.8,Exhausted,searching (mirror 100 % hall 100 % right 91 % left 0 %),RightCorridor,Explore,150,6.24,,AGlimmer@78s; FoundTheRing@84s,Wayfinding 12+7 Gathering 1+0 Instantiate 0+0
+talk x3.6,"B: 15 hall candles, no phials",3,81.2,Exhausted,corridors searched,LeftCorridor,Travel,130,13.605,,,Wayfinding 11+12 Gathering 1+1 Instantiate 0+0
+talk x3.6,"B: 15 hall candles, no phials",4,208.2,Exhausted,dark corridor 0 %,LeftCorridor,FeedYourHoursToTheFlames,269.91,13.518,,TheDarknessPushedBack@109s; AllTwentyFiveAlight@203s,Wayfinding 7+13 Gathering 10+7 Instantiate 10+6 Invoking 0+0
+talk x3.6,"B: 15 hall candles, no phials",5,201.2,Exhausted,dark corridor 0 %,LeftCorridor,Travel,249.986,16.387,,,Wayfinding 8+15 Gathering 10+11 Instantiate 10+10 Invoking 0+0
+talk x3.6,"B: 15 hall candles, no phials",6,195.7,Exhausted,dark corridor 0 %,LeftCorridor,Travel,239.845,16.996,,,Wayfinding 8+17 Gathering 10+14 Instantiate 10+13 Invoking 0+0
+talk x3.6,"B: 15 hall candles, no phials",7,190,Exhausted,dark corridor 0 %,LeftCorridor,FeedYourHoursToTheFlames,239.989,13.518,,,Wayfinding 7+18 Gathering 10+16 Instantiate 10+15 Invoking 1+0
+talk x3.6,"B: 15 hall candles, no phials",8,194.1,Exhausted,dark corridor 9 %,HangingMirrors,Explore,239.992,17.6,,,Wayfinding 9+20 Gathering 10+18 Instantiate 10+17 Invoking 0+0
+talk x3.6,"B: 15 hall candles, no phials",9,193.3,Exhausted,dark corridor 22 %,HangingMirrors,Explore,239.993,17.6,,,Wayfinding 10+21 Gathering 10+20 Instantiate 10+19 Invoking 0+0
+talk x3.6,"B: 15 hall candles, no phials",10,185.3,Exhausted,dark corridor 22 %,LeftCorridor,FeedYourHoursToTheFlames,239.902,13.518,,,Wayfinding 7+22 Gathering 10+22 Instantiate 10+21 Invoking 1+1
+talk x3.6,"B: 15 hall candles, no phials",11,191.9,Exhausted,dark corridor 42 %,HangingMirrors,Explore,239.96,17.6,,,Wayfinding 10+23 Gathering 10+23 Instantiate 10+22 Invoking 0+1
+talk x3.6,"B: 15 hall candles, no phials",12,187,Exhausted,dark corridor 57 %,HangingMirrors,Explore,229.92,17.6,,MirrorsInTheDark@183s,Wayfinding 9+24 Gathering 10+24 Instantiate 10+23 Invoking 0+1
+talk x3.6,"B: 15 hall candles, no phials",13,179.3,Exhausted,dark corridor 57 %,LeftCorridor,FeedYourHoursToTheFlames,229.973,13.518,,,Wayfinding 7+25 Gathering 10+25 Instantiate 10+24 Invoking 1+2
+talk x3.6,"B: 15 hall candles, no phials",14,186,Exhausted,dark corridor 77 %,HangingMirrors,Explore,229.999,17.6,,,Wayfinding 10+26 Gathering 10+26 Instantiate 10+25 Invoking 0+2
+talk x3.6,"B: 15 hall candles, no phials",15,185.2,Exhausted,lab (insight 0),HangingMirrors,,229.961,17.6,,TheOtherLaboratory@185s,Wayfinding 11+27 Gathering 10+27 Instantiate 10+26 Invoking 0+2
+talk x3.6,"B: 15 hall candles, no phials",16,173.6,Exhausted,lab (insight 0),LeftCorridor,FeedYourHoursToTheFlames,219.924,13.518,,,Wayfinding 7+27 Gathering 10+28 Instantiate 10+27 Invoking 1+3
+talk x3.6,"B: 15 hall candles, no phials",17,225.2,Exhausted,lab (insight 0),OtherLaboratory,Explore,379.919,43.46,,,Wayfinding 14+29 Gathering 11+29 Instantiate 11+28 Invoking 0+3
+talk x3.6,"B: 15 hall candles, no phials",18,223.5,Exhausted,lab (insight 0),OtherLaboratory,TakeTheEarrings,379.989,43.46,,TheMemoryIsWrong@222s,Wayfinding 14+30 Gathering 11+30 Instantiate 11+29 Invoking 0+3 Studying 0+0 Convincing 0+0
+talk x3.6,"B: 15 hall candles, no phials",19,225.7,Exhausted,lab (insight 0),Junction,Travel,359.892,27.131,,,Wayfinding 11+31 Gathering 11+31 Instantiate 10+30 Invoking 5+5 Studying 0+0 Convincing 0+0
+talk x3.6,"B: 15 hall candles, no phials",20,234.2,Exhausted,lab (insight 0),OtherLaboratory,TakeTheEarrings,409.998,56.932,,,Wayfinding 16+32 Gathering 12+31 Instantiate 11+30 Invoking 0+5 Studying 0+0 Convincing 0+0
+talk x3.6,"B: 15 hall candles, no phials",21,233.4,Exhausted,lab (insight 0),OtherLaboratory,DrawADenseWisp,410.001,56.931,,TheEarrings@233s,Wayfinding 16+33 Gathering 12+32 Instantiate 11+31 Invoking 0+5 Studying 0+0 Convincing 0+0
+talk x3.6,"B: 15 hall candles, no phials",22,231.4,Exhausted,lab (insight 0),OtherLaboratory,DrawADenseWisp,409.965,56.932,,,Wayfinding 16+34 Gathering 12+33 Instantiate 11+32 Invoking 0+5 Studying 0+0 Convincing 0+0
+talk x3.6,"B: 15 hall candles, no phials",23,230.3,Exhausted,lab (insight 0),OtherLaboratory,,410.001,56.931,,,Wayfinding 16+35 Gathering 12+34 Instantiate 11+32 Invoking 0+5 Studying 0+0 Convincing 0+0
+talk x3.6,"B: 15 hall candles, no phials",24,459.7,WalkedOut,gem made,HallMirror,,1580.747,90.973,,"WhatHeDidThatNight@291s; talk at insight 3, 41 vitality, 309s; RolandTakesTheRing@354s; craft at 43 vitality, 394s; TheGemIsMade@433s; Home@459s",Wayfinding 19+36 Gathering 23+36 Instantiate 11+33 Invoking 0+5 Studying 1+0 Convincing 9+5 Crafting 10+6
+talk x3.6,"C: 15 hall candles, 10 phials (tidy)",1,1.7,Exhausted,searching (mirror 0 % hall 0 % right 0 % left 0 %),HallMirror,ChaseRoland,50,0,,LostRoland@1s,Wayfinding 0+0 Gathering 0+0
+talk x3.6,"C: 15 hall candles, 10 phials (tidy)",2,88.8,Exhausted,searching (mirror 100 % hall 100 % right 91 % left 0 %),RightCorridor,Explore,150,6.24,,AGlimmer@78s; FoundTheRing@84s,Wayfinding 12+7 Gathering 1+0 Instantiate 0+0
+talk x3.6,"C: 15 hall candles, 10 phials (tidy)",3,81.2,Exhausted,corridors searched,LeftCorridor,Travel,130,13.605,,,Wayfinding 11+12 Gathering 1+1 Instantiate 0+0
+talk x3.6,"C: 15 hall candles, 10 phials (tidy)",4,211.6,Exhausted,dark corridor 0 %,LeftCorridor,Travel,269.91,16.385,,TheDarknessPushedBack@109s; AllTwentyFiveAlight@203s,Wayfinding 8+14 Gathering 10+7 Instantiate 10+6 Invoking 0+0
+talk x3.6,"C: 15 hall candles, 10 phials (tidy)",5,418.2,Exhausted,dark corridor 77 %,HangingMirrors,Explore,1025.026,26.768,,MirrorsInTheDark@406s,Wayfinding 15+18 Gathering 22+18 Instantiate 12+11 Invoking 5+2
+talk x3.6,"C: 15 hall candles, 10 phials (tidy)",6,414.8,Exhausted,lab (insight 0),OtherLaboratory,DrawADenseWisp,1152.681,72.645,,TheOtherLaboratory@293s; TheMemoryIsWrong@377s; TheEarrings@381s,Wayfinding 19+22 Gathering 23+24 Instantiate 13+15 Invoking 0+2 Studying 0+0 Convincing 0+0
+talk x3.6,"C: 15 hall candles, 10 phials (tidy)",7,505,Exhausted,talked to Roland,OtherLaboratory,CraftTheGem,1863.202,56.931,,"WhatHeDidThatNight@368s; talk at insight 3, 36 vitality, 391s; RolandTakesTheRing@436s; craft at 25 vitality, 488s; TheGemCracks@505s",Wayfinding 16+25 Gathering 27+29 Instantiate 13+18 Invoking 0+3 Studying 1+0 Convincing 9+5 Crafting 7+4
+talk x3.6,"C: 15 hall candles, 10 phials (tidy)",8,412.8,WalkedOut,gem made,HallMirror,,947.834,90.973,,"craft at 43 vitality, 341s; TheGemIsMade@384s; Home@412s",Wayfinding 18+27 Gathering 21+32 Instantiate 12+20 Invoking 0+3 Studying 0+0 Convincing 0+5 Crafting 8+8
+talk x3.6,"D: 8 hall candles, 5 phials (loose)",1,1.7,Exhausted,searching (mirror 0 % hall 0 % right 0 % left 0 %),HallMirror,ChaseRoland,50,0,,LostRoland@1s,Wayfinding 0+0 Gathering 0+0
+talk x3.6,"D: 8 hall candles, 5 phials (loose)",2,88.8,Exhausted,searching (mirror 100 % hall 100 % right 91 % left 0 %),RightCorridor,Explore,150,6.24,,AGlimmer@78s; FoundTheRing@84s,Wayfinding 12+7 Gathering 1+0 Instantiate 0+0
+talk x3.6,"D: 8 hall candles, 5 phials (loose)",3,81.2,Exhausted,corridors searched,LeftCorridor,Travel,130,13.605,,,Wayfinding 11+12 Gathering 1+1 Instantiate 0+0
+talk x3.6,"D: 8 hall candles, 5 phials (loose)",4,129.7,Exhausted,corridors searched,Junction,,169.963,9.739,,,Wayfinding 6+13 Gathering 5+4 Instantiate 7+4
+talk x3.6,"D: 8 hall candles, 5 phials (loose)",5,123.6,Exhausted,corridors searched,LeftCorridor,Travel,159.961,9.497,,,Wayfinding 5+14 Gathering 5+6 Instantiate 7+7
+talk x3.6,"D: 8 hall candles, 5 phials (loose)",6,174.3,Exhausted,dark corridor 0 %,LeftCorridor,Travel,250.001,14.443,,AllTwentyFiveAlight@171s,Wayfinding 7+16 Gathering 9+9 Instantiate 9+11 Invoking 0+0
+talk x3.6,"D: 8 hall candles, 5 phials (loose)",7,173.8,Exhausted,dark corridor 0 %,LeftCorridor,Travel,249.938,15.897,,,Wayfinding 8+17 Gathering 9+12 Instantiate 9+13 Invoking 0+0
+talk x3.6,"D: 8 hall candles, 5 phials (loose)",8,173.5,Exhausted,dark corridor 0 %,LeftCorridor,Travel,250.001,17.099,,,Wayfinding 8+19 Gathering 9+14 Instantiate 9+15 Invoking 0+0
+talk x3.6,"D: 8 hall candles, 5 phials (loose)",9,173.2,Exhausted,dark corridor 0 %,Junction,Travel,250.001,18.055,,,Wayfinding 9+20 Gathering 9+16 Instantiate 9+17 Invoking 0+0
+talk x3.6,"D: 8 hall candles, 5 phials (loose)",10,351.4,Exhausted,dark corridor 41 %,HangingMirrors,Explore,953.823,37.463,,,Wayfinding 15+23 Gathering 19+21 Instantiate 11+19 Invoking 5+2
+talk x3.6,"D: 8 hall candles, 5 phials (loose)",11,285.9,Exhausted,lab (insight 0),Junction,Travel,619.9,54.896,,MirrorsInTheDark@249s; TheOtherLaboratory@268s,Wayfinding 18+25 Gathering 13+23 Instantiate 11+21 Invoking 0+2
+talk x3.6,"D: 8 hall candles, 5 phials (loose)",12,342.6,Exhausted,lab (insight 1),OtherLaboratory,DrawADenseWisp,1144.002,43.46,,TheMemoryIsWrong@254s; TheEarrings@258s; WhatHeDidThatNight@335s,Wayfinding 14+27 Gathering 22+27 Instantiate 12+23 Invoking 0+2 Studying 1+0 Convincing 0+0
+talk x3.6,"D: 8 hall candles, 5 phials (loose)",13,379.6,Exhausted,lab (insight 4),OtherLaboratory,TalkToRoland,1412.67,43.46,,"talk at insight 4, 7 vitality, 344s",Wayfinding 14+28 Gathering 22+30 Instantiate 12+24 Invoking 0+3 Studying 1+1 Convincing 8+5
+talk x3.6,"D: 8 hall candles, 5 phials (loose)",14,437.1,Exhausted,gem made,OtherLaboratory,Travel,1802.003,49.89,,"talk at insight 6, 21 vitality, 321s; RolandTakesTheRing@348s; craft at 45 vitality, 390s; TheGemIsMade@429s",Wayfinding 15+30 Gathering 24+33 Instantiate 12+25 Invoking 0+3 Studying 1+2 Convincing 9+9 Crafting 10+6
+talk x3.6,"D: 8 hall candles, 5 phials (loose)",15,244.3,WalkedOut,gem made,HallMirror,,442.366,43.46,,Home@244s,Wayfinding 14+31 Gathering 14+34 Instantiate 11+26 Invoking 0+3 Studying 0+2 Convincing 0+9 Crafting 0+6

@@ -1,0 +1,56 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0e696aadb90452947a6f52d36af651f0, type: 3}
+  m_Name: start_explore
+  m_EditorClassIdentifier: HallOfEchoingMirrors::HallOfEchoingMirrors.Core.BlurbBucket
+  _id: 23c008c8083ba224490579db4f0297d6
+  bucketId: start_explore
+  enabled: 1
+  description: Beginning to explore a room.
+  priority: 20
+  chance: 1
+  cooldownSeconds: 0
+  moment: 1
+  activities: 2
+  tasks: []
+  topics: 
+  rooms: []
+  roomKinds: 
+  fromLoop: 0
+  toLoop: 0
+  needsFlipped: []
+  endsWhenFlipped: []
+  needsHeld: []
+  needsNotHeld: []
+  vitalityBelow: 0
+  taperFromLoop: 0
+  silentFromLoop: 0
+  lines:
+  - Looking around, I see nothing at first, which is where every good look begins.
+  - I start at one corner and work outward, the way he taught me to read a cracked
+    stone.
+  - I stop, and take the measure of the place.
+  - Slowly, then. Nothing here rewards haste.
+  - I look around. Nothing at first. Then less than nothing, which is interesting.
+  - I walk the edges before the middle. Edges tell you what a room is for.
+  - I set myself to learn this place. It does not care to be learned.
+  - I let my eyes go where they like for a while. They are better at this than I
+    am.
+  - I stand quite still and let the room show itself. Rooms, like children, confess
+    to the patient.
+  - First the ceiling. Nobody looks at ceilings, which makes them the best place
+    to hide things.
+  - I note the doors, then the frames, then anything that should not be here.
+  - I look the room over the way I would a house before signing for it.
+  - I begin with what I can touch. This place lies to the eye.
+  - I take a slow turn about the room, as though I were at a dull party.
+  - I start where I came in. It is the only part of the room I trust.

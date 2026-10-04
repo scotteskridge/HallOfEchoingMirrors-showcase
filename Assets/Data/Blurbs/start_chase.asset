@@ -1,0 +1,51 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0e696aadb90452947a6f52d36af651f0, type: 3}
+  m_Name: start_chase
+  m_EditorClassIdentifier: HallOfEchoingMirrors::HallOfEchoingMirrors.Core.BlurbBucket
+  _id: 6e86f00be0d905a4db45e44bc8782a3b
+  bucketId: start_chase
+  enabled: 1
+  description: The chase in loop 1. Only while chasing Roland.
+  priority: 30
+  chance: 1
+  cooldownSeconds: 0
+  moment: 1
+  activities: 0
+  tasks:
+  - {fileID: 11400000, guid: 13d3cca25b6fd8b4c8743eed89534253, type: 2}
+  topics: 
+  rooms: []
+  roomKinds: 
+  fromLoop: 0
+  toLoop: 1
+  needsFlipped: []
+  endsWhenFlipped: []
+  needsHeld: []
+  needsNotHeld: []
+  vitalityBelow: 0
+  taperFromLoop: 0
+  silentFromLoop: 0
+  lines:
+  - I run. There is no other word for it and no time to find one.
+  - I begin chasing, but my good sense has not finished clearing its throat.
+  - He is too far ahead. I start after him anyway.
+  - I run, and the hall lengthens to meet me.
+  - Every instinct I own says slow down. I do not listen to a single one.
+  - I call his name once, then save my breath for running.
+  - His coat goes round a corner. I go round it after him, and there is more corridor.
+  - I have not run like this since Evercrest, and I was twenty then.
+  - The thing in his coat never hurries. It doesn't need to.
+  - I keep him in sight. That is the whole plan, and it is not much of one.
+  - My shoes were not made for this. Neither, frankly, was I.
+  - Roland looks back once. I run faster, and the hall stretches to suit me.
+  - Frame, frame, frame. I stop seeing them and look only at his back.

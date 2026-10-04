@@ -1,0 +1,32 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 315c27de9a194d54796a1ac6d2497658, type: 3}
+  m_Name: TheManaStone
+  m_EditorClassIdentifier: HallOfEchoingMirrors::HallOfEchoingMirrors.Core.SwitchDefinition
+  _id: dd3da0637510ab947bba5255df6e9dd0
+  displayName: The Mana Stone
+  trigger: 3
+  triggerTask: {fileID: 0}
+  requiredTasks: []
+  triggerAttribute: 2
+  triggerLevel: 1
+  resourceToHold: {fileID: 11400000, guid: ead6b2c5b3ae57e4cafc5c3e43eab497, type: 2}
+  triggerAmount: 1
+  roomToExplore: {fileID: 0}
+  explorePercent: 100
+  unlocksTasks: []
+  locksTasks:
+  - {fileID: 11400000, guid: c02944b0aabefb7429f2a75268a05f36, type: 2}
+  unlocksPools: 
+  opensWays: []
+  closesWays: []
+  story: {fileID: 11400000, guid: a82ec74468b2d114ba2ab61f4f9e4a60, type: 2}

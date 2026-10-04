@@ -1,0 +1,54 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0e696aadb90452947a6f52d36af651f0, type: 3}
+  m_Name: reaching
+  m_EditorClassIdentifier: HallOfEchoingMirrors::HallOfEchoingMirrors.Core.BlurbBucket
+  _id: d5f0078657b95764bb52ba09cc4dbd52
+  bucketId: reaching
+  enabled: 1
+  description: Muscle memory failing. She reaches for a hue that is not there.
+  priority: 30
+  chance: 0.5
+  cooldownSeconds: 0
+  moment: 0
+  activities: 0
+  tasks: []
+  topics: 
+  rooms: []
+  roomKinds: 
+  fromLoop: 2
+  toLoop: 0
+  needsFlipped: []
+  endsWhenFlipped:
+  - {fileID: 11400000, guid: 3e59431db0c12ad4e987fa75b3f12b8c, type: 2}
+  needsHeld: []
+  needsNotHeld: []
+  vitalityBelow: 0
+  taperFromLoop: 3
+  silentFromLoop: 5
+  lines:
+  - I reach for a colour without deciding to, and close my hand on nothing.
+  - Twenty-one years. You would think the hand would learn.
+  - I reached for amber again. Twenty-one years, and the hand still hasn't been told.
+  - I go to read the room and find I am only looking at it.
+  - A frame catches the light and I move to gather what comes off it. Nothing does.
+  - The threads are there. I can see them. I simply cannot take hold.
+  - It is like putting weight on a stair that is not where the stair was.
+  - I keep opening my hand. I have started noticing that I keep opening my hand.
+  - Something behind my ribs used to be full. I keep checking.
+  - 'He asked me once what gathering felt like. I said: being handed something.'
+  - The girl I was would have panicked by now. I am merely furious, which is progress
+    of a kind.
+  - I know exactly which working opens this. I know all of it. I have nothing to
+    pour in.
+  - There is a name for this in the old texts and I have never needed it before.
+  - I am rubbing my thumb across my fingertips, the way one does in cold.

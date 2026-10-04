@@ -1,0 +1,58 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0e696aadb90452947a6f52d36af651f0, type: 3}
+  m_Name: lab_sealed
+  m_EditorClassIdentifier: HallOfEchoingMirrors::HallOfEchoingMirrors.Core.BlurbBucket
+  _id: 15701c1204a692347a93af3a98f9ca77
+  bucketId: lab_sealed
+  enabled: 1
+  description: At the lab mirror before she can enter it. Loop 4 onward. She needs
+    Roland's ring to get in.
+  priority: 25
+  chance: 1
+  cooldownSeconds: 0
+  moment: 0
+  activities: 0
+  tasks: []
+  topics: 
+  rooms:
+  - {fileID: 11400000, guid: 38371d1a8178e19408cba87e0062495d, type: 2}
+  roomKinds: 
+  fromLoop: 4
+  toLoop: 0
+  needsFlipped:
+  - {fileID: 11400000, guid: 3ae8e2d65d1538c49af2415717aaf2fa, type: 2}
+  endsWhenFlipped:
+  - {fileID: 11400000, guid: 397892fc7e3b8ec4f8fb3bf302aaf087, type: 2}
+  needsHeld: []
+  needsNotHeld:
+  - {fileID: 11400000, guid: 7c1447b7d63c053489974a719deb21bc, type: 2}
+  vitalityBelow: 0
+  taperFromLoop: 0
+  silentFromLoop: 0
+  lines:
+  - The glass will not give. I have put my hand flat on it and felt it decline.
+  - 'Through it: the long bench, the brass instruments, the lamp with the cracked
+    green shade.'
+  - That is our laboratory. That is the night we cut the stone.
+  - I can see the book open on the bench, and the two of us bent over it.
+  - It is not a picture of that night. It is the night, kept here, and shut.
+  - The other mirrors let me through. This one wants a key, and I think I know whose.
+  - He is right there, young, with no idea what is coming.
+  - Everything in that room is exactly where we left it. That should not comfort
+    me.
+  - The lamp in there is lit. Out here, the dark is not.
+  - I knock on the glass, which is absurd, and nothing answers.
+  - Every other mirror gives. This one keeps its door locked from the inside.
+  - I stand at the glass until my palm aches with the cold. It does not change its
+    mind.
+  - Rain runs down the skylight in there. Out here there is no rain at all.

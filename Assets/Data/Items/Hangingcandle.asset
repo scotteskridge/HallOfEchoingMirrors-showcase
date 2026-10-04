@@ -1,0 +1,34 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a032cadcee9e19b43b302dcedfdcf540, type: 3}
+  m_Name: Hangingcandle
+  m_EditorClassIdentifier: HallOfEchoingMirrors::HallOfEchoingMirrors.Core.ResourceDefinition
+  _id: 03d3e3e441aab59429566b049982dc6a
+  displayName: Hanging candle
+  nameInActions: all candles
+  description: A small candle that hangs in the air where she leaves it.
+  kind: 2
+  lasts: 0
+  hideOnceUsed: 0
+  startingMax: 0
+  carryCostPerSecond: 0
+  alwaysCharged: 0
+  goesInPocket: 1
+  addsPockets: 0
+  addsFloorSpace: 0
+  holds: []
+  holdsHowMany: 0
+  restoreVitality: 0
+  restoreSeconds: 2.5
+  drainAtFull: 1
+  countsUpTo: 0
+  unlocksSpeed: 0

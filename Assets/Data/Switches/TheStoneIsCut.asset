@@ -1,0 +1,32 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 315c27de9a194d54796a1ac6d2497658, type: 3}
+  m_Name: TheStoneIsCut
+  m_EditorClassIdentifier: HallOfEchoingMirrors::HallOfEchoingMirrors.Core.SwitchDefinition
+  _id: 42f08147aa020ce4c930a2105bdf606c
+  displayName: The Stone Is Cut
+  trigger: 1
+  triggerTask: {fileID: 0}
+  requiredTasks:
+  - {fileID: 11400000, guid: 37c8673730ba1af448b5669e82ec83d9, type: 2}
+  triggerAttribute: 2
+  triggerLevel: 1
+  resourceToHold: {fileID: 0}
+  triggerAmount: 5
+  roomToExplore: {fileID: 0}
+  explorePercent: 100
+  unlocksTasks: []
+  locksTasks: []
+  unlocksPools: 
+  opensWays: []
+  closesWays: []
+  story: {fileID: 11400000, guid: 83d1f3442e51c79458dea795795b92d5, type: 2}

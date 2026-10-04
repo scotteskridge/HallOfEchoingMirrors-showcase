@@ -1,0 +1,36 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a032cadcee9e19b43b302dcedfdcf540, type: 3}
+  m_Name: Emptyphial
+  m_EditorClassIdentifier: HallOfEchoingMirrors::HallOfEchoingMirrors.Core.ResourceDefinition
+  _id: e17368114970c384795274e31530e500
+  displayName: Pouch of phials
+  nameInActions: 
+  description: A pouch pulled from the glass, with room for ten phials. It hangs
+    at her belt, not in her pockets.
+  kind: 0
+  lasts: 0
+  hideOnceUsed: 0
+  startingMax: 1
+  carryCostPerSecond: 0
+  alwaysCharged: 0
+  goesInPocket: 0
+  addsPockets: 0
+  addsFloorSpace: 0
+  holds:
+  - {fileID: 11400000, guid: c00ceee503a87be468d9ad798dd534ea, type: 2}
+  holdsHowMany: 10
+  restoreVitality: 0
+  restoreSeconds: 2.5
+  drainAtFull: 1
+  countsUpTo: 0
+  unlocksSpeed: 0

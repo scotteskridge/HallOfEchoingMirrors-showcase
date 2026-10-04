@@ -1,0 +1,76 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 519f4f541b1f9894a9f72218ed300513, type: 3}
+  m_Name: OtherLaboratory
+  m_EditorClassIdentifier: HallOfEchoingMirrors::HallOfEchoingMirrors.Core.NodeDefinition
+  _id: 4c436ce34ae4d0547b4aa82d4f950fb5
+  displayName: The Mirror's Laboratory
+  kind: 2
+  hue: 0
+  depth: 4
+  alwaysOnMap: 0
+  ways: []
+  tasks: []
+  exploresToFill: 1
+  foundBySearching:
+  - task: {fileID: 11400000, guid: 7be687b6320e96347b704cd4916966ba, type: 2}
+    atSearched: 34
+    needsPerception: 0
+    afterSwitch: {fileID: 0}
+  - task: {fileID: 11400000, guid: a66009efff6e4594c9bd8c387bfc2be2, type: 2}
+    atSearched: 34
+    needsPerception: 0
+    afterSwitch: {fileID: 0}
+  - task: {fileID: 11400000, guid: ed7e5d4cbfe3dd346b65d847713c8944, type: 2}
+    atSearched: 20
+    needsPerception: 0
+    afterSwitch: {fileID: 0}
+  - task: {fileID: 11400000, guid: c02944b0aabefb7429f2a75268a05f36, type: 2}
+    atSearched: 34
+    needsPerception: 0
+    afterSwitch: {fileID: 0}
+  - task: {fileID: 11400000, guid: 75b66d5a603e50540a41ca45bf5a978a, type: 2}
+    atSearched: 20
+    needsPerception: 0
+    afterSwitch: {fileID: 0}
+  - task: {fileID: 11400000, guid: dac92fe5cdff51445b7443f6822f74a0, type: 2}
+    atSearched: 67
+    needsPerception: 0
+    afterSwitch: {fileID: 0}
+  - task: {fileID: 11400000, guid: f99c1ae920855d34bb1c25223aba6584, type: 2}
+    atSearched: 15
+    needsPerception: 0
+    afterSwitch: {fileID: 0}
+  - task: {fileID: 11400000, guid: 56f1064520939f34cb9204836e2f315d, type: 2}
+    atSearched: 15
+    needsPerception: 0
+    afterSwitch: {fileID: 0}
+  - task: {fileID: 11400000, guid: 089bcf653d3b7d5478804cc322b2b672, type: 2}
+    atSearched: 25
+    needsPerception: 0
+    afterSwitch: {fileID: 11400000, guid: 397892fc7e3b8ec4f8fb3bf302aaf087, type: 2}
+  - task: {fileID: 11400000, guid: 0d092eb1f5abc274f8f14a09598acae2, type: 2}
+    atSearched: 25
+    needsPerception: 0
+    afterSwitch: {fileID: 11400000, guid: 397892fc7e3b8ec4f8fb3bf302aaf087, type: 2}
+  eachExploreGives: []
+  firstEntry: {fileID: 11400000, guid: 35f6171eea6f842428180f09fb8b3832, type: 2}
+  leaving:
+    cost: 1
+    time: 1
+  entering:
+    cost: 1
+    time: 1
+  exploring:
+    cost: 0.25
+    time: 0.25
+  mapPosition: {x: 4.47, y: 0.68}

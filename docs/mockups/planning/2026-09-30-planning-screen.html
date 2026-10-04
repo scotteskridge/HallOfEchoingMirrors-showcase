@@ -1,0 +1,289 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Planning Screen</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=EB+Garamond:wght@500;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+  /* Mock-up only: a proposal for the planning screen (UI plan ui-024a). Same palette and fonts as the main screen. */
+  :root {
+    --ground: #17120d; --panel: #211a13; --panel-2: #2a2118; --line: #4a3a26;
+    --gilt: #c9a24a; --gilt-dim: #7d6634; --text: #eadcc2; --muted: #a8977b; --faint: #6f6250;
+    --route: #e2b85a; --bar: #d6a646; --warn: #e0743a; --heart: #b98bd6;
+  }
+  * { box-sizing: border-box; }
+  body { margin: 0; background: #0d0a07; color: var(--text); font: 15px/1.35 Inter, system-ui, sans-serif; }
+  .page { max-width: 1920px; margin: 0 auto; padding: 16px; }
+  .intro { max-width: 980px; margin: 0 auto 14px; }
+  .intro h1 { font: 700 26px "EB Garamond", serif; margin: 0 0 4px; color: var(--gilt); }
+  .intro p { margin: 4px 0; color: var(--muted); }
+  .switch { display: flex; gap: 8px; flex-wrap: wrap; margin: 10px 0 0; }
+  .switch button { font: 600 14px Inter; padding: 7px 14px; border-radius: 6px; border: 1px solid var(--gilt-dim);
+    background: var(--panel); color: var(--text); cursor: pointer; }
+  .switch button[aria-pressed="true"] { background: var(--gilt); color: #1b140c; border-color: var(--gilt); }
+  .switch .gap { width: 18px; }
+
+  .viewport { width: 100%; overflow: hidden; }
+  .frame { width: 1920px; height: 1080px; transform-origin: top left; position: relative; overflow: hidden;
+    background: radial-gradient(ellipse at 50% 55%, #3a2c1d 0%, #21180f 55%, #100b07 100%); border: 1px solid var(--line); }
+
+  /* ---------- Map: full height, no bars ---------- */
+  .map { position: absolute; left: 0; top: 0; bottom: 0; right: 480px; }
+  .map svg { width: 100%; height: 100%; }
+  .title { position: absolute; left: 150px; top: 22px; }
+  .title h1 { margin: 0; font: 700 34px "EB Garamond", serif; color: var(--gilt); }
+  .title p { margin: 2px 0 0; color: var(--muted); font-size: 14px; }
+  .spare { position: absolute; left: 150px; top: 100px; width: 270px; padding: 10px 12px; border: 1px dashed var(--gilt-dim); border-radius: 6px;
+    color: var(--faint); font-size: 12.5px; }
+  .spare b { color: var(--muted); }
+
+  /* By-heart labels under each room, drawn in HTML so they can carry tooltips later */
+  .tag { position: absolute; width: 190px; margin-left: -95px; text-align: center; font-size: 12.5px; line-height: 1.3; color: var(--muted); }
+  .tag .h { display: inline-block; padding: 1px 8px; border-radius: 10px; border: 1px solid var(--line); background: rgba(23,18,13,.85); }
+  .tag .h.done { color: #1b140c; background: var(--heart); border-color: var(--heart); font-weight: 600; }
+  .tag .h.some { color: var(--text); }
+  .tag .spd { display: block; color: var(--faint); font-size: 11.5px; margin-top: 2px; }
+  .tag .spd::before { content: "speed "; }
+
+  /* Popover, as on the main screen */
+  .popover { position: absolute; width: 400px; background: var(--panel); border: 1px solid var(--gilt); border-radius: 6px;
+    box-shadow: 0 8px 30px rgba(0,0,0,.6); padding: 12px 14px; z-index: 6; }
+  .popover h3 { margin: 0; font: 700 21px "EB Garamond", serif; }
+  .popover .known { margin: 3px 0 0; font-size: 13px; color: var(--heart); }
+  .popover .where { margin: 4px 0 8px; font-size: 13px; color: var(--route); }
+  .sec { font-size: 12px; text-transform: uppercase; letter-spacing: .06em; color: var(--faint); margin: 8px 0 4px; }
+  .act { display: flex; align-items: center; gap: 8px; padding: 6px 8px; border-radius: 4px; background: var(--panel-2); margin-bottom: 4px; font-size: 14.5px; }
+  .act .t { flex: 1; } .act .d { color: var(--muted); font-size: 13px; }
+  .play, .sched { width: 28px; height: 24px; border-radius: 4px; display: grid; place-items: center; font-weight: 700; font-size: 13px; }
+  .play { background: #3a2d20; color: var(--faint); border: 1px solid var(--line); opacity: .5; }
+  .sched { background: var(--gilt); color: #1b140c; }
+
+  /* ---------- Candles: two on the outer sides, light and flickering shadow ---------- */
+  .candle { position: absolute; bottom: 60px; width: 60px; height: 250px; z-index: 3; pointer-events: none; }
+  .candle.l { left: 46px; } .candle.r { right: 540px; }
+  .candle .stick { position: absolute; bottom: 0; left: 12px; width: 36px; height: 12px; border-radius: 6px; background: #5b4a30; }
+  .candle .wax { position: absolute; bottom: 10px; left: 18px; width: 24px; height: 150px; border-radius: 4px 4px 2px 2px;
+    background: linear-gradient(90deg,#c9b98d,#efe3bf 45%,#b8a679); }
+  .candle .flame { position: absolute; bottom: 158px; left: 20px; width: 20px; height: 42px; border-radius: 50% 50% 50% 50% / 62% 62% 38% 38%;
+    background: radial-gradient(ellipse at 50% 70%, #fff7d0 0%, #ffd26a 45%, #f08a2a 80%, transparent 100%);
+    transform-origin: 50% 100%; filter: blur(.6px); animation: sway 1.9s ease-in-out infinite; }
+  .candle.r .flame { animation-duration: 2.3s; animation-delay: -.8s; }
+  @keyframes sway { 0%,100% { transform: rotate(-3deg) scaleY(1); } 30% { transform: rotate(2deg) scaleY(1.1); } 60% { transform: rotate(-1deg) scaleY(.92); } }
+  /* Light pool: opacity driven by JS so the two candles flicker out of step */
+  .glow { position: absolute; top: 0; bottom: 0; width: 900px; z-index: 2; pointer-events: none; mix-blend-mode: screen; opacity: var(--f, .7); }
+  .glow.l { left: -260px; background: radial-gradient(ellipse at 30% 78%, rgba(255,190,90,.34) 0%, rgba(255,150,60,.12) 35%, transparent 65%); }
+  .glow.r { right: 480px; margin-right: -640px; background: radial-gradient(ellipse at 70% 78%, rgba(255,190,90,.34) 0%, rgba(255,150,60,.12) 35%, transparent 65%); }
+  /* Shadows: a dark vignette that breathes opposite to the light, plus mirrors' drop shadows that lean away from each candle */
+  .dark { position: absolute; inset: 0; z-index: 2; pointer-events: none; background: radial-gradient(ellipse at 50% 45%, transparent 35%, rgba(0,0,0,.55) 100%); opacity: var(--d, .8); }
+  .mirror { filter: drop-shadow(var(--sx, 6px) 8px 8px rgba(0,0,0,.55)); }
+  .candle-note { position: absolute; left: 0; bottom: 0; width: 100%; }
+
+  /* ---------- Queue column, full height ---------- */
+  .queue { position: absolute; top: 0; bottom: 0; right: 0; width: 480px; background: var(--panel); border-left: 1px solid var(--gilt-dim);
+    display: flex; flex-direction: column; z-index: 4; }
+  .qhead { padding: 16px 16px 10px; border-bottom: 1px solid var(--line); }
+  .qhead h2 { margin: 0; font: 700 26px "EB Garamond", serif; color: var(--gilt); display: flex; align-items: baseline; gap: 10px; }
+  .qhead h2 small { font: 500 13px Inter; color: var(--muted); }
+  .qhead .clear { margin-left: auto; font: 600 12.5px Inter; color: var(--muted); border: 1px solid var(--line); border-radius: 5px; padding: 4px 9px; background: var(--panel-2); }
+  .qlist { flex: 1; overflow: hidden; padding: 12px 12px 0; }
+  .hint { color: var(--muted); font-style: italic; padding: 30px 18px; text-align: center; border: 1px dashed var(--line); border-radius: 6px; }
+
+  .stop { border: 1px solid var(--line); border-radius: 6px; margin-bottom: 9px; background: rgba(0,0,0,.18); }
+  .stop.heart { border-color: #5b476d; }
+  .stophead { display: flex; align-items: center; gap: 8px; padding: 7px 10px; font: 700 17px "EB Garamond", serif; cursor: grab; }
+  .num { width: 22px; height: 22px; border-radius: 50%; background: var(--gilt); color: #1b140c; font: 700 12px Inter; display: grid; place-items: center; flex: none; }
+  .stophead .meta { margin-left: auto; font: 500 12.5px Inter; color: var(--muted); }
+  .stophead .badge { font: 600 11px Inter; letter-spacing: .05em; text-transform: uppercase; color: #1b140c; background: var(--heart); padding: 1px 7px; border-radius: 9px; }
+  .stophead .fold { font: 600 12px Inter; color: var(--text); border: 1px solid var(--gilt-dim); background: var(--panel-2); border-radius: 4px; padding: 2px 8px; cursor: pointer; }
+  .stophead .rm, .qrow .rm { color: var(--faint); font-size: 13px; }
+  .warn { color: var(--warn); font-size: 15px; cursor: help; }
+  .qrow { display: flex; align-items: center; gap: 8px; padding: 5px 10px 5px 14px; border-top: 1px solid rgba(74,58,38,.55); font-size: 14px; }
+  .qrow .grip { color: var(--faint); cursor: grab; } .qrow .t { flex: 1; } .qrow .x { color: var(--muted); font-size: 12.5px; }
+  .qrow.bad { background: rgba(224,116,58,.10); }
+  .reasonline { padding: 0 10px 6px 34px; font-size: 12px; color: var(--warn); }
+  /* Count stepper: placeholder for a not-yet-designed rule */
+  .step { display: inline-flex; align-items: center; border: 1px dashed var(--gilt-dim); border-radius: 5px; overflow: hidden; }
+  .step b { width: 22px; text-align: center; background: var(--panel-2); color: var(--gilt); cursor: pointer; }
+  .step span { min-width: 26px; text-align: center; font-weight: 600; color: var(--text); }
+  .qfoot { padding: 12px 16px 16px; border-top: 1px solid var(--line); }
+  .qfoot .sum { font-size: 13px; color: var(--muted); margin-bottom: 10px; }
+  .begin { width: 100%; font: 700 22px "EB Garamond", serif; padding: 12px; border-radius: 7px; border: 1px solid var(--gilt); background: var(--gilt); color: #1b140c; letter-spacing: .03em; }
+
+  /* Callouts and notes */
+  .call { position: absolute; width: 26px; height: 26px; border-radius: 50%; background: #e0493a; color: #fff; font: 700 14px Inter;
+    display: grid; place-items: center; box-shadow: 0 0 0 3px rgba(0,0,0,.5); z-index: 9; }
+  .notes { max-width: 980px; margin: 16px auto 40px; }
+  .notes h2 { font: 700 21px "EB Garamond", serif; color: var(--gilt); margin: 18px 0 6px; }
+  .notes ol, .notes ul { padding-left: 22px; margin: 0; } .notes li { margin: 6px 0; } .notes li b { color: var(--gilt); }
+  .notes p { color: var(--muted); }
+  .hide { display: none !important; }
+</style>
+</head>
+<body>
+<div class="page">
+  <div class="intro">
+    <h1>Planning screen</h1>
+    <p>Proposal for UI plan ui-024a, drawn at 1920×1080. The main screen with the top bar and Story box removed: the map and the queue take the whole screen. Red numbers match the notes below the picture. The candles flicker for real here; in the game they would be a sprite or two and a light.</p>
+    <div class="switch" role="group" aria-label="State">
+      <button id="sNone" aria-pressed="false">Nothing carried</button>
+      <button id="sFold" aria-pressed="true">Two blocks, folded</button>
+      <button id="sOpen" aria-pressed="false">A block unfolded (warning, counts)</button>
+      <span class="gap"></span>
+      <button id="pOn" aria-pressed="true">Popover shown</button>
+      <button id="cOn" aria-pressed="true">Candles on</button>
+    </div>
+  </div>
+
+  <div class="viewport" id="vp">
+  <div class="frame" id="frame">
+
+    <div class="map">
+      <svg viewBox="0 0 1440 1080" preserveAspectRatio="xMidYMid meet" aria-label="Map of the Hall">
+        <defs><linearGradient id="glass" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#3b3127"/><stop offset="1" stop-color="#1b1510"/></linearGradient></defs>
+        <g stroke="#6b5a44" stroke-width="3" fill="none">
+          <path d="M260 600 L 520 600"/><path d="M520 600 L 720 470"/><path d="M520 600 L 720 750"/>
+          <path d="M720 470 L 980 420"/><path d="M980 420 L 1200 400"/>
+        </g>
+        <g font-family="EB Garamond, serif" font-weight="700" font-size="20" fill="#eadcc2" text-anchor="middle">
+          <g class="mirror"><rect x="205" y="530" width="110" height="140" rx="10" fill="url(#glass)" stroke="#c9a24a" stroke-width="3"/><text x="260" y="695">The Smoky Mirror</text></g>
+          <g class="mirror"><rect x="465" y="530" width="110" height="140" rx="10" fill="url(#glass)" stroke="#c9a24a" stroke-width="3"/><text x="520" y="695">A Dark Hall</text></g>
+          <g class="mirror"><rect x="665" y="400" width="110" height="140" rx="10" fill="url(#glass)" stroke="#c9a24a" stroke-width="3"/><text x="720" y="565">The Left Corridor</text></g>
+          <g class="mirror"><rect x="665" y="680" width="110" height="140" rx="10" fill="url(#glass)" stroke="#c9a24a" stroke-width="3"/><text x="720" y="845">The Right Corridor</text></g>
+          <g class="mirror"><rect x="925" y="350" width="110" height="140" rx="10" fill="url(#glass)" stroke="#c9a24a" stroke-width="3"/><text x="980" y="515">The Dark Corridor</text><text x="980" y="537">with Hanging Mirrors</text></g>
+          <g class="mirror"><rect x="1145" y="330" width="110" height="140" rx="10" fill="url(#glass)" stroke="#c9a24a" stroke-width="3"/><text x="1200" y="495">The Mirror's</text><text x="1200" y="517">Laboratory</text></g>
+        </g>
+        <!-- a violet ring on rooms known by heart -->
+        <g fill="none" stroke="#b98bd6" stroke-width="2.5" stroke-dasharray="3 5">
+          <rect x="199" y="524" width="122" height="152" rx="14"/><rect x="459" y="524" width="122" height="152" rx="14"/>
+        </g>
+      </svg>
+
+      <div class="title"><h1>Plan the next run</h1><p>Loop 15 · nothing has started yet</p></div>
+      <div class="spare"><b>Spare slot.</b> Room for a run-ahead strip (starting vitality, stats, an estimate of the plan) if playtests want one. Not decided.</div>
+
+      <!-- By-heart tags positioned under each room (map is 1440 wide and fills the area) -->
+      <div class="tag" style="left:260px;top:730px"><span class="h done">Known by heart</span><span class="spd">1.6× (3 runs)</span></div>
+      <div class="tag" style="left:520px;top:730px"><span class="h done">Known by heart</span><span class="spd">1.9× (5 runs)</span></div>
+      <div class="tag" style="left:720px;top:600px"><span class="h some">Worked here in 2 runs</span><br>by heart at 4<span class="spd">1.2×</span></div>
+      <div class="tag" style="left:720px;top:880px"><span class="h some">Worked here in 1 run</span><br>by heart at 4<span class="spd">1.0×</span></div>
+      <div class="tag" style="left:980px;top:570px"><span class="h">Not worked yet</span><span class="spd">1.0×</span></div>
+      <div class="tag" style="left:1200px;top:550px"><span class="h some">Worked here in 3 runs</span><br>by heart at 4<span class="spd">1.4×</span></div>
+
+      <div class="popover" id="pop" style="left:800px;top:640px">
+        <h3>The Left Corridor</h3>
+        <div class="known">Worked here in 2 runs (by heart at 4)</div>
+        <div class="where">Adds to the end of the plan. Not on the route yet: schedule adds the walk first.</div>
+        <div class="sec">Here</div>
+        <div class="act"><span class="t">Search the Left Corridor</span><span class="d">2.4s</span><span class="play">▶</span><span class="sched">+</span></div>
+        <div class="act"><span class="t">Light the hanging candles</span><span class="d">1.2s ×5</span><span class="play">▶</span><span class="sched">+</span></div>
+        <div class="sec">Ways on</div>
+        <div class="act"><span class="t">A Dark Hall</span><span class="d">6.1s</span><span class="play">▶</span><span class="sched">+</span></div>
+      </div>
+    </div>
+
+    <!-- Candles -->
+    <div class="glow l" id="glowL"></div><div class="glow r" id="glowR"></div><div class="dark" id="dark"></div>
+    <div class="candle l" id="candL"><div class="flame"></div><div class="wax"></div><div class="stick"></div></div>
+    <div class="candle r" id="candR"><div class="flame"></div><div class="wax"></div><div class="stick"></div></div>
+
+    <!-- Queue column -->
+    <div class="queue">
+      <div class="qhead"><h2>Plan <small id="qcount">8 actions carried</small><button class="clear">Clear plan</button></h2></div>
+      <div class="qlist" id="qlist"></div>
+      <div class="qfoot"><div class="sum" id="qsum">Ends in The Mirror's Laboratory</div><button class="begin" title="Start the run with this plan">Begin</button></div>
+    </div>
+
+    <span class="call" style="left:150px;top:74px">1</span>
+    <span class="call" style="left:130px;top:100px">6</span>
+    <span class="call" style="left:150px;top:722px">2</span>
+    <span class="call" style="left:1455px;top:120px">3</span>
+    <span class="call" style="left:1210px;top:625px">4</span>
+    <span class="call" style="left:345px;top:750px">5</span>
+    <span class="call" style="left:1830px;top:1000px">7</span>
+  </div>
+  </div>
+
+  <div class="notes">
+    <h2>What it shows</h2>
+    <ol>
+      <li><b>Its own screen, the main screen's cousin.</b> No top bar, no Story box: the map runs the full height and the queue column the full right edge. Same map, popovers, cards, fonts and palette, so nothing is built twice. It is a title, not a bar.</li>
+      <li><b>By-heart progress on every room</b> under its name: <em>Known by heart</em> (violet, with a dotted violet ring on the mirror), <em>Worked here in N runs, by heart at 4</em>, or <em>Not worked yet</em>. The room popover repeats it.</li>
+      <li><b>The carried plan</b> as one folded block per room ("A Dark Hall · by heart · 5 actions"). The fold button opens a block into its actions (see the third state). Player-added stops look as they do on the main screen. Drag to reorder, ✕ removes a block or an entry, <em>Clear plan</em> empties everything.</li>
+      <li><b>Adding actions</b> is the popover's <b>+</b>, as in play: appended after the last stop, with the walk added if the room is off the route. Ways and scheduling ahead work the same. ▶ is greyed because nothing is running.</li>
+      <li><b>Room speed</b> line under each room (numbers made up here; the game shows plan 025's real speed and the runs to its next step).</li>
+      <li><b>Spare slot</b> for a run-ahead strip, not chosen yet.</li>
+      <li><b>Begin</b> at the bottom of the queue: the only way out. The plan is saved, so quitting here keeps it.</li>
+    </ol>
+    <h2>In the third state</h2>
+    <ul>
+      <li><b>Warning</b>: an orange ⚠ on a block and entry that would be refused, with the reason ("needs a candle she won't have by then").</li>
+      <li><b>Count stepper</b> (<b>− 2 +</b>, dashed) on an entry that only wants doing some number of times. A <em>placeholder</em>: no such verb exists in Act I yet, and how it counts against ways and by-heart blocks is undecided.</li>
+    </ul>
+    <h2>Candles</h2>
+    <p>Two candles at the outer edges of the map, each a flame that sways, a pool of warm light and a dark edge that breathes the other way, plus the mirrors' shadows leaning away from the nearest flame. Purely decoration: nothing in the simulation depends on it.</p>
+  </div>
+</div>
+
+<script>
+  const frame = document.getElementById('frame'), vp = document.getElementById('vp');
+  function fit() { const s = Math.min(1, vp.clientWidth / 1920); frame.style.transform = `scale(${s})`; vp.style.height = (1080 * s) + 'px'; }
+  addEventListener('resize', fit); fit();
+
+  // ---- The queue in three states ----
+  const rm = '<span class="rm">✕</span>';
+  const foldBtn = t => `<span class="fold">${t}</span>`;
+  const STATES = {
+    none: { count: 'nothing carried', sum: 'Nothing queued yet',
+      html: '<div class="hint">Nothing is carried over. Click a room on the map and press + to plan the run, or press Begin to start with an empty queue.</div>' },
+    fold: { count: '8 actions carried', sum: 'Ends in The Mirror\'s Laboratory',
+      html: `
+      <div class="stop heart"><div class="stophead"><span class="num">1</span>The Smoky Mirror <span class="badge">by heart</span><span class="meta">3 actions</span>${foldBtn('Unfold')}${rm}</div></div>
+      <div class="stop heart"><div class="stophead"><span class="num">2</span>A Dark Hall <span class="badge">by heart</span><span class="meta">5 actions</span>${foldBtn('Unfold')}${rm}</div></div>
+      <div class="stop"><div class="stophead"><span class="num">3</span>The Left Corridor<span class="meta">walk 7.0s</span>${rm}</div>
+        <div class="qrow"><span class="grip">⋮⋮</span><span class="t">Search the Left Corridor</span><span class="x">until searched</span>${rm}</div></div>` },
+    open: { count: '10 actions carried', sum: 'Ends in The Left Corridor · 1 warning',
+      html: `
+      <div class="stop heart"><div class="stophead"><span class="num">1</span>The Smoky Mirror <span class="badge">by heart</span><span class="meta">3 actions</span>${foldBtn('Unfold')}${rm}</div></div>
+      <div class="stop heart"><div class="stophead"><span class="num">2</span>A Dark Hall <span class="badge">by heart</span><span class="meta">5 actions</span>${foldBtn('Fold')}${rm}</div>
+        <div class="qrow"><span class="grip">⋮⋮</span><span class="t">Search A Dark Hall</span><span class="x">until searched</span>${rm}</div>
+        <div class="qrow"><span class="grip">⋮⋮</span><span class="t">Gather a wisp</span><span class="step"><b>−</b><span>2</span><b>+</b></span>${rm}</div>
+        <div class="qrow"><span class="grip">⋮⋮</span><span class="t">Take the satchel</span><span class="x">1.0s</span>${rm}</div>
+        <div class="qrow"><span class="grip">⋮⋮</span><span class="t">Instantiate a candle</span><span class="step"><b>−</b><span>5</span><b>+</b></span>${rm}</div>
+        <div class="qrow"><span class="grip">⋮⋮</span><span class="t">Put down all candles</span><span class="x">0.5s</span>${rm}</div></div>
+      <div class="stop"><div class="stophead"><span class="num">3</span>The Left Corridor<span class="warn" title="Some actions here won't start">⚠</span><span class="meta">walk 7.0s</span>${rm}</div>
+        <div class="qrow bad"><span class="grip">⋮⋮</span><span class="t">Light the hanging candles</span><span class="warn">⚠</span><span class="x">×5</span>${rm}</div>
+        <div class="reasonline">Needs candles; she'll have put them all down by then.</div>
+        <div class="qrow"><span class="grip">⋮⋮</span><span class="t">Search the Left Corridor</span><span class="x">until searched</span>${rm}</div></div>` }
+  };
+  function show(k) {
+    const s = STATES[k];
+    document.getElementById('qlist').innerHTML = s.html;
+    document.getElementById('qcount').textContent = s.count;
+    document.getElementById('qsum').textContent = s.sum;
+    for (const [id, key] of [['sNone','none'],['sFold','fold'],['sOpen','open']]) document.getElementById(id).setAttribute('aria-pressed', key === k);
+  }
+  sNone.onclick = () => show('none'); sFold.onclick = () => show('fold'); sOpen.onclick = () => show('open');
+  show('fold');
+
+  pOn.onclick = () => { const on = pOn.getAttribute('aria-pressed') !== 'true'; pOn.setAttribute('aria-pressed', on); document.getElementById('pop').classList.toggle('hide', !on); };
+
+  // ---- Candles: each flame gets its own random flicker; the light and the dark edge move against each other ----
+  let candles = true;
+  cOn.onclick = () => { candles = !candles; cOn.setAttribute('aria-pressed', candles);
+    for (const id of ['glowL','glowR','dark','candL','candR']) document.getElementById(id).classList.toggle('hide', !candles); };
+  const gl = document.getElementById('glowL'), gr = document.getElementById('glowR'), dk = document.getElementById('dark');
+  let a = .7, b = .7;
+  function flick() {
+    a += (Math.random() * .5 + .45 - a) * .35; b += (Math.random() * .5 + .45 - b) * .35;
+    gl.style.setProperty('--f', a.toFixed(2)); gr.style.setProperty('--f', b.toFixed(2));
+    dk.style.setProperty('--d', (1.25 - (a + b) / 2).toFixed(2));
+    // Shadows lean away from whichever candle is brighter
+    frame.style.setProperty('--sx', ((b - a) * 22).toFixed(1) + 'px');
+    setTimeout(flick, 70 + Math.random() * 110);
+  }
+  flick();
+</script>
+</body>
+</html>

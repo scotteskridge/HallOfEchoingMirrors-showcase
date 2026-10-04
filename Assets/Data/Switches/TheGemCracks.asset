@@ -1,0 +1,34 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 315c27de9a194d54796a1ac6d2497658, type: 3}
+  m_Name: TheGemCracks
+  m_EditorClassIdentifier: HallOfEchoingMirrors::HallOfEchoingMirrors.Core.SwitchDefinition
+  _id: 4a2bf3d7003db8440b9432bcdb73656c
+  displayName: The Gem Cracks
+  trigger: 0
+  triggerTask: {fileID: 11400000, guid: 0d092eb1f5abc274f8f14a09598acae2, type: 2}
+  requiredTasks: []
+  triggerAttribute: 2
+  triggerLevel: 1
+  resourceToHold: {fileID: 0}
+  triggerAmount: 5
+  roomToExplore: {fileID: 0}
+  explorePercent: 100
+  unlocksTasks: []
+  locksTasks: []
+  unlocksPools: 
+  wakesAttributes: 
+  opensWays: []
+  closesWays: []
+  waivesWayNeeds: []
+  reopensSearch: []
+  story: {fileID: 11400000, guid: 7cf9965d797dd5a44b5f943b57f0d605, type: 2}

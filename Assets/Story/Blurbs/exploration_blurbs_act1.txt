@@ -1,0 +1,258 @@
+# EXPLORATION BLURBS - ACT I
+# Hall of Echoing Mirrors
+#
+# FORMAT
+#   Lines beginning with # are comments and should be skipped by the parser.
+#   Lines beginning with ## open a bucket. Everything after is that bucket's content
+#   until the next ## line.
+#   One blurb per line. Blank lines are ignored.
+#
+# USAGE
+#   The script picks a BUCKET first, based on current game state, then a random
+#   line from within it. Never pull at random across the whole file - a line about
+#   the dark cannot fire before she has found the dark.
+#
+#   Do not repeat a line until the bucket is exhausted. Shuffle the bucket, walk it,
+#   reshuffle. Pure random repeats within four or five pulls and the player notices.
+#
+# VOICE (rewritten 2026-09-29 against DesignNotes/Writing Guides/ProseVoiceGuide.md)
+#   Clara at 41, first person, present tense. Twenty-one years after the book.
+#   NOT frail - she is at the height of her practice and knows exactly what
+#   everything costs. Dry where she was once earnest. Impatient rather than
+#   frightened. She has a household and children waiting, and the hall is an
+#   interruption she intends to survive. She does not explain the magic.
+#   Every line is 20 words or fewer.
+#
+# COUNTS
+#   Roughly 12-19 per major bucket. Aim for 30-40 each before ship so that a full
+#   playthrough does not exhaust them. These are a starting set to write against.
+
+
+## hall_corridor
+# The mirrored corridor. Fires on traverse and search, loops 2-3, before the dark is found.
+
+The frames go on. I have stopped counting them, which I suspect is what they want.
+Every glass shows a room I almost know. The lamp is wrong. The lamp is always wrong.
+My shoes make no sound on this floor. I find that rude.
+Corridors narrow, or widen, or end. This one just goes on.
+In the third frame a chair is pushed back from a desk. In the fourth, it is pushed back further.
+One mirror shows a kitchen, a kettle boiling. It has been boiling for some time.
+Dust, here. Dust means something settled, or something stopped.
+The light comes from nowhere I can find. It is the colour of a room with the curtains drawn.
+I keep catching movement at the edge of my eye and turning to find only my own coat.
+Somewhere behind me a door closes. I did not pass a door.
+The glass is cold when I touch it, and stays cold after I take my hand away.
+Roland would have measured this and been happier for it.
+Twenty-one years of practice and the first thing this place does is take it all off me.
+The frames are hung at eye level. Somebody hung them. I do not care for that.
+I have not been anybody's student in twenty-one years. The hall does not seem to have been told.
+I left bread rising. I keep returning to that, which tells me something about my nerve.
+I count seven steps between two frames, then eight. I stop counting.
+Every frame shows a room somebody left in a hurry. I am beginning to take it personally.
+The children will be home by four. The hall has not been told that either.
+A hat stand stands in one frame. No hats. It looks embarrassed about that.
+The clock in one frame says ten past four. So does the next. So does the next.
+I tap the glass with a fingernail. It answers a moment late.
+The floor is polished and nobody polishes it. I would like a word with the staff.
+There is a draught, and no door for it to come from.
+Roland always said a place this tidy was hiding something. He was usually right, and insufferable about it.
+Someone has left a glove on a windowsill in the glass. Left hand, good leather. Not mine.
+A frame shows a hallway very like my own. I do not slow down.
+The corridor smells of beeswax and cold tea. A house well kept, and lately left.
+Every mirror wants me to look at it. I look at the floor, which has manners.
+
+
+## hall_dark
+# The open dark with the floating mirrors. Unlocks after loop 2's discovery.
+
+The walls have gone. The mirrors remain, turning on nothing, like leaves that forgot to fall.
+There is no floor here and I am walking on it regardless.
+Hundreds of mirrors, each looking out on somewhere that is not here.
+A drawing room with the curtains shut against a summer that never ended.
+A stair goes up into cloud. Nothing at the top of it that I can see.
+One mirror shows a garden I planted. The roses are wrong by a season.
+They all turn slowly, and none of them turn together.
+I have begun to think of them as windows, which is a comfort and probably a mistake.
+The dark is patient. I am not, and it knows.
+Some of these are mine, some are his. I can tell which at a glance, and wish I couldn't.
+One mirror holds me at twenty, very sure of herself. I do not look twice.
+If I look too long at one, the others seem to lean.
+No sound reaches here except my own breathing, and that only sometimes.
+Somewhere in all this glass there is a way home. I am not looking for it yet.
+I keep my eyes on the middle distance. The mirrors at the edges are the ones that look back.
+I turn all the way round. Every direction is equally far from anywhere.
+A mirror drifts past close enough to touch. I don't. It has the look of something that bites.
+Rain runs down the inside of one frame. It is quite dry in here.
+In one mirror the lamps are lit. In the next, they never were.
+One shows a bakery I have never visited, and I am hungry regardless.
+Far off, a single frame catches light and loses it. I mark where.
+No draught, no smell, no edges. I would give a great deal for a wall.
+I hold my own elbow for company and keep walking.
+A mirror turns to show its back. Black, and no less watchful.
+The near mirrors are dark and the far ones bright. I have decided that is a matter of temperature.
+A mirror drifts by showing a street in snow. My breath does not fog.
+I pick a bright frame and walk towards it. It keeps its distance.
+The quiet here is heavy. I carry it like a wet coat.
+One mirror shows a nursery, the cot empty and neatly made. I keep walking.
+I say something aloud, just to hear it. The dark lets it go nowhere.
+A child's shoe lies in one frame, laces undone. I make myself walk on.
+In one mirror a table is laid for four. I only ever count three.
+
+
+## searching
+# Fires on search actions in any hall node.
+
+Nothing. A frame, a wall, a length of floor that goes on being floor.
+I run my hand along the moulding. Real wood. Somebody carved this.
+There is a seam where two corridors were joined badly.
+I find a coat button, brass and quite ordinary. I leave it.
+The frames are not all the same size. I do not yet know if that matters.
+Behind one glass, a room has been left in the middle of being tidied.
+Something has been here before me and was not careful.
+I search for a long time and find my own frown looking back.
+There is a smell of cold iron, faint, and then not there at all.
+The dust is thinner in a line down the middle of the hall. Somebody walks here.
+I check behind the frame and under it. The frame is unimpressed.
+I find a bent hairpin. Not mine. I put it back.
+I lift the corner of a rug that isn't there. My hands have habits.
+Nothing here. The nothing is very thorough.
+I tap the moulding for a hollow. Solid all the way along, and smug about it.
+A scrap of blue wool is caught on a splinter. I leave it hanging.
+I check the skirting, the frame and the glass. Then the skirting again, out of spite.
+My fingers come away clean. That is suspicious in a place this old.
+Two scratches run side by side across the floor, where something was dragged. Long ago, or lately.
+I hold my breath and listen. The Hall listens back.
+I turn over a loose tile. Underneath, a smaller tile.
+A chest of drawers stands in the glass. I reach for the top drawer and find only glass.
+A pressed flower is wedged in the moulding. It crumbles when I touch it.
+One frame hangs crooked. I straighten it. Nothing happens, but I feel better.
+Under the frame there is a line of fine grey dust, like ash.
+I find a silver thimble, worn through at the tip. I leave it on the frame.
+The glass is scratched in one corner, as if someone tried to write something.
+I press each panel in turn. The seventh gives slightly, then thinks better of it.
+I search until my eyes ache and the frames start repeating themselves.
+Something small rolls away from my foot and is gone before I see what.
+A small wooden toy, worn smooth, in a frame that isn't ours. I put it back.
+
+
+## ring_present
+# The ring is visible at its node and she has not taken it. Loops 2-3.
+
+A ring waits just behind the glass of one frame, close enough to touch. I know the setting.
+I will have to drop something to make room in my pockets for this.
+It is his. Of course it is his. The hall does not leave things by accident.
+An empty ring, the stone gone dull. He would have said the word "uncharged" and meant nothing by it.
+It has not moved since I last came this way. Nothing here moves unless it wants to be followed.
+He took it off in my presence once, before he had any reason to. I know what that cost him.
+A hundred committee meetings, and he turned that ring through every one of them.
+The mirror is offering it to me. I have learned to ask what mirrors want in return.
+It is the only thing in the Right Corridor that looks as though someone cared for it.
+Taking it means paying for every step afterwards. I have done the sum twice.
+Roland mislaid umbrellas by the dozen and never once his ring. Until now.
+I stop at the frame again. The ring has not moved. Neither, I notice, have I.
+Behind glass, like something in a museum case. He would hate that.
+The claws stand open, waiting for a stone. I have no idea what he meant to put there.
+
+
+## ring_carried
+# While the ring is in hand. These should ache - it is taxing her. Say plainly that it costs her.
+
+The ring weighs nothing, yet every step with it costs me.
+I am tiring faster with it in my hand, and I know exactly why.
+It is warm, which an empty stone has no business being.
+The longer I hold it, the less of me there is to hold it with.
+With it in my hand I feel him more clearly. That is precisely the trouble.
+It wants something. It was built to want something.
+Twice now I have caught myself turning it. He used to do that.
+The hall is quieter while I hold it. I do not trust that.
+Something had to leave my pockets to make room for it. I have stopped asking what.
+He carried this for years and never once complained. I am beginning to resent that.
+Every step with the ring is a step I pay for twice.
+I could put it down and stop paying. I keep walking.
+I have carried a sleeping child up three flights with less effort than this ring.
+It grows heavier the further I take it. Not in the hand. Everywhere else.
+The open claws catch on my sleeve. Even the ring is impatient.
+
+
+## ring_refused
+# After she has put it down. Fires occasionally in the corridor.
+
+I left it where it lay. I could not spare what it was taking.
+The ring is behind me somewhere. I have thought about it more than I would like.
+I told myself it was only a ring. I have told myself worse.
+It is only a ring. I will go back for it when I can afford it.
+Roland would have told me to leave it. Roland would also have gone back for it.
+Putting it down was the sensible thing. I have never liked the sensible thing.
+My hand feels lighter, and so does the rest of me. I still look back.
+I will need it later. I am almost sure I will need it later.
+The drain eased the moment I set it down. So did my temper.
+Twenty-one years married, and I have just left his ring on a floor.
+I know exactly where it is. That is not the same as having it.
+It will keep. The Hall keeps everything; that is rather the problem.
+
+
+## low_vitality
+# Fires when vitality drops below a threshold. Should feel like effort, not panic.
+
+My hands have gone cold and are staying that way.
+I am slower now. I notice it in the turns.
+The tiredness is in my chest, not my legs. I felt it once before, beside the reservoir.
+Something is being taken, and I can feel where from.
+Not long now. I have learned roughly how long.
+I have been emptied before, though never by anything that meant it.
+I should turn back. I am aware that I should turn back.
+The frames have begun to blur, and I do not think the fault is mine.
+I would give a great deal for a hot cup of tea and a chair.
+My vitality is running low. I can hear it, like a tap in another room.
+My knees have started making decisions without me.
+I lean on a frame for a moment. Only a moment.
+I am running low, and the Hall is in no hurry at all.
+My breath comes short on the easy stretches now.
+I have a little left. I intend to spend it well.
+My sight greys at the edges, the way it did after each confinement.
+Every step costs a little more than the last. I am keeping count.
+My hands are shaking. I put them in my pockets, where they are nobody's business.
+When I blink, my eyes take a moment longer to open again.
+I feel thin, like a letter held up to the light.
+If I stop now, someone at home goes on waiting. I don't stop.
+I promised them I would bring him back. I am rationing what is left.
+
+
+## lab_sealed
+# At the lab mirror before she can enter it. Loop 4 onward. She needs Roland's ring to get in.
+
+The glass will not give. I have put my hand flat on it and felt it decline.
+Through it: the long bench, the brass instruments, the lamp with the cracked green shade.
+That is our laboratory. That is the night we cut the stone.
+I can see the book open on the bench, and the two of us bent over it.
+It is not a picture of that night. It is the night, kept here, and shut.
+The other mirrors let me through. This one wants a key, and I think I know whose.
+He is right there, young, with no idea what is coming.
+Everything in that room is exactly where we left it. That should not comfort me.
+The lamp in there is lit. Out here, the dark is not.
+I knock on the glass, which is absurd, and nothing answers.
+Every other mirror gives. This one keeps its door locked from the inside.
+I stand at the glass until my palm aches with the cold. It does not change its mind.
+Rain runs down the skylight in there. Out here there is no rain at all.
+
+
+## reaching
+# Muscle memory failing. She reaches for a hue that is not there.
+# Fires early and often in loops 2-3, then TAPERS - by loop 4 she has mostly
+# stopped reaching. Cut it off entirely once she has crafted the mirror gem;
+# after that the loss is a fact rather than a discovery.
+
+I reach for a colour without deciding to, and close my hand on nothing.
+Twenty-one years. You would think the hand would learn.
+I reached for amber again. Twenty-one years, and the hand still hasn't been told.
+I go to read the room and find I am only looking at it.
+A frame catches the light and I move to gather what comes off it. Nothing does.
+The threads are there. I can see them. I simply cannot take hold.
+It is like putting weight on a stair that is not where the stair was.
+I keep opening my hand. I have started noticing that I keep opening my hand.
+Something behind my ribs used to be full. I keep checking.
+He asked me once what gathering felt like. I said: being handed something.
+The girl I was would have panicked by now. I am merely furious, which is progress of a kind.
+I know exactly which working opens this. I know all of it. I have nothing to pour in.
+There is a name for this in the old texts and I have never needed it before.
+I am rubbing my thumb across my fingertips, the way one does in cold.

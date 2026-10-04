@@ -1,0 +1,73 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 11630b595a8ffd947ac3987150b4e458, type: 3}
+  m_Name: LoopSettings
+  m_EditorClassIdentifier: Assembly-CSharp::HallOfEchoingMirrors.Core.LoopSettings
+  pauseWhenAWayIsFound: 1
+  vitalityMax: 50
+  vitalityDrainPerSecond: 1
+  drainGrowthPerMinute: 0.4
+  pools:
+  - hue: 1
+    startsUnlocked: 1
+    max: 150
+  - hue: 2
+    startsUnlocked: 1
+    max: 100
+  - hue: 3
+    startsUnlocked: 1
+    max: 25
+  - hue: 4
+    startsUnlocked: 1
+    max: 75
+  - hue: 5
+    startsUnlocked: 1
+    max: 100
+  - hue: 6
+    startsUnlocked: 1
+    max: 90
+  - hue: 7
+    startsUnlocked: 1
+    max: 75
+  chargeActionCosts: 0
+  chargeCarryCosts: 0
+  byHeartRuns: 4
+  fullSpeedRuns: 8
+  roomSpeedCap: 5
+  pocketSlots: 5
+  floorSpace: 10
+  standardTripSeconds: 15
+  roomStep: 1.1
+  xpPerSecondOfTask: 1.5
+  masteryShare: 1
+  xpForFirstLevel: 10
+  masteryXpForFirstLevel: 20
+  xpGrowthPerLevel: 1.085
+  xpMinIncreasePerLevel: 0
+  skillSpeedPerLevel: 1.05
+  skillMasterySpeedPerLevel: 1.01
+  attunementPerLevel: 0.02
+  composureActionCostPerLevel: 0.01
+  composureCarryCostPerLevel: 0.1
+  enduranceXpPerVitalityLost: 0.05
+  composureXpPerSecond: 0.1
+  composureXpPerSecondCarrying: 0.2
+  enduranceBankShare: 0.03
+  enduranceBankPerLevel: 0.01
+  enduranceOverflowPerLevel: 0.5
+  composureDrainGrowthPerLevel: 0.97
+  composureExtraDrainPerLevel: 0.03
+  attunementRestorePerLevel: 0.02
+  asleepAttributes: 0100000002000000030000000400000005000000
+  collapseStatXpShare: 0.5
+  scholarshipLevelsPerExtraStudy: 5
+  statSkillXpPerLevel: 0.05

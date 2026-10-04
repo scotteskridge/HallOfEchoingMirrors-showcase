@@ -1,0 +1,79 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0e696aadb90452947a6f52d36af651f0, type: 3}
+  m_Name: hall_corridor
+  m_EditorClassIdentifier: HallOfEchoingMirrors::HallOfEchoingMirrors.Core.BlurbBucket
+  _id: 719d7e912a8f67e4e90bd70dfd032c06
+  bucketId: hall_corridor
+  enabled: 1
+  description: The mirrored corridor. Fires on traverse and search, loops 2-3, before
+    the dark is found.
+  priority: 20
+  chance: 1
+  cooldownSeconds: 0
+  moment: 0
+  activities: 7
+  tasks: []
+  topics: 
+  rooms: []
+  roomKinds: 00000000
+  fromLoop: 2
+  toLoop: 0
+  needsFlipped: []
+  endsWhenFlipped:
+  - {fileID: 11400000, guid: f8035e0617f75904ab082ffddac2b476, type: 2}
+  needsHeld: []
+  needsNotHeld: []
+  vitalityBelow: 0
+  taperFromLoop: 0
+  silentFromLoop: 0
+  lines:
+  - The frames go on. I have stopped counting them, which I suspect is what they
+    want.
+  - Every glass shows a room I almost know. The lamp is wrong. The lamp is always
+    wrong.
+  - My shoes make no sound on this floor. I find that rude.
+  - Corridors narrow, or widen, or end. This one just goes on.
+  - In the third frame a chair is pushed back from a desk. In the fourth, it is pushed
+    back further.
+  - One mirror shows a kitchen, a kettle boiling. It has been boiling for some time.
+  - Dust, here. Dust means something settled, or something stopped.
+  - The light comes from nowhere I can find. It is the colour of a room with the
+    curtains drawn.
+  - I keep catching movement at the edge of my eye and turning to find only my own
+    coat.
+  - Somewhere behind me a door closes. I did not pass a door.
+  - The glass is cold when I touch it, and stays cold after I take my hand away.
+  - Roland would have measured this and been happier for it.
+  - Twenty-one years of practice and the first thing this place does is take it all
+    off me.
+  - The frames are hung at eye level. Somebody hung them. I do not care for that.
+  - I have not been anybody's student in twenty-one years. The hall does not seem
+    to have been told.
+  - I left bread rising. I keep returning to that, which tells me something about
+    my nerve.
+  - I count seven steps between two frames, then eight. I stop counting.
+  - Every frame shows a room somebody left in a hurry. I am beginning to take it
+    personally.
+  - The children will be home by four. The hall has not been told that either.
+  - A hat stand stands in one frame. No hats. It looks embarrassed about that.
+  - The clock in one frame says ten past four. So does the next. So does the next.
+  - I tap the glass with a fingernail. It answers a moment late.
+  - The floor is polished and nobody polishes it. I would like a word with the staff.
+  - There is a draught, and no door for it to come from.
+  - Roland always said a place this tidy was hiding something. He was usually right,
+    and insufferable about it.
+  - Someone has left a glove on a windowsill in the glass. Left hand, good leather.
+    Not mine.
+  - A frame shows a hallway very like my own. I do not slow down.
+  - The corridor smells of beeswax and cold tea. A house well kept, and lately left.
+  - Every mirror wants me to look at it. I look at the floor, which has manners.

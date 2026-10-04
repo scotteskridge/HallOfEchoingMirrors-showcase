@@ -1,0 +1,20 @@
+{
+    "name": "HallOfEchoingMirrors.Editor",
+    "rootNamespace": "HallOfEchoingMirrors.EditorTools",
+    "references": [
+        "HallOfEchoingMirrors",
+        "UnityEngine.UI",
+        "Unity.TextMeshPro"
+    ],
+    "includePlatforms": [
+        "Editor"
+    ],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
+}

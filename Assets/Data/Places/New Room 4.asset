@@ -1,0 +1,65 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 519f4f541b1f9894a9f72218ed300513, type: 3}
+  m_Name: New Room 4
+  m_EditorClassIdentifier: HallOfEchoingMirrors::HallOfEchoingMirrors.Core.NodeDefinition
+  _id: d13a682ed5bce784aa3475b07a3c9c51
+  planned: 1
+  planningNote: 
+  displayName: New Room 4
+  kind: 0
+  hue: 0
+  depth: 0
+  alwaysOnMap: 0
+  ways:
+  - to: {fileID: 11400000, guid: ef4191703a9c2d3458793f56b87a56a3, type: 2}
+    bothWays: 1
+    startsOpen: 0
+    needs: []
+    foundAtExplored: 0
+    needsPerception: 0
+    story: {fileID: 0}
+    showWhileShut: 0
+    shutMessageKey: 
+  - to: {fileID: 11400000, guid: e251d6f445c95854197bb98bf52f4031, type: 2}
+    bothWays: 1
+    startsOpen: 0
+    needs: []
+    foundAtExplored: 0
+    needsPerception: 0
+    story: {fileID: 0}
+    showWhileShut: 0
+    shutMessageKey: 
+  - to: {fileID: 11400000, guid: e805790e3c74ef44c96ba847895e4f03, type: 2}
+    bothWays: 1
+    startsOpen: 0
+    needs: []
+    foundAtExplored: 0
+    needsPerception: 0
+    story: {fileID: 0}
+    showWhileShut: 0
+    shutMessageKey: 
+  tasks: []
+  exploresToFill: 0
+  foundBySearching: []
+  eachExploreGives: []
+  firstEntry: {fileID: 0}
+  leaving:
+    cost: 1
+    time: 1
+  entering:
+    cost: 1
+    time: 1
+  exploring:
+    cost: 1
+    time: 1
+  mapPosition: {x: -4.09, y: -0.13}

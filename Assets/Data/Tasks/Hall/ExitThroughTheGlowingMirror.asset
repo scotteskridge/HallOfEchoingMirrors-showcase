@@ -1,0 +1,44 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 70f8fffa6242ef341b6ebafea3e93bd8, type: 3}
+  m_Name: ExitThroughTheGlowingMirror
+  m_EditorClassIdentifier: HallOfEchoingMirrors::HallOfEchoingMirrors.Core.TaskDefinition
+  _id: 0cb1ffcc2c9426a41830ea8a35b19d8f
+  displayName: Exit through the glowing mirror
+  kind: 0
+  blurbTopic: 0
+  family: {fileID: 11400000, guid: 6d6e35836af93f74b859cc8e95655d0c, type: 2}
+  durationMultiplier: 2
+  xpMultiplier: 1
+  startsUnlocked: 0
+  oncePerRun: 0
+  singleAction: 0
+  description: 'The Smoky Mirror knows the gem, and on the other side is home.'
+  skill: {fileID: 0}
+  xpReward: 0
+  trainsAttribute: 0
+  cost: 0
+  costShares: []
+  alwaysCharged: 0
+  extraDrainPerSecond: 0
+  escalatingCharge: 0
+  chargeGrowth: 1
+  needs:
+  - resource: {fileID: 11400000, guid: 797bedceaa75e79498a0cdd60bc29b4b, type: 2}
+    amount: 1
+  gives: []
+  takes: []
+  easierWith: []
+  drainTimes: 1
+  walksOut: 1
+  requiresAttributes: []
+  requiresSkills: []

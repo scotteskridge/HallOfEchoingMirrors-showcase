@@ -1,0 +1,86 @@
+# ACTION STARTS - ACT I
+# Hall of Echoing Mirrors
+#
+# Rewritten 2026-09-29 against DesignNotes/Writing Guides/ProseVoiceGuide.md.
+#
+# One of these fires the moment an action begins ("I begin chasing, but..."),
+# then the ordinary buckets take over while she's at it. Buckets named start_...
+# speak at the start of an action; the rest of the name says which action.
+# Same format as exploration_blurbs_act1.txt. Re-run Import Blurbs after editing.
+#
+# VOICE: Clara at 41, first person, present tense. Dry, impatient, not frightened.
+# Every line is 20 words or fewer.
+
+
+## start_chase
+# The chase in loop 1. Only while chasing Roland.
+
+I run. There is no other word for it and no time to find one.
+I begin chasing, but my good sense has not finished clearing its throat.
+He is too far ahead. I start after him anyway.
+I run, and the hall lengthens to meet me.
+Every instinct I own says slow down. I do not listen to a single one.
+I call his name once, then save my breath for running.
+His coat goes round a corner. I go round it after him, and there is more corridor.
+I have not run like this since Evercrest, and I was twenty then.
+The thing in his coat never hurries. It doesn't need to.
+I keep him in sight. That is the whole plan, and it is not much of one.
+My shoes were not made for this. Neither, frankly, was I.
+Roland looks back once. I run faster, and the hall stretches to suit me.
+Frame, frame, frame. I stop seeing them and look only at his back.
+
+
+## start_travel
+# Setting off along a way to the next room.
+
+I set off, counting frames so that I have something to count.
+I go on. The floor makes no promises and I ask for none.
+I choose my way and take it before I can argue with myself.
+Onward, then. The hall is never once shorter the second time.
+I walk briskly, the way one walks past a house one does not wish to be asked into.
+I leave without looking back. Looking back here is expensive.
+I go, and the frames turn their faces as I pass. I have decided that they do not.
+One foot, then the next. It worked on the stairs at home with a child on each hip.
+I take the next way before the Hall can offer me a worse one.
+I set off at the pace I keep for trains I intend to catch.
+Onward. He has to be somewhere, and standing still has never once found him.
+I straighten my collar and go. Nobody is watching, but the mirrors are.
+I pick a direction. The Hall will tell me later whether it was the right one.
+Off again. My feet know the way better than I do, and complain less.
+I walk on, hands in my pockets so they cannot reach for anything.
+
+
+## start_explore
+# Beginning to explore a room.
+
+Looking around, I see nothing at first, which is where every good look begins.
+I start at one corner and work outward, the way he taught me to read a cracked stone.
+I stop, and take the measure of the place.
+Slowly, then. Nothing here rewards haste.
+I look around. Nothing at first. Then less than nothing, which is interesting.
+I walk the edges before the middle. Edges tell you what a room is for.
+I set myself to learn this place. It does not care to be learned.
+I let my eyes go where they like for a while. They are better at this than I am.
+I stand quite still and let the room show itself. Rooms, like children, confess to the patient.
+First the ceiling. Nobody looks at ceilings, which makes them the best place to hide things.
+I note the doors, then the frames, then anything that should not be here.
+I look the room over the way I would a house before signing for it.
+I begin with what I can touch. This place lies to the eye.
+I take a slow turn about the room, as though I were at a dull party.
+I start where I came in. It is the only part of the room I trust.
+
+
+## start_search
+# Beginning a search.
+
+I get down on my knees, something I only do for a child's lost shoe.
+I begin at the skirting and work along it, inch by inch.
+I search the way one searches for a dropped needle: slowly, and cursing.
+I go through it again, properly this time.
+Looking closely, I find nothing at first. I keep looking.
+I roll up my sleeves. Somewhere in here is a thing that does not want finding.
+I start with the frames nearest the floor. Things fall; they rarely fall upward.
+I search in rows, left to right, as if reading a page someone smudged.
+I run my fingers along the first frame and begin.
+I look for anything out of place, in a place where everything is.
+I begin, and promise myself I will not search it twice. I always search it twice.

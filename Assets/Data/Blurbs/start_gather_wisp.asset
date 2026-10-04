@@ -1,0 +1,51 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0e696aadb90452947a6f52d36af651f0, type: 3}
+  m_Name: start_gather_wisp
+  m_EditorClassIdentifier: HallOfEchoingMirrors::HallOfEchoingMirrors.Core.BlurbBucket
+  _id: 8f17cba30b1db164a9704ae223b93a73
+  bucketId: start_gather_wisp
+  enabled: 1
+  description: Beginning to gather a wisp.
+  priority: 25
+  chance: 1
+  cooldownSeconds: 0
+  moment: 1
+  activities: 0
+  tasks: []
+  topics: 01000000
+  rooms: []
+  roomKinds: 
+  fromLoop: 0
+  toLoop: 0
+  needsFlipped: []
+  endsWhenFlipped: []
+  needsHeld: []
+  needsNotHeld: []
+  vitalityBelow: 0
+  taperFromLoop: 0
+  silentFromLoop: 0
+  lines:
+  - I hold out my hand and wait, the way one waits for a cat to decide.
+  - There is a thread of light near the glass. I go after it slowly.
+  - I cup my hands. The trick is not to want it too obviously.
+  - A thread of light drifts past. I let it think it was its own idea.
+  - A wisp drifts off the old glass. I keep very still and let it come.
+  - Slowly now. A wisp shies away if I reach like I mean it.
+  - I open my hand under the thread of light and wait for it to settle.
+  - There is one by the frame's edge, thin as cotton. I go for it.
+  - Twenty-one years, and I am back to catching light in my hands like a first-year.
+  - I hold my breath. The wisp doesn't care, but I feel more careful.
+  - The light hangs by the glass, deciding. I give it all the time it needs, and
+    not a second more.
+  - A thread of light, low by the skirting. I crouch for it.
+  - I want this one badly, which is exactly how to lose it.

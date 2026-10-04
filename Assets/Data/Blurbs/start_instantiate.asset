@@ -1,0 +1,53 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0e696aadb90452947a6f52d36af651f0, type: 3}
+  m_Name: start_instantiate
+  m_EditorClassIdentifier: HallOfEchoingMirrors::HallOfEchoingMirrors.Core.BlurbBucket
+  _id: 736ece87300a7954aa3d56c218737642
+  bucketId: start_instantiate
+  enabled: 1
+  description: Beginning to make something solid out of a mirror.
+  priority: 25
+  chance: 1
+  cooldownSeconds: 0
+  moment: 1
+  activities: 0
+  tasks: []
+  topics: 02000000
+  rooms: []
+  roomKinds: 
+  fromLoop: 0
+  toLoop: 0
+  needsFlipped: []
+  endsWhenFlipped: []
+  needsHeld: []
+  needsNotHeld: []
+  vitalityBelow: 0
+  taperFromLoop: 0
+  silentFromLoop: 0
+  lines:
+  - I put my hand to the glass and ask the reflection for the real thing.
+  - I find the object in the mirror and do not let myself doubt it.
+  - Roland would call this closure. I call it not taking no for an answer.
+  - Dozens of frames on every wall, and only a handful with anything close enough
+    to reach.
+  - I choose my frame. Pick the wrong one and I am only a woman with her hand against
+    a window.
+  - The thing behind the glass is close enough. I reach in and insist.
+  - 'I fix the shape in mind first: the weight, the edges, where the light sits on
+    it.'
+  - Hand flat on the glass. The cold goes up my arm, and I keep it there.
+  - This is the first thing I ever taught a student, and the hardest to do tired.
+  - I look at the thing behind the glass until it starts to look like mine.
+  - A reflection is only a promise. I am here to collect on one.
+  - The glass resists, then thinks better of it.
+  - I make myself certain. Doubt is what leaves you holding air.

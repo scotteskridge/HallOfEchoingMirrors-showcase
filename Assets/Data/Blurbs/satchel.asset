@@ -1,0 +1,51 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0e696aadb90452947a6f52d36af651f0, type: 3}
+  m_Name: satchel
+  m_EditorClassIdentifier: HallOfEchoingMirrors::HallOfEchoingMirrors.Core.BlurbBucket
+  _id: e209f4baa0132d14f9107373daba0291
+  bucketId: satchel
+  enabled: 1
+  description: While she has the satchel this run.
+  priority: 21
+  chance: 0.3
+  cooldownSeconds: 0
+  moment: 0
+  activities: 0
+  tasks: []
+  topics: 
+  rooms: []
+  roomKinds: 
+  fromLoop: 0
+  toLoop: 0
+  needsFlipped: []
+  endsWhenFlipped: []
+  needsHeld:
+  - resource: {fileID: 11400000, guid: a5c930bddeb17ad41b59a05cb91bad52, type: 2}
+    amount: 1
+  needsNotHeld: []
+  vitalityBelow: 0
+  taperFromLoop: 0
+  silentFromLoop: 0
+  lines:
+  - Twenty-one years on, the leather still smells of Evercrest chalk.
+  - Room for more. The hall, I suspect, has noticed.
+  - Plenty of room. I intend to use all of it.
+  - The satchel bumps my hip at every step, the way it did on the walk to lectures.
+  - Everything I carry has a place now. I feel almost organised.
+  - The strap finds the old groove in my shoulder as if it never left.
+  - I check the buckle without thinking. Twenty-one years of habit.
+  - There is ink on the lining from an examination I nearly failed.
+  - My hands are free again. I had forgotten how much I like that.
+  - It is heavier than it was this morning. That is the point of it.
+  - 'I pack it the way Roland never does: heaviest at the bottom.'
+  - A tutor once called it a disgrace. It has outlasted her.

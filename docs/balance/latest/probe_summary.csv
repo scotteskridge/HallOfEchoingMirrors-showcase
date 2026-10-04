@@ -1,0 +1,13 @@
+﻿scenario,policy,walks_out_on_run,lab_visits,talk_attempts
+shipped,A: wisps only,not in 30,0,0
+shipped,"B: 15 hall candles, no phials",25,7,1
+shipped,"C: 15 hall candles, 10 phials (tidy)",9,3,2
+shipped,"D: 8 hall candles, 5 phials (loose)",15,3,2
+drain growth 0.45,A: wisps only,not in 30,0,0
+drain growth 0.45,"B: 15 hall candles, no phials",29,7,1
+drain growth 0.45,"C: 15 hall candles, 10 phials (tidy)",11,4,2
+drain growth 0.45,"D: 8 hall candles, 5 phials (loose)",24,7,4
+talk x3.6,A: wisps only,not in 30,0,0
+talk x3.6,"B: 15 hall candles, no phials",24,7,1
+talk x3.6,"C: 15 hall candles, 10 phials (tidy)",8,2,1
+talk x3.6,"D: 8 hall candles, 5 phials (loose)",15,3,2

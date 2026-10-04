@@ -1,0 +1,35 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 315c27de9a194d54796a1ac6d2497658, type: 3}
+  m_Name: WhatHeDidThatNight
+  m_EditorClassIdentifier: HallOfEchoingMirrors::HallOfEchoingMirrors.Core.SwitchDefinition
+  _id: 2cb8b6aa1c77865418597432fba092e7
+  displayName: What He Did That Night
+  trigger: 1
+  triggerTask: {fileID: 0}
+  requiredTasks:
+  - {fileID: 11400000, guid: ed7e5d4cbfe3dd346b65d847713c8944, type: 2}
+  triggerAttribute: 2
+  triggerLevel: 1
+  resourceToHold: {fileID: 0}
+  triggerAmount: 1
+  roomToExplore: {fileID: 0}
+  explorePercent: 100
+  unlocksTasks: []
+  locksTasks: []
+  unlocksPools: 
+  wakesAttributes: 
+  opensWays: []
+  closesWays: []
+  waivesWayNeeds: []
+  reopensSearch: []
+  story: {fileID: 11400000, guid: 9d732e9445955fe49a341ac5d1e0dc82, type: 2}

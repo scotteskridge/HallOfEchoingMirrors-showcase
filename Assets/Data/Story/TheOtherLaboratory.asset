@@ -1,0 +1,16 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bc1b7a14e7a18dc4c98bb8e0c1388b72, type: 3}
+  m_Name: TheOtherLaboratory
+  m_EditorClassIdentifier: HallOfEchoingMirrors::HallOfEchoingMirrors.Core.StoryBeat
+  _id: f77e483ba5c62ef498c3a43d0b51d76d
+  text: {fileID: 4900000, guid: bcf2bb2a84e7b6640954bdc8b403b828, type: 3}
